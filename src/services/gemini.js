@@ -375,23 +375,38 @@ Keep it extremely concise and readable.`;
 
   // Fallback simulator for mock test generation
   simulateTestGeneration(examType, subjects, count) {
-    const list = fallbackTests[examType] || fallbackTests.BCI_I || fallbackTests.BCI_II;
-    // Filter by subject if requested and matching
-    let pool = [];
-    if (subjects && subjects.length > 0) {
-      pool = list.filter(q => subjects.some(s => q.subject.toLowerCase().includes(s.toLowerCase()) || s.toLowerCase().includes(q.subject.toLowerCase())));
+    // Determine the bank key. Ensure we fall back properly if BCI_II is empty or doesn't exist.
+    const bankKey = examType === 'BCI_I' ? 'BCI_I' : 'BCI_II';
+    let bank = fallbackTests[bankKey];
+    
+    // If the bank doesn't exist or is empty, fall back to BCI_I
+    if (!bank || bank.length === 0) {
+      bank = fallbackTests['BCI_I'] || [];
     }
-    if (pool.length === 0) {
-      pool = list;
+
+    if (bank.length === 0) {
+      throw new Error('No fallback questions available. Please configure an API key.');
+    }
+
+    // Filter by subject if requested and matching
+    let pool = bank;
+    if (subjects && subjects.length > 0 && subjects[0] !== '') {
+      const filtered = bank.filter(q => 
+        subjects.some(s => q.subject?.toLowerCase().includes(s.toLowerCase()) || s.toLowerCase().includes(q.subject?.toLowerCase()))
+      );
+      if (filtered.length > 0) {
+        pool = filtered;
+      }
     }
 
     // Shuffle and pick
-    const shuffled = [...pool].sort(() => 0.5 - Math.random());
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
     const finalQuestions = shuffled.slice(0, count);
 
     // If we need more than we have, pad it by copying and changing slightly
     while (finalQuestions.length < count) {
       const randomQ = pool[Math.floor(Math.random() * pool.length)];
+      if (!randomQ) break;
       finalQuestions.push({
         ...randomQ,
         id: `sim_${Date.now()}_${finalQuestions.length}`,
@@ -567,76 +582,6 @@ Let me know if you want to solve a practice question using this formula!`;
       citations: [
         { title: "M Laxmikanth - Indian Polity Reference", url: "#" },
         { title: "Quantitative Aptitude for Competitive Exams", url: "#" }
-      ]
-    };
-  },
-
-  // Fallback: generate test from local question bank when no API key is available
-  simulateTestGeneration(examType, subjects, questionCount) {
-    // Pick from the fallback test bank
-    const bankKey = examType === 'BCI_I' ? 'BCI_I' : 'BCI_II';
-    const bank = fallbackTests[bankKey] || fallbackTests['BCI_I'] || [];
-    
-    if (bank.length === 0) {
-      throw new Error('No fallback questions available. Please configure an API key.');
-    }
-
-    // Filter by subjects if provided
-    let pool = bank;
-    if (subjects && subjects.length > 0 && subjects[0] !== '') {
-      const filtered = bank.filter(q => 
-        subjects.some(s => q.subject?.toLowerCase().includes(s.toLowerCase()))
-      );
-      if (filtered.length >= questionCount) {
-        pool = filtered;
-      }
-    }
-
-    // Shuffle and pick
-    const shuffled = [...pool].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, Math.min(questionCount, shuffled.length));
-  },
-
-  // Fallback: simulate daily current affairs when no API key is available
-  simulateDailyCurrentsAndQuiz() {
-    return {
-      summary: "**Today's Current Affairs Briefing**\n\n• Government of India announced new digital literacy initiatives for rural areas\n• Rajasthan State Government launched new teacher training programs\n• RSSB released updated exam calendar for upcoming recruitment cycles\n• India's GDP growth rate projected at 6.5% for current fiscal year\n• New education policy reforms being implemented across states",
-      quiz: [
-        {
-          subject: "Current Affairs",
-          question: "Which initiative was recently launched by the Government of India for rural areas?",
-          options: ["Digital Literacy Program", "Smart City Mission", "Ujjwala Yojana Extension", "Rural Employment Guarantee"],
-          correctIndex: 0,
-          explanation: "The Government of India has been focusing on digital literacy initiatives for rural areas to bridge the digital divide."
-        },
-        {
-          subject: "Current Affairs",
-          question: "What is India's projected GDP growth rate for the current fiscal year?",
-          options: ["5.5%", "6.0%", "6.5%", "7.0%"],
-          correctIndex: 2,
-          explanation: "India's GDP growth rate has been projected at 6.5% for the current fiscal year by major economic agencies."
-        },
-        {
-          subject: "Current Affairs",
-          question: "Which state body released an updated exam calendar for recruitment?",
-          options: ["UPSC", "SSC", "RSSB", "RPSC"],
-          correctIndex: 2,
-          explanation: "Rajasthan Staff Selection Board (RSSB) regularly updates its exam calendar for various recruitment examinations."
-        },
-        {
-          subject: "Current Affairs",
-          question: "What new program did Rajasthan State Government launch?",
-          options: ["Healthcare Initiative", "Teacher Training Program", "Road Development Scheme", "Water Conservation Project"],
-          correctIndex: 1,
-          explanation: "The Rajasthan State Government has been actively launching teacher training programs to improve education quality."
-        },
-        {
-          subject: "Current Affairs",
-          question: "Which major policy reform is being implemented across Indian states?",
-          options: ["Land Reform Act", "New Education Policy", "Labour Reform Act", "Tax Reform Policy"],
-          correctIndex: 1,
-          explanation: "The New Education Policy (NEP) reforms are being implemented across states to modernize India's education system."
-        }
       ]
     };
   }
