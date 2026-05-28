@@ -1,6 +1,8 @@
 # GovPrep AI 🎓🤖
 ### RSSB Rajasthan Computer Instructor (BCI) Exam Preparation Web Application
 
+🔗 **Live Link:** [https://bci-exam-prep.vercel.app/](https://bci-exam-prep.vercel.app/)
+
 GovPrep AI is a state-of-the-art, premium AI-powered test preparation dashboard tailored for the Rajasthan Staff Selection Board (RSSB) Basic Computer Instructor (BCI) exam. Built with a stunning modern dark-themed glassmorphism user interface, it provides aspirants with mock tests, topic-wise practice, AI tutoring, and syllabus progress tracking.
 
 ---
