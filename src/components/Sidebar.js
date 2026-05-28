@@ -53,6 +53,11 @@ export class Sidebar {
             <i class="fas fa-chart-bar"></i>
             <span>Analysis</span>
           </a>
+
+          <a href="#" class="nav-item" data-route="leaderboard">
+            <i class="fas fa-trophy"></i>
+            <span>Leaderboard</span>
+          </a>
         </div>
 
         <div class="sidebar-user-section" style="padding: 16px; border-top: 1px solid var(--panel-border);">

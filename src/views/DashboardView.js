@@ -162,6 +162,14 @@ export class DashboardView {
               <h3>Study</h3>
             </div>
           </div>
+          <div class="feature-card" data-route="leaderboard">
+            <div class="feature-card-bg" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=400&q=80');"></div>
+            <div class="feature-card-overlay"></div>
+            <div class="feature-card-content">
+              <i class="fas fa-trophy feature-icon"></i>
+              <h3>Rankings</h3>
+            </div>
+          </div>
           <div class="feature-card" id="card-start-daily">
             <div class="feature-card-bg" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80');"></div>
             <div class="feature-card-overlay"></div>

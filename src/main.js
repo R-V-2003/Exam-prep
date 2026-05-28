@@ -19,6 +19,8 @@ import { AnalyticsView } from './views/AnalyticsView.js';
 import { SyllabusProgressView } from './views/SyllabusProgressView.js';
 import { LoginView } from './views/LoginView.js';
 import { supabaseService } from './services/supabase.js';
+import { LeaderboardView } from './views/LeaderboardView.js';
+import './styles/leaderboard.css';
 
 class App {
   constructor() {
@@ -137,7 +139,8 @@ class App {
       ),
       'study-material': new StudyMaterialView(),
       'analysis': new AnalyticsView(),
-      'progress': new SyllabusProgressView((viewId) => this.navigate(viewId))
+      'progress': new SyllabusProgressView((viewId) => this.navigate(viewId)),
+      'leaderboard': new LeaderboardView()
     };
 
     // Render layout components
@@ -221,7 +224,8 @@ class App {
       'test-review': 'Test Performance Review',
       'chat': 'BCI AI Study Tutor',
       'topic-practice': 'Topic-Wise Practice',
-      'pyqs': 'Previous Year Papers (PYQs)'
+      'pyqs': 'Previous Year Papers (PYQs)',
+      'leaderboard': 'National Aspirants Leaderboard'
     };
     this.header.setTitle(titles[viewId] || 'GovPrep AI');
 
