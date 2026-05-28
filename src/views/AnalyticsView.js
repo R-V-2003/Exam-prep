@@ -37,8 +37,8 @@ export class AnalyticsView {
 
     // Wait for DOM
     setTimeout(() => {
-      this.analytics.renderSubjectProficiency('analytics-radar-canvas');
-      this.analytics.renderScoreHistory('analytics-history-canvas');
+      this.analytics.drawRadar('analytics-radar-canvas');
+      this.analytics.drawHistory('analytics-history-canvas');
     }, 100);
 
     // Theme support for charts
