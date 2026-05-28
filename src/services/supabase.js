@@ -21,8 +21,10 @@
 //
 //    alter table public.user_data enable row level security;
 //
-//    create policy "Users can read own data" on public.user_data
-//      for select using (auth.uid() = id);
+//    drop policy if exists "Users can read own data" on public.user_data;
+//
+//    create policy "Anyone can read user_data" on public.user_data
+//      for select using (true);
 //
 //    create policy "Users can update own data" on public.user_data
 //      for update using (auth.uid() = id);
@@ -145,6 +147,20 @@ export const supabaseService = {
       return null;
     }
     return data;
+  },
+
+  async getAllUsersData() {
+    if (!supabase) return [];
+    
+    const { data, error } = await supabase
+      .from('user_data')
+      .select('*');
+
+    if (error) {
+      console.error('Error fetching all users data:', error);
+      return [];
+    }
+    return data || [];
   },
 
   async saveTestResult(testResult) {

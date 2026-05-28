@@ -1,5 +1,6 @@
 import { storage } from '../services/storage.js';
 import { bciSyllabus } from '../data/bciSyllabus.js';
+import { supabaseService } from '../services/supabase.js';
 
 export class LeaderboardView {
   constructor() {
@@ -9,21 +10,8 @@ export class LeaderboardView {
     // Constant total topics in BCI syllabus
     this.TOTAL_SYLLABUS_TOPICS = 79; 
 
-    // Initial base peer aspirant profiles (aspirants preparing for the BCI exam)
-    this.peerAspirants = [
-      { name: "Rohini Sen", baseAccuracy: 88, baseStreak: 12, baseSyllabusCount: 65, baseSpeed: 28, testCount: 15 },
-      { name: "Aarav Sharma", baseAccuracy: 84, baseStreak: 8, baseSyllabusCount: 58, baseSpeed: 34, testCount: 11 },
-      { name: "Divya Deshmukh", baseAccuracy: 91, baseStreak: 16, baseSyllabusCount: 71, baseSpeed: 42, testCount: 22 },
-      { name: "Vikram Malhotra", baseAccuracy: 76, baseStreak: 5, baseSyllabusCount: 45, baseSpeed: 22, testCount: 7 },
-      { name: "Ananya Iyer", baseAccuracy: 80, baseStreak: 7, baseSyllabusCount: 52, baseSpeed: 40, testCount: 9 },
-      { name: "Amit Patel", baseAccuracy: 72, baseStreak: 3, baseSyllabusCount: 38, baseSpeed: 31, testCount: 5 },
-      { name: "Sneha Rao", baseAccuracy: 86, baseStreak: 10, baseSyllabusCount: 60, baseSpeed: 26, testCount: 12 },
-      { name: "Rohan Verma", baseAccuracy: 78, baseStreak: 4, baseSyllabusCount: 42, baseSpeed: 38, testCount: 6 },
-      { name: "Karan Johar", baseAccuracy: 68, baseStreak: 2, baseSyllabusCount: 30, baseSpeed: 50, testCount: 3 },
-      { name: "Pooja Hegde", baseAccuracy: 82, baseStreak: 6, baseSyllabusCount: 48, baseSpeed: 35, testCount: 8 },
-      { name: "Suresh Raina", baseAccuracy: 64, baseStreak: 0, baseSyllabusCount: 22, baseSpeed: 48, testCount: 1 },
-      { name: "Kabir Singh", baseAccuracy: 94, baseStreak: 20, baseSyllabusCount: 74, baseSpeed: 19, testCount: 25 }
-    ];
+    // Cache for live fetched data
+    this.cachedAspirants = null;
   }
 
   // Calculate current user stats from storage
@@ -75,31 +63,14 @@ export class LeaderboardView {
 
   // Combine user stats and peer profiles, and calculate composite scores for peers
   getRankedAspirants() {
-    const user = this.getUserStats();
+    const aspirants = [...(this.cachedAspirants || [])];
     
-    const aspirants = this.peerAspirants.map(peer => {
-      const syllabusPercent = Math.round((peer.baseSyllabusCount / this.TOTAL_SYLLABUS_TOPICS) * 100);
-      const overallScore = Number((
-        (syllabusPercent * 0.3) + 
-        (peer.baseAccuracy * 0.4) + 
-        (peer.baseStreak * 1.5) + 
-        (peer.testCount * 2.0)
-      ).toFixed(1));
-
-      return {
-        name: peer.name,
-        isCurrentUser: false,
-        accuracy: peer.baseAccuracy,
-        streak: peer.baseStreak,
-        syllabusCount: peer.baseSyllabusCount,
-        syllabusPercent: syllabusPercent,
-        speed: peer.baseSpeed,
-        testCount: peer.testCount,
-        overallScore: overallScore
-      };
-    });
-
-    aspirants.push(user);
+    // Check if current user is in the list. If not (guest), add local stats.
+    let user = aspirants.find(a => a.isCurrentUser);
+    if (!user) {
+      user = this.getUserStats();
+      aspirants.push(user);
+    }
 
     // Sort based on current tab
     if (this.activeTab === 'overall') {
@@ -135,9 +106,70 @@ export class LeaderboardView {
     return `background: linear-gradient(135deg, hsl(${h}, ${s}%, ${l}%), hsl(${(h + 40) % 360}, ${s}%, ${l - 10}%));`;
   }
 
-  render(container) {
-    const user = this.getUserStats();
+  async render(container) {
+    container.innerHTML = `
+      <div class="animate-fade-in" style="display:flex; justify-content:center; align-items:center; min-height: 400px;">
+        <div style="text-align:center; color:var(--brand-primary);">
+          <i class="fas fa-circle-notch fa-spin fa-3x" style="margin-bottom:15px;"></i>
+          <h3>Loading Live Rankings...</h3>
+        </div>
+      </div>
+    `;
+
+    // Fetch from supabase
+    const rawUsers = await supabaseService.getAllUsersData();
+    const sessionUser = await supabaseService.getCurrentUser();
+    const currentUserId = sessionUser ? sessionUser.id : null;
+
+    // Transform raw users into aspirant format
+    this.cachedAspirants = rawUsers.map(u => {
+      const history = u.test_history || [];
+      const streakInfo = u.streak_info || { count: 0 };
+      const studiedTopics = u.studied_topics || [];
+      const isCurrentUser = u.id === currentUserId;
+
+      const totalTests = history.length;
+      let avgAccuracy = 0;
+      let avgSpeed = 0;
+      
+      if (totalTests > 0) {
+        avgAccuracy = Math.round(history.reduce((acc, curr) => acc + (curr.accuracy || curr.scorePercentage || 0), 0) / totalTests);
+        const totalQuestions = history.reduce((acc, curr) => acc + (curr.questions?.length || 10), 0);
+        const totalTime = history.reduce((acc, curr) => acc + (curr.timeSpentSeconds || 0), 0);
+        avgSpeed = Math.round(totalTime / totalQuestions) || 30;
+      }
+
+      const syllabusCount = studiedTopics.length;
+      const syllabusPercent = Math.round((syllabusCount / this.TOTAL_SYLLABUS_TOPICS) * 100);
+
+      const overallScore = Number((
+        (syllabusPercent * 0.3) + 
+        (avgAccuracy * 0.4) + 
+        ((streakInfo.count || 0) * 1.5) + 
+        (totalTests * 2.0)
+      ).toFixed(1));
+
+      return {
+        id: u.id,
+        name: u.display_name || 'Aspirant',
+        displayName: u.display_name || 'Aspirant',
+        isCurrentUser,
+        accuracy: avgAccuracy,
+        streak: streakInfo.count || 0,
+        syllabusCount,
+        syllabusPercent,
+        speed: avgSpeed,
+        testCount: totalTests,
+        overallScore
+      };
+    });
+
+    this.renderComplete(container);
+  }
+
+  renderComplete(container) {
     const rankedAll = this.getRankedAspirants();
+    const user = rankedAll.find(a => a.isCurrentUser) || this.getUserStats();
     
     // Find current user's position
     const userIndex = rankedAll.findIndex(a => a.isCurrentUser);
@@ -624,7 +656,7 @@ export class LeaderboardView {
 
   refreshRankingsAndInsights(container) {
     const rankedAll = this.getRankedAspirants();
-    const user = this.getUserStats();
+    const user = rankedAll.find(a => a.isCurrentUser) || this.getUserStats();
 
     // Re-render list
     const rankingsTarget = container.querySelector('#rankings-list-target');
