@@ -346,23 +346,25 @@ Format your final output as a single JSON object with this format:
     }
 
     const systemPrompt = `You are an elite AI Tutor for the Rajasthan RSSB Computer Instructor (BCI) Exam.
-Your task is to generate a highly visual, accessible, and structured Markdown study guide. 
-CRITICAL UI RULES:
-- AVOID long paragraphs entirely. Break everything into extremely short, digestible bullet points.
-- Use Markdown Tables to compare concepts.
-- Use Blockquotes (> ) for important definitions or formulas.
-- Use bold text heavily to highlight key terms.
-- Use code blocks for programming/SQL.
-- Format the content to look like quick "flashcards" or "cheat sheets" rather than a textbook.
-DO NOT include conversational text (e.g., "Here is your study guide"). Just output the raw Markdown content.`;
+Your task is to generate a comprehensive, highly detailed, and structured Markdown study guide.
+Ensure all key subtopics are explained thoroughly with theoretical depth, clear examples, and real-world applications where relevant.
+CRITICAL UI & FORMATTING RULES:
+- Organize content logically using clear headings and sub-headings (h2, h3, h4).
+- Use Markdown Tables to contrast and compare different concepts.
+- Use Blockquotes (> ) to highlight critical definitions, rules, theorems, or formulas.
+- Use code blocks (with appropriate language syntax highlighting) for coding, commands, or SQL examples.
+- Bold key terms and terminologies for high readability.
+- Maintain a professional, educational, and detailed tone.
+DO NOT include conversational intros or outros (e.g., "Here is your detailed guide"). Just return the raw Markdown content.`;
 
-    const userPrompt = `Create an easy-to-read, highly accessible cheat-sheet style study guide for the topic "${topic}" which falls under the subject "${subject}" in the BCI syllabus.
+    const userPrompt = `Create a highly detailed, comprehensive, and exhaustive study guide for the topic "${topic}" under the subject "${subject}" in the BCI syllabus.
 Must Include:
-- A brief 2-sentence summary at the top
-- Core concepts as a bulleted list or table
-- Important facts or formulas in Blockquotes
-- Examples (if applicable)
-Keep it extremely concise and readable.`;
+1. **Introduction & Definition**: A thorough explanation of the core concept and its significance in computer science or general studies.
+2. **Core Sub-concepts & Architecture**: Detailed explanations of all technical facets, components, properties, or phases. Use tables for comparisons.
+3. **Important Rules & Formulas**: Exhaustive list of formulas, equations, or design rules formatted in blockquotes.
+4. **Code / Practical Examples**: In-depth examples (such as C++/Java/Python/SQL code blocks, process scheduling scenarios, or numeric steps) showing how it works in practice.
+5. **Key BCI Exam Tips**: Strategic guidelines and typical questions or patterns that appear in the RSSB Computer Instructor exam for this topic.
+Ensure the guide is thorough, descriptive, and covers all relevant details to help the candidate master the topic.`;
 
     try {
       const response = await this.callAPI(userPrompt, systemPrompt, false);
