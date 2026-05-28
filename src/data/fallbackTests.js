@@ -1,0 +1,1307 @@
+// Overwritten mock test bank targeting the Rajasthan RSSB Computer Instructor (BCI) Exam.
+// Contains real questions extracted from the 2022 Papers.
+export const fallbackTests = {
+  BCI_I: [
+  {
+    "id": "bci_i_1",
+    "subject": "General Studies",
+    "question": "Which of the following statements is/are true in relation to Abhaneri?\n(1) The Harshat Mata temple here was built by the Feudal Chauhan's of Pratiharas.\n(2) The Chand Baori of Abhaneri is world famous.\n(3) There is a famous temple of goddess Pippalada.\nChoose the correct code -",
+    "options": [
+      "Only (3)",
+      "Only (2)",
+      "(1) and (2)",
+      "(1), (2) and (3)"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_2",
+    "subject": "General Studies",
+    "question": "How many languages of Rajasthan are mentioned in Kuvalayamala?",
+    "options": [
+      "08",
+      "18",
+      "06",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_3",
+    "subject": "General Studies",
+    "question": "Which is called the emergency hormone in the human body?",
+    "options": [
+      "Adrenaline",
+      "Progesterone",
+      "Insulin",
+      "Thyroxin"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_4",
+    "subject": "General Studies",
+    "question": "Which is the biggest Thermal Power Station of Rajasthan?",
+    "options": [
+      "Barsingsar Thermal",
+      "Giral Thermal",
+      "Kota Thermal",
+      "Suratgarh Thermal"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_5",
+    "subject": "General Studies",
+    "question": "According to census 2011, which district had the lowest sex ratio in the age group of 0 to 6 in Rajasthan?",
+    "options": [
+      "Dholpur",
+      "Jhunjhunu",
+      "Dausa",
+      "Ganganagar"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_6",
+    "subject": "General Studies",
+    "question": "Rajasthan's famous folk art \"Bewan\" is -",
+    "options": [
+      "A temple shaped figure made of wood with doors.",
+      "A sword shaped figure made of wood which is used in Ramleela drama.",
+      "Presenting the life of a folk deity through paintings on a khadi cloth.",
+      "A throne made of wood on which the idol of Thakurji is adorned and seated."
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_7",
+    "subject": "General Studies",
+    "question": "Which one of the following is not correctly matched?",
+    "options": [
+      "DOTS - Tuberculosis",
+      "AB+ Blood group -Universal Donor",
+      "DPT - Vaccine",
+      "Adrenaline - Hormone"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_8",
+    "subject": "General Studies",
+    "question": "In which part of the body do women wear \"Damana\" ornament?",
+    "options": [
+      "Feet",
+      "Ears",
+      "Nose",
+      "Finger"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_9",
+    "subject": "General Studies",
+    "question": "Batool Begum is related to which singing tradition of Rajasthan?",
+    "options": [
+      "Qawwali singing",
+      "Gandharva Gaan",
+      "Mand singing",
+      "Phad singing"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_10",
+    "subject": "General Studies",
+    "question": "Match the following -\nInstitution\n(A) Rajasthan Seva Sangh\n(B) Desh Hitaishini Sabha\n(C) Veer Bharat Sabha\n(D) Sarv Hitaishini Sabha\nFounder\n(1) Vijay Singh Pathik, Ram Narayan Choudhary, Hari Bhai Kinker\n(2) Kesari Singh Barhath\n(3) Swami Gopaldas\n(4) Maharana Sajjan Singh\nChoose the correct code -",
+    "options": [
+      "A-1, B-4, C-2, D-3",
+      "A-4, B-2, C-3, D-1",
+      "A-3, B-1, C-2, D-4",
+      "A-1, B-2, C-3, D-4"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_11",
+    "subject": "General Studies",
+    "question": "Which district of Rajasthan has got the second place in the country under the \"Prime Ministers Housing Scheme\" in June 2021?",
+    "options": [
+      "Jodhpur",
+      "Ajmer",
+      "Jaipur",
+      "Dungarpur"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_12",
+    "subject": "General Studies",
+    "question": "Where \"Rajiv Gandhi Fintech Digital Institute\" is to be established?",
+    "options": [
+      "Kota",
+      "Udaipur",
+      "Jaipur",
+      "Jodhpur"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_13",
+    "subject": "General Studies",
+    "question": "Pre-Cambrian rocks of Rajasthan are basically described by -",
+    "options": [
+      "A.M.Heron",
+      "La Touche",
+      "M.S.Khurana",
+      "C.A.Hacket"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_14",
+    "subject": "General Studies",
+    "question": "Which statement is correct about Bhakra Canal project?\n(A) It is a joint project of Punjab-Haryana-Rajasthan.\n(B) It provides irrigation to Hanumangarh district.\n(C) Rajasthan's share is 17.22%..\n(D) It irrigates 2.3 Lakh Hectare of agricultural land.\nCorrect code is -",
+    "options": [
+      "A, B or C",
+      "B or C",
+      "A, B or D",
+      "B, C or D"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_15",
+    "subject": "General Studies",
+    "question": "When did Maharana Pratap establish his new capital at Chavand?",
+    "options": [
+      "1576 AD",
+      "1594 AD",
+      "1582 AD",
+      "1585 AD"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_16",
+    "subject": "General Studies",
+    "question": "The foundation stone of world's third largest cricket stadium was laid on 5th Feb, 2022 at -",
+    "options": [
+      "Sanganer",
+      "Kishangarh",
+      "Chonp (Jaipur)",
+      "Jodhpur"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_17",
+    "subject": "General Studies",
+    "question": "On 19 December, 2021 which scheme has been started by the department of Women and Child Development in Rajasthan?",
+    "options": [
+      "Jagrati Bal Vikas Yojana",
+      "Udaan ke Sath Shakti Yojana",
+      "Balika Vikas Yojana",
+      "I Am Shakti Udaan Yojana"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_18",
+    "subject": "General Studies",
+    "question": "Which is the hardest substance in the human body?",
+    "options": [
+      "Finger Nails",
+      "Tooth Enamel",
+      "Skull Bones",
+      "Kneecap"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_19",
+    "subject": "General Studies",
+    "question": "Vivaan Kapoor is related to which sport?",
+    "options": [
+      "Boxing",
+      "Kho - Kho",
+      "Kabaddi",
+      "Rifle Shooting"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_20",
+    "subject": "General Studies",
+    "question": "Where is Lok Kala Mandir located?",
+    "options": [
+      "Bikaner",
+      "Jodhpur",
+      "Udaipur",
+      "Jaipur"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_21",
+    "subject": "General Studies",
+    "question": "Which of the following pairs (Book -Author) is not correctly matched?",
+    "options": [
+      "Suraj Prakash - Karnidan",
+      "Kirtar Bavni - Kavi Isardas",
+      "Desh Darpan - Shankardan Samaur",
+      "Ragunath Rupak - Mancharam Sevag"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_22",
+    "subject": "General Studies",
+    "question": "When was the \"Jaipur Theater Fest\" organized in Jaipur?",
+    "options": [
+      "April, 2022",
+      "May, 2022",
+      "January, 2022",
+      "March, 2022"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_23",
+    "subject": "General Studies",
+    "question": "The escape velocity of the earth is -",
+    "options": [
+      "11.9 km/sec",
+      "13.6 km/sec.",
+      "19.2 km/sec",
+      "11.2 km/sec"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_24",
+    "subject": "General Studies",
+    "question": "First mammal to be cloned was -",
+    "options": [
+      "Frog",
+      "Rat",
+      "Sheep",
+      "Goat"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_25",
+    "subject": "General Studies",
+    "question": "Involuntary actions like blood pressure and vomiting are controlled by which part of hindbrain?",
+    "options": [
+      "Cerebrum",
+      "Pons",
+      "Medulla oblongata",
+      "Cerebellum"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_26",
+    "subject": "General Studies",
+    "question": "Which of the following forests are often called the \"Lungs of the Planet\"?",
+    "options": [
+      "Monsoon forest",
+      "Tundra forest",
+      "Amazon rain forests",
+      "Taiga forest"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_27",
+    "subject": "General Studies",
+    "question": "Which one of the following pairs (Archaeological Site - Related District) is not correctly matched?",
+    "options": [
+      "Ojhiyana - Chittorgarh",
+      "Sunari - Jhunjhunu",
+      "Gilund - Rajsamand",
+      "Jodhpura - Jaipur"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_28",
+    "subject": "General Studies",
+    "question": "Which of the following pairs (Currency - Issuers) is not correctly matched?",
+    "options": [
+      "Vijaishahi - Bikaner",
+      "Gajshahi - Jodhpur",
+      "Akhaishahi - Jaisalmer",
+      "Jhadshahi - Jaipur"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_29",
+    "subject": "General Studies",
+    "question": "Match the following\nDistrict\n(A) Banswara\n(B) Jaisalmer\n(C) Dholpur\n(D) Ganganagar\nLatitude/Longitude\n(I) 30°12′ N\n(II) 69°30′ E\n(III) 23°3′ N\n(IV) 78°17′ E\nCorrect code is -",
+    "options": [
+      "A-III, B-II, C-IV, D-I",
+      "A-III, B-II, C-I, D-IV",
+      "A-II, B-III, C-IV, D-I",
+      "A-I, B-II, C-IV, D-III"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_30",
+    "subject": "General Studies",
+    "question": "Who has been awarded the Sahitya Akademi Award 2021 for Rajasthani language?",
+    "options": [
+      "Namita Gokhale",
+      "Meethesh Nirmohi",
+      "Raj Rahi",
+      "Anuradha Sharma"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_31",
+    "subject": "General Studies",
+    "question": "Which of these statements is/are not true in relation to \"Gentlemen agreement\"?\n(1) This agreement was done in 1942 A.D.\n(2) It is related to the princely state of Jhalawar.\n(3) According to this agreement the princely government will not help the British in future.\nChoose the correct code -",
+    "options": [
+      "(1) and (2)",
+      "Only (2)",
+      "Only (3)",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_32",
+    "subject": "General Studies",
+    "question": "Red and yellow soil is found in which district of Rajasthan?",
+    "options": [
+      "Sawai Madhopur-Kota-Bhundi-Bhilwara",
+      "Sirohi-Ajmer-Tonk-Jaipur",
+      "Sawai Madhopur-Sirohi-Bhilwara-Ajmer",
+      "Ajmer-Sirohi-Dungarpur-Banswara"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_33",
+    "subject": "General Studies",
+    "question": "In 17th century's \"Sisodia-Rathore Alliance\", the rural of Mewar was",
+    "options": [
+      "Maharana Raj Singh - I",
+      "Maharana Amar Singh - II",
+      "Maharana Jagat Singh - I",
+      "Maharana Sangram Singh - II"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_34",
+    "subject": "General Studies",
+    "question": "Haveli painting belongs to which century?",
+    "options": [
+      "19th century",
+      "18th century",
+      "20th century",
+      "17th century"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_35",
+    "subject": "General Studies",
+    "question": "Which is not correctly matched?",
+    "options": [
+      "DB'w climate region - Northern Rajasthan",
+      "CA'w climate region - South-eastern Rajasthan",
+      "EA'd climate region - Eastern Rajasthan",
+      "DA'w climate region - Mid-Rajasthan"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_36",
+    "subject": "General Studies",
+    "question": "Which one of the following is not an antioxidant?",
+    "options": [
+      "Vitamin E",
+      "Lycopene",
+      "Aspartame",
+      "Selenium"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_37",
+    "subject": "General Studies",
+    "question": "Match the following -\nMine\n(A) Degana\n(B) Mando-ki-pal\n(C) Jhamar Kotra\n(D) Goth-Manglod\nMineral\n(I) Tungsten.\n(II) Florspar\n(III) Rock Phosphate\n(IV) Gypsum\nCorrect code is -",
+    "options": [
+      "A-I, B-II, C-IV, D-III",
+      "A-I, B-II, C-III, D-IV",
+      "A-II, B-I, C-III, D-IV",
+      "A-IV, B-II, C-III, D-I"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_38",
+    "subject": "General Studies",
+    "question": "Late. Hisamuddin was an accomplished artist of which Handicraft?",
+    "options": [
+      "Jatt Patti craft",
+      "Meenakari",
+      "Usta craft",
+      "Thewa craft"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_39",
+    "subject": "General Studies",
+    "question": "Identify the chronology of the following Battles\n(1) Battle of Haldighati\n(2) Battle of Khanwa\n(3) Second Battle of Tarain\nChoose the correct code -",
+    "options": [
+      "3, 2, 1",
+      "1,3,2",
+      "1, 2, 3",
+      "2, 3, 1"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_40",
+    "subject": "General Studies",
+    "question": "How is the ancient historical place \"Aashram Pattan\" known in Modern Times?",
+    "options": [
+      "Bhinmal",
+      "Keshoraipatan",
+      "Jhalrapatan",
+      "Viratnagar"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_41",
+    "subject": "General Studies",
+    "question": "The founder of Ren Branch of Ram Snehi Sect was -",
+    "options": [
+      "Saint Haridas Ji",
+      "Saint Ram Charan ji",
+      "Saint Dariyav Ji",
+      "Saint Hariram Das Ji"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_42",
+    "subject": "General Studies",
+    "question": "On the second day of marriage, reception and feast is organised for the newly weds by the groom's side. What is it called?",
+    "options": [
+      "Badhar",
+      "Ku",
+      "Aulandi",
+      "Aano"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_43",
+    "subject": "General Studies",
+    "question": "Which is not correct?",
+    "options": [
+      "Mechanized agriculture is practised in Ganganagar district.",
+      "Humid south-eastern plain is suitable for soybean cultivation.",
+      "Mahi-Kanchan is a high yielding variety of rice in Rajasthan.",
+      "Suratgarh agriculture farm is established with the help of Russia."
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_44",
+    "subject": "General Studies",
+    "question": "Pancreatic juice contains which enzyme that breaks down emulsified fats?",
+    "options": [
+      "Pepsin",
+      "Trypsin",
+      "Amylase",
+      "Lipase"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_45",
+    "subject": "General Studies",
+    "question": "Which scholar made a scientific division of Rajasthani painting style in his book \"Rajput paintings\"?",
+    "options": [
+      "Dr. Shridhar Andhare",
+      "Ananda Coomaraswamy",
+      "Dr. Fayaz Ali",
+      "Eric Dickinson"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_46",
+    "subject": "General Studies",
+    "question": "Who is the brand ambassador of Beti Bachao Beti Padhao campaign in Rajasthan?",
+    "options": [
+      "Sarika Gupta",
+      "Avani Lekhara",
+      "Mithali Raj",
+      "Gulabo Sapera"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_47",
+    "subject": "General Studies",
+    "question": "Sarvottam Vilas, Gaj Vilas, Jawahar Vilas is situated in which of the following forts?",
+    "options": [
+      "Jalore fort",
+      "Mehrangarh fort",
+      "Sonargarh fort",
+      "Bala Quila"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_48",
+    "subject": "General Studies",
+    "question": "Who is called the 'forgotten Hero of Marwar'?",
+    "options": [
+      "Rao Gangdev",
+      "Maharaja Ajit Singh",
+      "Rao Chandrasen",
+      "Sur Singh"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_49",
+    "subject": "General Studies",
+    "question": "Which statement is correct?\nStatement A -Sambhar is the largest salt water lake of Rajasthan.\nStatement R - Sambhar lake is located between 74° to 75°E longitudes.\nCorrect code is -",
+    "options": [
+      "Only R is correct",
+      "Only A is correct",
+      "A and R both are correct",
+      "A and R both are not correct"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_50",
+    "subject": "General Studies",
+    "question": "Which organism causes the Kala-azar disease?",
+    "options": [
+      "Plasmodium",
+      "Amoeba",
+      "Leishmania",
+      "Planaria"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_51",
+    "subject": "Logical Reasoning",
+    "question": "The following table shows number of registered vehicles in a city (in lakhs) in different years.\nYear (वर्ष) | 1990-91 | 2000-01 | 2010-11\nVehicle (वाहन)\nCar (कार) | 4.77 | 9.27 | 25.38\nBus (बस) | 1.02 | 1.71 | 3.51\nTruck (ट्रक) | 2.46 | 5.04 | 11.04\nBike (मोटर साइकिल) | 0.81 | 2.85 | 45.27\nOthers (अन्य) | 0.12 | 1.08 | 11.82\nTotal (कुल) | 9.18 | 19.95 | 97.02\nIf percentage of increase of total number of vehicles from 2000-01 to 2010-11 is made equal to percentage of increase of total number of vehicles from 1990-91 to 2000-01, then total number of vehicles in 2010-11 would be equal to (in lakhs)?",
+    "options": [
+      "43.36",
+      "42",
+      "42.5",
+      "43.95"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_52",
+    "subject": "Mathematics",
+    "question": "The average of 25 results is 18. The average of first twelve of them is 14 and that of last twelve is 17. Find the thirteenth result -",
+    "options": [
+      "78",
+      "70",
+      "66",
+      "74"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_53",
+    "subject": "Logical Reasoning",
+    "question": "A cube is coloured blue on all faces. It is cut into 64 small cubes of equal size. How many cubes have only one face coloured?",
+    "options": [
+      "24",
+      "8",
+      "16",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_54",
+    "subject": "Logical Reasoning",
+    "question": "If a mirror is placed in position of LM, then which of the answer figures is the right mirror image of the given question figure?",
+    "options": [
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_55",
+    "subject": "Logical Reasoning",
+    "question": "Six persons are sitting in a circle. A is facing B. B is to the right of E and left of C. C is to the left of D. F is to the right of A. Now, D exchanges his seat with F and E with B. Who will be sitting to the left of D?",
+    "options": [
+      "B",
+      "E",
+      "D",
+      "A"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_56",
+    "subject": "Mathematics",
+    "question": "A tree increases annually by 1/8th of its height. By how much will it increase after 2 years, if it stands today 64cm high?",
+    "options": [
+      "81 cm",
+      "75 cm",
+      "72 cm",
+      "74 cm"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_57",
+    "subject": "Logical Reasoning",
+    "question": "Find the wrong number in the series 2880, 480, 92, 24, 8, 4, 4",
+    "options": [
+      "4",
+      "8",
+      "92",
+      "480"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_58",
+    "subject": "Logical Reasoning",
+    "question": "How many 3's are there in the given sequence which are neither preceded by 6 and nor immediately followed by 9?\nSeries: 9 3 6 6 3 9 5 9 3 7 8 9 1 8 3 9 6 3 9",
+    "options": [
+      "1",
+      "3",
+      "4",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_59",
+    "subject": "Logical Reasoning",
+    "question": "In a tournament 14 teams play league matches. If each team plays against every other team once only then how many matches are played?",
+    "options": [
+      "85",
+      "105",
+      "78",
+      "91"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_60",
+    "subject": "Logical Reasoning",
+    "question": "Read the following information and answer the given question\nMuskan. Gajendra is older than Muskan but younger than Aarti. Keshav is younger than Rajendra and Muskan. Muskan is older than Rajendra.\nWhose age is between Rajendra and Gajendra?",
+    "options": [
+      "Keshav",
+      "Muskan",
+      "Aarti",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_61",
+    "subject": "Mathematics",
+    "question": "Raju's father's age is 5 years more than three times of Raju's age. Raju's father is 44 years old, then age of Raju is -",
+    "options": [
+      "12 years",
+      "39 years",
+      "13 years",
+      "14 years"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_62",
+    "subject": "Logical Reasoning",
+    "question": "A group of 630 children are arranged in rows for a group photo session. Each row contains three less children than the row in front. What number of rows is not possible?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_63",
+    "subject": "Logical Reasoning",
+    "question": "If by arranging the letters of the word LASBEBLA, the name of a game is formed, what are the first and last letters of the word so formed?",
+    "options": [
+      "S, L",
+      "B, L",
+      "L, E",
+      "L, S"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_64",
+    "subject": "Logical Reasoning",
+    "question": "How many times in a day are the hands of a clock straight?",
+    "options": [
+      "22 times",
+      "48 times",
+      "24 times",
+      "44 times"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_65",
+    "subject": "Logical Reasoning",
+    "question": "The minimum number of straight lines required to make the following figure is -",
+    "options": [
+      "12",
+      "11",
+      "9",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_66",
+    "subject": "Logical Reasoning",
+    "question": "In the following question, three of the given four numbered figures (A), (B), (C) and (D) are alike in a certain way. Choose the one which is different from these three figures -",
+    "options": [
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_67",
+    "subject": "Logical Reasoning",
+    "question": "If in a certain code language \"DELHI\" is coded as \"CCIDD\", \"SIGHT\" is coded as \"RGDDO\", then in the same code language \"BOMBAY\" will be coded as -",
+    "options": [
+      "AMJXVR",
+      "ANKYUR",
+      "ANIYWS",
+      "AMJXVS"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_68",
+    "subject": "Logical Reasoning",
+    "question": "Which of the following letters is 14th to the right of 6th letter from the left in the English alphabet?",
+    "options": [
+      "P",
+      "R",
+      "T",
+      "W"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_69",
+    "subject": "Logical Reasoning",
+    "question": "Find the missing number from the given alternatives -",
+    "options": [
+      "72",
+      "71",
+      "78",
+      "66"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_70",
+    "subject": "Logical Reasoning",
+    "question": "In the question below, three statements I, II, and III are given. You are required to find out which of the given statement is / are sufficient to answer the question.\nHow is Q related to T?\nI. M and R are brothers.\nII. S has two sons and one daughter, R being one of the sons.\nIII. S is the mother of T and married to Q.",
+    "options": [
+      "II and III",
+      "I and II",
+      "Only III",
+      "I and III"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_71",
+    "subject": "Mathematics",
+    "question": "Which of the following rational number lies between -1/3 and 5/9?",
+    "options": [
+      "-1/5",
+      "5/9",
+      "-13/45",
+      "5/5"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_72",
+    "subject": "Logical Reasoning",
+    "question": "Mr. X walked 75 m towards North. Then he turned to left and walked 25m. He turned left again and walked 80m. Then he turned to right at an angle of 45°. In which direction was he moving finally?",
+    "options": [
+      "South-West",
+      "North-East",
+      "North-West",
+      "South-East"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_73",
+    "subject": "Logical Reasoning",
+    "question": "Find the number of triangles in the given figure -",
+    "options": [
+      "22",
+      "24",
+      "18",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_74",
+    "subject": "Logical Reasoning",
+    "question": "How many such pairs of letters are there in the word 'FOREIGN', each of which has as many letters between its two letters as they have between them in the English alphabet?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "Nil"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_75",
+    "subject": "Logical Reasoning",
+    "question": "One morning Udai and Vishal were talking to each other face to face at a crossing. If Vishal's shadow was exactly to the left of Udai, which direction was Udai facing?",
+    "options": [
+      "South",
+      "East",
+      "North",
+      "West"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_76",
+    "subject": "Logical Reasoning",
+    "question": "What will be the difference between the first digit of the highest number as well as of the lowest number after the positions of the first two digits in each number of the following series 738, 429, 156, 273, 894 are reversed?",
+    "options": [
+      "4",
+      "7",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_77",
+    "subject": "Mathematics",
+    "question": "Equations are solved on the basis of a certain system, on the same basis find out the correct answer for the given equation\nIf 5472=9, 6342=6, 7584=6, then 9236 =?",
+    "options": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_78",
+    "subject": "Mathematics",
+    "question": "When 70 is added to 70% of a number, then obtained number is equal to 70% of 150. Number is equal to -",
+    "options": [
+      "100",
+      "70",
+      "50",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_79",
+    "subject": "Logical Reasoning",
+    "question": "If the 25th of October in a year is Thursday, then number of Mondays in that month is equal to -",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_80",
+    "subject": "Logical Reasoning",
+    "question": "Choose the Venn diagram that depicts the correct relationship among Males, Fathers and Doctors",
+    "options": [
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_81",
+    "subject": "Logical Reasoning",
+    "question": "What will come in place of question mark (?) in the following series?\nP3C, R5F, T8I, V12L, ....?.....",
+    "options": [
+      "X17O",
+      "X17M",
+      "Y17O",
+      "Y17M"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_82",
+    "subject": "Logical Reasoning",
+    "question": "In the question given below two statements are given, which are followed by two conclusions I and II. You have to take the statements to be true even if the statements are at variance with known facts. Make a careful study of all the conclusions and decide which conclusion logically follows the given statements even if they seem to be at variance from commonly known facts.\nStatements: All cakes are desks.\nAll desks are toffies.\nConclusions: I. All toffies are cakes.\nII. Some toffies are cakes.",
+    "options": [
+      "only conclusion I follows",
+      "only conclusion II follows",
+      "Both conclusions I and II follow",
+      "Neither conclusion I nor conclusion II follows"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_83",
+    "subject": "Mathematics",
+    "question": "The central angle of the C field is equal to -",
+    "options": [
+      "20°",
+      "5°",
+      "1.8°",
+      "18°"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_84",
+    "subject": "Mathematics",
+    "question": "If the family expenditure is ₹ 56,000, the difference between the expenses of (B, C) and (F, E) is equal to -",
+    "options": [
+      "₹ 448",
+      "₹ 4380",
+      "₹ 4580",
+      "₹ 4480"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_85",
+    "subject": "Logical Reasoning",
+    "question": "Use some rule and then find out the right option for the blank cell?",
+    "options": [
+      "33",
+      "135",
+      "145",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_86",
+    "subject": "Logical Reasoning",
+    "question": "A question and two statements are given below. You have to decide which statement is sufficient to answer the given question.\nHow many doctors are working in a village?\nStatements: I. There is one doctor per one thousand villagers.\nII. There are 20 wards in the village. Each ward has number of doctors equal to total number of wards.",
+    "options": [
+      "Only I is sufficient.",
+      "Only II is sufficient",
+      "Both I and II are sufficient together",
+      "Neither I nor II is sufficient"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_87",
+    "subject": "Logical Reasoning",
+    "question": "Select the correct alternative that shares the same relationship as the given pair below. -\nQxM: 13×17::D×H:?",
+    "options": [
+      "4x8",
+      "4 x 6",
+      "6×6",
+      "8 × 4"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_88",
+    "subject": "Mathematics",
+    "question": "Find the largest number of four digits which gives remainder 4 when divided by each 6,8,10 and 12?",
+    "options": [
+      "9964",
+      "9984",
+      "9944",
+      "9946"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_89",
+    "subject": "Logical Reasoning",
+    "question": "Select the correct alternative that shares the same relationship as the given pair below -\nFog / Visibility :: AIDS : ___?_______",
+    "options": [
+      "Resistance",
+      "Health",
+      "Death",
+      "Virus"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_90",
+    "subject": "Mathematics",
+    "question": "√2+√3/√2+√2+√3/√2+√2+√2+√3 / √2-√2+√2+√3 is equal to -",
+    "options": [
+      "√6",
+      "2",
+      "1",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_91",
+    "subject": "Mathematics",
+    "question": "A man completes half of a trip at 30 miles per hours and the other half at 60 miles per hour. If the whole trip is 20 miles, how much time will he take to complete the trip?",
+    "options": [
+      "60 minute",
+      "75 minute",
+      "45 minute",
+      "30 minute"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_92",
+    "subject": "Logical Reasoning",
+    "question": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z\nIf the second half of the English alphabet is reversed then which letter will be 4th to the right of 20th letter from the right?",
+    "options": [
+      "E",
+      "K",
+      "F",
+      "U"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_93",
+    "subject": "Logical Reasoning",
+    "question": "Find the odd one out -",
+    "options": [
+      "G29M",
+      "T36P",
+      "D22R",
+      "V24B"
+    ],
+    "correctIndex": 2,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_94",
+    "subject": "Mathematics",
+    "question": "The value of k for which quadratic equation kx (x - 2) + 6 = 0 has equal roots are -",
+    "options": [
+      "6",
+      "2√6",
+      "3√6",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_95",
+    "subject": "Mathematics",
+    "question": "There are 120 students in a class, who read Maths or History or English. It is known that no student can read all three subjects. 24 read only Maths and History, 8 read only History and English and 21 read only Maths and English. 32 read only Maths and 13 only History. If 9 of the students who read only Maths start to read all three subjects, then find the percentage of students who read History?",
+    "options": [
+      "50%",
+      "60%",
+      "40%",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_96",
+    "subject": "Mathematics",
+    "question": "If A denotes -, C denotes x, D denotes ÷, E denotes +, then 14C3A12E4D2 = ?",
+    "options": [
+      "32",
+      "28",
+      "17",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_97",
+    "subject": "Logical Reasoning",
+    "question": "If 'sky' is called 'sea', 'sea' is called 'water', 'water' is called, 'air', 'air' is called 'cloud' and 'cloud' is called 'river', then what do we drink when thirsty?",
+    "options": [
+      "air",
+      "sky",
+      "sea",
+      "water"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_98",
+    "subject": "Mathematics",
+    "question": "Find the angle between the hour hand and the minute hand of a clock, when the time is 3:25 -",
+    "options": [
+      "47 1/2°",
+      "45°",
+      "40°",
+      "45 1/2°"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_99",
+    "subject": "Logical Reasoning",
+    "question": "Study the following information and answer the question given below it.\nK, G and H are intelligent. K, R and J are hardworking. R, H and J are honest. K, G and J are ambitious. Which of the following persons is neither honest nor hardworking but is ambitious?",
+    "options": [
+      "R",
+      "H",
+      "G",
+      "K"
+    ],
+    "correctIndex": 3,
+    "explanation": ""
+  },
+  {
+    "id": "bci_i_100",
+    "subject": "Logical Reasoning",
+    "question": "A cuboid has six sides of different colours. The red side is opposite to black, the blue side is adjacent to white. The brown side is adjacent to blue. The red side is face down. Which one of the following would be the opposite to brown?",
+    "options": [
+      "Blue",
+      "Black",
+      "Red",
+      "White"
+    ],
+    "correctIndex": 1,
+    "explanation": ""
+  }
+],
+  BCI_II: []
+};

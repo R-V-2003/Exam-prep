@@ -1,0 +1,346 @@
+/* Global Design System & Theme Variables */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  /* Color Tokens - Modern Dark Theme */
+  --bg-color: hsl(224, 71%, 4%);
+  --bg-gradient-start: hsl(224, 71%, 4%);
+  --bg-gradient-end: hsl(244, 60%, 8%);
+  
+  --panel-bg: rgba(15, 23, 42, 0.45);
+  --panel-border: rgba(99, 102, 241, 0.15);
+  --panel-border-hover: rgba(99, 102, 241, 0.3);
+  
+  --text-primary: hsl(0, 0%, 96%);
+  --text-secondary: hsl(215, 20%, 65%);
+  --text-muted: hsl(215, 15%, 45%);
+  
+  /* Glowing Brand Gradients */
+  --brand-primary: hsl(250, 89%, 65%);
+  --brand-secondary: hsl(275, 80%, 55%);
+  --accent-cyan: hsl(180, 80%, 50%);
+  --brand-gradient: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  --cyan-gradient: linear-gradient(135deg, hsl(180, 80%, 50%), hsl(200, 85%, 60%));
+  
+  /* Status Colors */
+  --success: hsl(142, 70%, 45%);
+  --success-glow: rgba(34, 197, 94, 0.2);
+  --warning: hsl(38, 92%, 50%);
+  --warning-glow: rgba(234, 179, 8, 0.2);
+  --danger: hsl(350, 80%, 55%);
+  --danger-glow: rgba(239, 68, 68, 0.2);
+  --info: hsl(199, 89%, 48%);
+  
+  /* Shadows & Blur */
+  --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+  --glow-indigo: 0 0 25px 0 rgba(99, 102, 241, 0.25);
+  --glass-blur: blur(16px);
+  
+  /* Typography */
+  --font-heading: 'Outfit', 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Layout constraints */
+  --sidebar-width: 280px;
+  --header-height: 80px;
+}
+
+/* Light Theme Overrides */
+[data-theme="light"] {
+  --bg-color: hsl(220, 20%, 97%);
+  --bg-gradient-start: hsl(220, 20%, 97%);
+  --bg-gradient-end: hsl(210, 30%, 94%);
+  
+  --panel-bg: rgba(255, 255, 255, 0.7);
+  --panel-border: rgba(99, 102, 241, 0.12);
+  --panel-border-hover: rgba(99, 102, 241, 0.25);
+  
+  --text-primary: hsl(220, 40%, 12%);
+  --text-secondary: hsl(220, 15%, 35%);
+  --text-muted: hsl(220, 10%, 55%);
+  
+  --shadow-lg: 0 10px 25px -10px rgba(0, 0, 0, 0.08);
+  --glow-indigo: 0 0 20px 0 rgba(99, 102, 241, 0.12);
+}
+
+/* Reset & Core Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: radial-gradient(circle at 50% 0%, var(--bg-gradient-end), var(--bg-gradient-start));
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Glassmorphism Panel Container Utility */
+.glass-panel {
+  background: var(--panel-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.glass-panel:hover {
+  border-color: var(--panel-border-hover);
+}
+
+/* Glowing Text and Elements */
+.glow-text {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-btn {
+  background: var(--brand-gradient);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.glow-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5), var(--glow-indigo);
+}
+
+.glow-btn:active {
+  transform: translateY(1px);
+}
+
+/* Secondary Button Outline */
+.outline-btn {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--panel-border-hover);
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.outline-btn:hover {
+  background-color: rgba(99, 102, 241, 0.1);
+  border-color: var(--brand-primary);
+  transform: translateY(-1px);
+}
+
+/* Form Controls */
+.glass-input {
+  background: rgba(15, 23, 42, 0.3);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.glass-input:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+}
+
+/* Main Layout Grid */
+.app-container {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
+  #sidebar-target {
+    display: none;
+  }
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background: rgba(10, 15, 30, 0.6);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-right: 1px solid var(--panel-border);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  z-index: 100;
+}
+
+.sidebar-brand {
+  padding: 0 24px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.brand-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--brand-gradient);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: var(--glow-indigo);
+}
+
+.sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 16px;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+}
+
+.nav-item.active {
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.15), transparent);
+  color: var(--brand-primary);
+  border-left: 3px solid var(--brand-primary);
+  border-radius: 0 12px 12px 0;
+}
+
+.nav-item i {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.content-viewport {
+  padding: 30px;
+  flex-grow: 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.4);
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-width: 80px;
+  }
+  .sidebar-text {
+    display: none;
+  }
+  .sidebar-logo span {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
+  .main-sidebar {
+    display: none; /* We will use a mobile bar or toggle */
+  }
+  .content-viewport {
+    padding: 15px;
+  }
+}

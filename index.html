@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" fill="hsl(250, 89%, 65%)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GovPrep AI - Smart Competitive Exam Preparation Platform</title>
+    <meta name="description" content="Prepare for government exams (UPSC, SSC CGL, Banking/IBPS) using advanced AI-powered mock tests, daily current affairs, and a grounded AI Study Assistant with real-time web search." />
+    
+    <!-- FontAwesome Icon Suite -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- View Stylesheets are imported in main.js -->
+    <script>
+      window.onerror = function(msg, url, line) {
+        fetch('http://localhost:8000/?error=' + encodeURIComponent(msg + ' @ ' + line));
+      };
+      const origErr = console.error;
+      console.error = function(...args) {
+        fetch('http://localhost:8000/?console=' + encodeURIComponent(args.join(' ')));
+        origErr.apply(console, args);
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Main SPA Layout Container -->
+    <div id="app" class="app-container">
+      <aside id="sidebar-target"></aside>
+      <div class="main-content">
+        <div id="header-target"></div>
+        <main class="content-viewport" id="view-target"></main>
+      </div>
+    </div>
+
+    <!-- Main Module Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
