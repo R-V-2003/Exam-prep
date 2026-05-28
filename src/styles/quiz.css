@@ -293,8 +293,40 @@
 .action-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
   margin-top: auto;
+}
+
+#test-clear-ans-btn {
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .question-panel {
+    padding: 15px !important;
+  }
+  .action-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    padding-top: 15px !important;
+  }
+  .action-row > button {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 8px 4px !important;
+    font-size: 0.72rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 4px !important;
+    flex-wrap: wrap !important;
+    white-space: normal !important;
+    line-height: 1.2 !important;
+    min-height: 38px !important;
+  }
 }
 
 /* Scratchpad Drawer Drawer Overlay */

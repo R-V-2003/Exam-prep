@@ -76,12 +76,10 @@ export class TestActiveView {
               <i class="far fa-star"></i> Mark for Review
             </button>
 
-            <div style="display: flex; gap: 10px;">
-              <button id="test-clear-ans-btn" class="outline-btn" style="padding: 10px 15px; font-size: 0.85rem;">Clear Answer</button>
-              <button id="test-next-btn" class="glow-btn" style="padding: 10px 24px;">
-                ${this.currentIdx === this.questions.length - 1 ? 'Save & Review' : 'Next Question <i class="fas fa-arrow-right"></i>'}
-              </button>
-            </div>
+            <button id="test-clear-ans-btn" class="outline-btn" style="padding: 10px 15px; font-size: 0.85rem;">Clear Answer</button>
+            <button id="test-next-btn" class="glow-btn" style="padding: 10px 24px;">
+              ${this.currentIdx === this.questions.length - 1 ? 'Save & Review' : 'Next Question <i class="fas fa-arrow-right"></i>'}
+            </button>
           </div>
         </div>
 

@@ -12,15 +12,15 @@ export class PracticeTopicView {
     container.innerHTML = `
       <div class="animate-fade-in" style="max-width: 900px; margin: 0 auto; padding-bottom: 50px;">
         <!-- Top selection tabs -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; border-bottom: 1px solid var(--panel-border); padding-bottom: 15px;">
+        <div class="tab-header-row" style="margin-bottom: 25px; border-bottom: 1px solid var(--panel-border); padding-bottom: 15px;">
           <div>
             <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-primary);">Topic-Wise Practice</h2>
             <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 3px;">Select any specific sub-topic from the syllabus to start a focused 5-question AI-generated practice set.</p>
           </div>
           
-          <div style="display: flex; background: rgba(15, 23, 42, 0.2); border: 1px solid var(--panel-border); padding: 4px; border-radius: 12px; height: max-content;">
-            <button id="practice-tab-1" class="outline-btn" style="padding: 8px 16px; border: none; border-radius: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 0.8rem; cursor: pointer; transition: all var(--transition-fast); ${this.activePaperTab === 'Paper I' ? 'background: var(--brand-gradient); color: white;' : 'color: var(--text-secondary);'}">Paper I (Aptitude & GK)</button>
-            <button id="practice-tab-2" class="outline-btn" style="padding: 8px 16px; border: none; border-radius: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 0.8rem; cursor: pointer; transition: all var(--transition-fast); ${this.activePaperTab === 'Paper II' ? 'background: var(--brand-gradient); color: white;' : 'color: var(--text-secondary);'}">Paper II (Computer Science)</button>
+          <div class="tab-toggle-container" style="display: flex; background: rgba(15, 23, 42, 0.2); border: 1px solid var(--panel-border); padding: 4px; border-radius: 12px; height: max-content; width: 100%; max-width: 480px; box-sizing: border-box;">
+            <button id="practice-tab-1" class="outline-btn" style="flex: 1; padding: 8px 10px; border: none; border-radius: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 0.78rem; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; transition: all var(--transition-fast); ${this.activePaperTab === 'Paper I' ? 'background: var(--brand-gradient); color: white;' : 'color: var(--text-secondary);'}">Paper I (Aptitude & GK)</button>
+            <button id="practice-tab-2" class="outline-btn" style="flex: 1; padding: 8px 10px; border: none; border-radius: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 0.78rem; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; transition: all var(--transition-fast); ${this.activePaperTab === 'Paper II' ? 'background: var(--brand-gradient); color: white;' : 'color: var(--text-secondary);'}">Paper II (Computer Sci)</button>
           </div>
         </div>
 

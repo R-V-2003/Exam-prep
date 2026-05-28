@@ -45,9 +45,9 @@ export class TestGeneratorView {
           ${isBCI ? `
             <div class="form-group animate-fade-in">
               <label class="form-label">Exam Paper</label>
-              <div style="display: flex; background: rgba(15, 23, 42, 0.2); border: 1px solid var(--panel-border); padding: 4px; border-radius: 12px; width: max-content;">
-                <button id="bci-paper-1-btn" class="outline-btn" style="padding: 8px 20px; border: none; border-radius: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 0.85rem; transition: all var(--transition-fast); ${this.selectedPaper === 'Paper I' ? 'background: var(--brand-gradient); color: white;' : 'color: var(--text-secondary);'}">Paper I (GS & Aptitude)</button>
-                <button id="bci-paper-2-btn" class="outline-btn" style="padding: 8px 20px; border: none; border-radius: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 0.85rem; transition: all var(--transition-fast); ${this.selectedPaper === 'Paper II' ? 'background: var(--brand-gradient); color: white;' : 'color: var(--text-secondary);'}">Paper II (Computer Science)</button>
+              <div class="tab-toggle-container" style="display: flex; background: rgba(15, 23, 42, 0.2); border: 1px solid var(--panel-border); padding: 4px; border-radius: 12px; width: 100%; max-width: 480px; box-sizing: border-box;">
+                <button id="bci-paper-1-btn" class="outline-btn" style="flex: 1; padding: 8px 10px; border: none; border-radius: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 0.78rem; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: all var(--transition-fast); ${this.selectedPaper === 'Paper I' ? 'background: var(--brand-gradient); color: white;' : 'color: var(--text-secondary);'}">Paper I (GS & Aptitude)</button>
+                <button id="bci-paper-2-btn" class="outline-btn" style="flex: 1; padding: 8px 10px; border: none; border-radius: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 0.78rem; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: all var(--transition-fast); ${this.selectedPaper === 'Paper II' ? 'background: var(--brand-gradient); color: white;' : 'color: var(--text-secondary);'}">Paper II (Computer Sci)</button>
               </div>
               <span style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 8px; display: block; line-height: 1.4;">
                 * ${bciSyllabus.papers[this.selectedPaper].description}

@@ -380,3 +380,47 @@ h1, h2, h3, h4, h5, h6 {
     display: block !important;
   }
 }
+
+/* Tab Header & Toggle Layout */
+.tab-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.tab-toggle-container {
+  display: flex;
+  background: rgba(15, 23, 42, 0.2);
+  border: 1px solid var(--panel-border);
+  padding: 4px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .tab-header-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 15px !important;
+  }
+  .tab-header-row .tab-toggle-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-toggle-container {
+    flex-direction: column !important;
+    gap: 6px !important;
+    padding: 6px !important;
+  }
+  .tab-toggle-container button {
+    width: 100% !important;
+    flex: none !important;
+    padding: 10px 8px !important;
+  }
+}
