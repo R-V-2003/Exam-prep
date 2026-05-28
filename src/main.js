@@ -30,16 +30,22 @@ class App {
     this.views = {};
   }
 
-  init() {
+  async init() {
     if (supabaseService.isConfigured()) {
       // Supabase mode: check auth state
-      supabaseService.getCurrentUser().then(user => {
+      try {
+        const user = await supabaseService.getCurrentUser();
         if (user) {
+          storage.setCurrentUserFromSupabase(user.email, user.user_metadata?.display_name);
+          await storage.syncFromSupabase(user);
           this.initApp();
         } else {
           this.showLogin();
         }
-      });
+      } catch (err) {
+        console.error("Auth check failed:", err);
+        this.showLogin();
+      }
     } else {
       // Local mode: check localStorage
       if (storage.isLoggedIn()) {
@@ -61,8 +67,20 @@ class App {
     if (headerTarget) headerTarget.style.display = 'none';
     if (appContainer) appContainer.style.display = 'block';
 
-    const loginView = new LoginView(() => {
-      // On login success, initialize the full app
+    const loginView = new LoginView(async () => {
+      // On login success, retrieve user credentials if Supabase is active
+      if (supabaseService.isConfigured()) {
+        try {
+          const user = await supabaseService.getCurrentUser();
+          if (user) {
+            storage.setCurrentUserFromSupabase(user.email, user.user_metadata?.display_name);
+            await storage.syncFromSupabase(user);
+          }
+        } catch (err) {
+          console.error("Post-login auth sync failed:", err);
+        }
+      }
+      // Initialize the full app
       this.initApp();
     });
 

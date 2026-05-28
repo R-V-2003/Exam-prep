@@ -38,8 +38,12 @@ const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 const isConfigured = !!(supabaseUrl && supabaseAnonKey);
 
 let supabase = null;
+let cachedUser = null;
 if (isConfigured) {
   supabase = createClient(supabaseUrl, supabaseAnonKey);
+  supabase.auth.onAuthStateChange((event, session) => {
+    cachedUser = session?.user || null;
+  });
 }
 
 export const supabaseService = {
@@ -96,12 +100,19 @@ export const supabaseService = {
   async logout() {
     if (!supabase) return;
     await supabase.auth.signOut();
+    cachedUser = null;
   },
 
   async getCurrentUser() {
     if (!supabase) return null;
+    if (cachedUser) return cachedUser;
     const { data } = await supabase.auth.getUser();
-    return data?.user || null;
+    cachedUser = data?.user || null;
+    return cachedUser;
+  },
+
+  getCachedUser() {
+    return cachedUser;
   },
 
   getCurrentSession() {
@@ -219,8 +230,18 @@ export const supabaseService = {
 
   getDisplayName() {
     if (!supabase) return 'Guest';
-    // Sync check from cached session
-    const session = supabase.auth.session;
-    return session?.user?.user_metadata?.display_name || 'User';
+    return cachedUser?.user_metadata?.display_name || cachedUser?.email?.split('@')[0] || 'User';
+  },
+
+  async uploadUserData(data) {
+    const user = await this.getCurrentUser();
+    if (!user || !supabase) return;
+    const { error } = await supabase
+      .from('user_data')
+      .update(data)
+      .eq('id', user.id);
+    if (error) {
+      console.error('Error uploading user data to Supabase:', error);
+    }
   }
 };

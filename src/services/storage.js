@@ -1,4 +1,5 @@
 // Storage service to handle local persistence of user settings and test records
+import { supabaseService } from './supabase.js';
 
 // Auth keys (global, not user-scoped)
 const AUTH_KEYS = {
@@ -92,11 +93,85 @@ export const storage = {
     }
 
     localStorage.setItem(AUTH_KEYS.CURRENT_USER, key);
+    // Ensure API keys are set from env (in case they were added after registration)
+    this._initUserDefaults(key);
     return users[key];
   },
 
   logout() {
     localStorage.removeItem(AUTH_KEYS.CURRENT_USER);
+  },
+
+  setCurrentUserFromSupabase(email, displayName) {
+    const key = email.toLowerCase().trim();
+    localStorage.setItem(AUTH_KEYS.CURRENT_USER, key);
+    
+    const users = this.getAllUsers();
+    if (!users[key]) {
+      users[key] = {
+        username: key,
+        displayName: displayName || email.split('@')[0],
+        createdAt: new Date().toISOString()
+      };
+      localStorage.setItem(AUTH_KEYS.USERS, JSON.stringify(users));
+    }
+    
+    this._initUserDefaults(key);
+  },
+
+  async syncFromSupabase(user) {
+    if (!supabaseService.isConfigured()) return;
+    try {
+      const data = await supabaseService.getUserData();
+      if (!data) return;
+
+      const email = user.email.toLowerCase().trim();
+      const prefix = `govprep_${email}_`;
+
+      // Sync display name
+      const users = this.getAllUsers();
+      if (!users[email]) {
+        users[email] = {
+          username: email,
+          displayName: data.display_name || user.user_metadata?.display_name || email.split('@')[0],
+          createdAt: new Date().toISOString()
+        };
+      } else if (data.display_name) {
+        users[email].displayName = data.display_name;
+      }
+      localStorage.setItem(AUTH_KEYS.USERS, JSON.stringify(users));
+
+      // Sync test history
+      if (data.test_history) {
+        localStorage.setItem(prefix + DATA_KEYS.TEST_HISTORY, JSON.stringify(data.test_history));
+      }
+      // Sync streak
+      if (data.streak_info) {
+        localStorage.setItem(prefix + DATA_KEYS.STREAK_INFO, JSON.stringify(data.streak_info));
+      }
+      // Sync studied topics
+      if (data.studied_topics) {
+        localStorage.setItem(prefix + DATA_KEYS.STUDIED_TOPICS, JSON.stringify(data.studied_topics));
+      }
+    } catch (e) {
+      console.error("Error syncing from Supabase:", e);
+    }
+  },
+
+  async syncToSupabase() {
+    if (!supabaseService.isConfigured()) return;
+    try {
+      const history = this.getTestHistory();
+      const streak = this.getStreakInfo();
+      const topics = this.getStudiedTopics();
+      await supabaseService.uploadUserData({
+        test_history: history,
+        streak_info: streak,
+        studied_topics: topics
+      });
+    } catch (e) {
+      console.error("Failed to sync data to Supabase:", e);
+    }
   },
 
   getUserDisplayName() {
@@ -188,6 +263,7 @@ export const storage = {
     history.unshift(record);
     localStorage.setItem(this._userKey(DATA_KEYS.TEST_HISTORY), JSON.stringify(history));
     this.updateStreak();
+    this.syncToSupabase();
     return record;
   },
 
@@ -223,6 +299,7 @@ export const storage = {
       }
     }
     localStorage.setItem(this._userKey(DATA_KEYS.STREAK_INFO), JSON.stringify(info));
+    this.syncToSupabase();
   },
 
   // Daily Currents caching
@@ -263,6 +340,7 @@ export const storage = {
     if (!topics.includes(topic)) {
       topics.push(topic);
       localStorage.setItem(this._userKey(DATA_KEYS.STUDIED_TOPICS), JSON.stringify(topics));
+      this.syncToSupabase();
     }
   }
 };
