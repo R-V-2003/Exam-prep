@@ -1,0 +1,226 @@
+// Supabase Backend Service
+// Free tier: 500MB database, 50K monthly active users, unlimited API requests
+//
+// SETUP (one-time, 2 minutes):
+// 1. Go to https://supabase.com → Sign up free with GitHub
+// 2. Click "New Project" → name it "govprep" → set a DB password → create
+// 3. Go to Project Settings → API → copy "Project URL" and "anon public" key
+// 4. Paste into your .env file as VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY
+// 5. Go to Authentication → Providers → enable Email (disable "Confirm email" for dev)
+// 6. Go to SQL Editor → run the SQL below to create the table:
+//
+//    create table public.user_data (
+//      id uuid references auth.users on delete cascade primary key,
+//      display_name text,
+//      test_history jsonb default '[]'::jsonb,
+//      streak_info jsonb default '{"count": 0, "lastDate": null}'::jsonb,
+//      studied_topics jsonb default '[]'::jsonb,
+//      target_exam text default 'BCI',
+//      created_at timestamptz default now()
+//    );
+//
+//    alter table public.user_data enable row level security;
+//
+//    create policy "Users can read own data" on public.user_data
+//      for select using (auth.uid() = id);
+//
+//    create policy "Users can update own data" on public.user_data
+//      for update using (auth.uid() = id);
+//
+//    create policy "Users can insert own data" on public.user_data
+//      for insert with check (auth.uid() = id);
+
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+
+const isConfigured = !!(supabaseUrl && supabaseAnonKey);
+
+let supabase = null;
+if (isConfigured) {
+  supabase = createClient(supabaseUrl, supabaseAnonKey);
+}
+
+export const supabaseService = {
+  isConfigured() {
+    return isConfigured;
+  },
+
+  getClient() {
+    return supabase;
+  },
+
+  // ========== AUTH ==========
+
+  async register(email, password, displayName) {
+    if (!supabase) throw new Error('Supabase not configured');
+
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        data: { display_name: displayName }
+      }
+    });
+
+    if (error) throw error;
+
+    // Create user data row
+    if (data.user) {
+      await supabase.from('user_data').insert({
+        id: data.user.id,
+        display_name: displayName || email.split('@')[0],
+        test_history: [],
+        streak_info: { count: 0, lastDate: null },
+        studied_topics: [],
+        target_exam: 'BCI'
+      });
+    }
+
+    return data.user;
+  },
+
+  async login(email, password) {
+    if (!supabase) throw new Error('Supabase not configured');
+
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password
+    });
+
+    if (error) throw error;
+    return data.user;
+  },
+
+  async logout() {
+    if (!supabase) return;
+    await supabase.auth.signOut();
+  },
+
+  async getCurrentUser() {
+    if (!supabase) return null;
+    const { data } = await supabase.auth.getUser();
+    return data?.user || null;
+  },
+
+  getCurrentSession() {
+    if (!supabase) return null;
+    return supabase.auth.getSession();
+  },
+
+  onAuthChange(callback) {
+    if (!supabase) return { data: { subscription: { unsubscribe: () => {} } } };
+    return supabase.auth.onAuthStateChange((event, session) => {
+      callback(session?.user || null, event);
+    });
+  },
+
+  // ========== USER DATA ==========
+
+  async getUserData() {
+    if (!supabase) return null;
+    const user = (await this.getCurrentUser());
+    if (!user) return null;
+
+    const { data, error } = await supabase
+      .from('user_data')
+      .select('*')
+      .eq('id', user.id)
+      .single();
+
+    if (error) {
+      console.error('Error fetching user data:', error);
+      return null;
+    }
+    return data;
+  },
+
+  async saveTestResult(testResult) {
+    const user = await this.getCurrentUser();
+    if (!user || !supabase) return null;
+
+    const record = {
+      id: testResult.id || 'test_' + Date.now(),
+      date: new Date().toISOString(),
+      ...testResult
+    };
+
+    // Get current history and append
+    const userData = await this.getUserData();
+    const history = userData?.test_history || [];
+    history.unshift(record);
+
+    await supabase
+      .from('user_data')
+      .update({ test_history: history })
+      .eq('id', user.id);
+
+    await this.updateStreak();
+    return record;
+  },
+
+  async updateStreak() {
+    const user = await this.getCurrentUser();
+    if (!user || !supabase) return;
+
+    const userData = await this.getUserData();
+    const info = userData?.streak_info || { count: 0, lastDate: null };
+    const today = new Date().toDateString();
+
+    if (!info.lastDate) {
+      info.count = 1;
+      info.lastDate = today;
+    } else {
+      const last = new Date(info.lastDate).toDateString();
+      if (last !== today) {
+        const diffTime = Math.abs(new Date(today) - new Date(last));
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        info.count = diffDays === 1 ? info.count + 1 : 1;
+        info.lastDate = today;
+      }
+    }
+
+    await supabase
+      .from('user_data')
+      .update({ streak_info: info })
+      .eq('id', user.id);
+  },
+
+  async markTopicStudied(topic) {
+    const user = await this.getCurrentUser();
+    if (!user || !supabase || !topic) return;
+
+    const userData = await this.getUserData();
+    const topics = userData?.studied_topics || [];
+    if (!topics.includes(topic)) {
+      topics.push(topic);
+      await supabase
+        .from('user_data')
+        .update({ studied_topics: topics })
+        .eq('id', user.id);
+    }
+  },
+
+  async getStudiedTopics() {
+    const data = await this.getUserData();
+    return data?.studied_topics || [];
+  },
+
+  async getTestHistory() {
+    const data = await this.getUserData();
+    return data?.test_history || [];
+  },
+
+  async getStreakInfo() {
+    const data = await this.getUserData();
+    return data?.streak_info || { count: 0, lastDate: null };
+  },
+
+  getDisplayName() {
+    if (!supabase) return 'Guest';
+    // Sync check from cached session
+    const session = supabase.auth.session;
+    return session?.user?.user_metadata?.display_name || 'User';
+  }
+};

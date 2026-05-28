@@ -1,5 +1,5 @@
 import { storage } from '../services/storage.js';
-import { firebaseService } from '../services/firebase.js';
+import { supabaseService } from '../services/supabase.js';
 
 export class LoginView {
   constructor(onLoginSuccess) {
@@ -7,7 +7,7 @@ export class LoginView {
     this.mode = 'login'; // 'login' | 'register'
     this.error = '';
     this.isLoading = false;
-    this.useFirebase = firebaseService.isConfigured();
+    this.useCloud = supabaseService.isConfigured();
   }
 
   render(container) {
@@ -37,8 +37,8 @@ export class LoginView {
             ` : ''}
 
             <div class="login-field">
-              <label for="auth-username"><i class="fas fa-${this.useFirebase ? 'envelope' : 'at'}"></i> ${this.useFirebase ? 'Email' : 'Username'}</label>
-              <input type="${this.useFirebase ? 'email' : 'text'}" id="auth-username" placeholder="${this.useFirebase ? 'Enter email' : 'Enter username'}" autocomplete="${this.useFirebase ? 'email' : 'username'}" required />
+              <label for="auth-username"><i class="fas fa-${this.useCloud ? 'envelope' : 'at'}"></i> ${this.useCloud ? 'Email' : 'Username'}</label>
+              <input type="${this.useCloud ? 'email' : 'text'}" id="auth-username" placeholder="${this.useCloud ? 'Enter email' : 'Enter username'}" autocomplete="${this.useCloud ? 'email' : 'username'}" required />
             </div>
 
             <div class="login-field">
@@ -232,12 +232,12 @@ export class LoginView {
         this.render(container);
 
         try {
-          if (this.useFirebase) {
-            // Firebase Auth (email/password)
+          if (this.useCloud) {
+            // Supabase Auth (email/password)
             if (this.mode === 'register') {
-              await firebaseService.register(usernameOrEmail, password, displayName || usernameOrEmail.split('@')[0]);
+              await supabaseService.register(usernameOrEmail, password, displayName || usernameOrEmail.split('@')[0]);
             } else {
-              await firebaseService.login(usernameOrEmail, password);
+              await supabaseService.login(usernameOrEmail, password);
             }
           } else {
             // Local Auth (localStorage)
@@ -250,13 +250,11 @@ export class LoginView {
           // Success
           if (this.onLoginSuccess) this.onLoginSuccess();
         } catch (err) {
-          // Clean up Firebase error messages
           let msg = err.message;
-          if (msg.includes('auth/email-already-in-use')) msg = 'This email is already registered';
-          else if (msg.includes('auth/user-not-found')) msg = 'No account found with this email';
-          else if (msg.includes('auth/wrong-password')) msg = 'Incorrect password';
-          else if (msg.includes('auth/invalid-email')) msg = 'Please enter a valid email';
-          else if (msg.includes('auth/weak-password')) msg = 'Password must be at least 6 characters';
+          if (msg.includes('already registered')) msg = 'This email is already registered';
+          else if (msg.includes('Invalid login')) msg = 'Incorrect email or password';
+          else if (msg.includes('invalid_email')) msg = 'Please enter a valid email';
+          else if (msg.includes('weak_password')) msg = 'Password must be at least 6 characters';
           this.error = msg;
           this.isLoading = false;
           this.render(container);

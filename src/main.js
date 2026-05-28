@@ -18,7 +18,7 @@ import { PyqView } from './views/PyqView.js';
 import { AnalyticsView } from './views/AnalyticsView.js';
 import { SyllabusProgressView } from './views/SyllabusProgressView.js';
 import { LoginView } from './views/LoginView.js';
-import { firebaseService } from './services/firebase.js';
+import { supabaseService } from './services/supabase.js';
 
 class App {
   constructor() {
@@ -31,20 +31,15 @@ class App {
   }
 
   init() {
-    if (firebaseService.isConfigured()) {
-      // Firebase mode: check auth state
-      const user = firebaseService.getCurrentUser();
-      if (user) {
-        this.initApp();
-      } else {
-        // Listen for auth state change (async init)
-        firebaseService.onAuthChange((user) => {
-          if (user && !this.appInitialized) {
-            this.initApp();
-          }
-        });
-        this.showLogin();
-      }
+    if (supabaseService.isConfigured()) {
+      // Supabase mode: check auth state
+      supabaseService.getCurrentUser().then(user => {
+        if (user) {
+          this.initApp();
+        } else {
+          this.showLogin();
+        }
+      });
     } else {
       // Local mode: check localStorage
       if (storage.isLoggedIn()) {
@@ -143,9 +138,9 @@ class App {
       this.activeViewInstance.onUnmount();
     }
     
-    // Logout from both Firebase and local storage
-    if (firebaseService.isConfigured()) {
-      await firebaseService.logout();
+    // Logout from both Supabase and local storage
+    if (supabaseService.isConfigured()) {
+      await supabaseService.logout();
     }
     storage.logout();
     
