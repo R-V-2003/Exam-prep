@@ -184,7 +184,22 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
   }
   #sidebar-target {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    z-index: 1000;
+    transition: left var(--transition-normal);
+    background: var(--bg-color);
+  }
+  #sidebar-target.mobile-open {
+    left: 0;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+  }
+  .sidebar {
+    height: 100vh;
+    border-right: 1px solid var(--panel-border);
   }
 }
 
@@ -320,27 +335,48 @@ h1, h2, h3, h4, h5, h6 {
   animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Responsiveness */
-@media (max-width: 1024px) {
-  :root {
-    --sidebar-width: 80px;
-  }
-  .sidebar-text {
-    display: none;
-  }
-  .sidebar-logo span {
-    display: none;
+/* Sidebar backdrop and extra responsiveness */
+.sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 15, 30, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.sidebar-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 900px) {
+  .content-viewport {
+    padding: 15px;
   }
 }
 
-@media (max-width: 768px) {
-  .app-container {
-    grid-template-columns: 1fr;
+@media (max-width: 480px) {
+  .dashboard-bento-metrics {
+    grid-template-columns: 1fr !important;
   }
-  .main-sidebar {
-    display: none; /* We will use a mobile bar or toggle */
+  .dashboard-bento-nav {
+    grid-template-columns: 1fr !important;
   }
-  .content-viewport {
-    padding: 15px;
+}
+
+.mobile-nav-toggle {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .mobile-nav-toggle {
+    display: block !important;
   }
 }

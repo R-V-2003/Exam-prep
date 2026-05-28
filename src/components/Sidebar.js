@@ -85,6 +85,14 @@ export class Sidebar {
         if (this.onNavigate) {
           this.onNavigate(route);
         }
+        
+        // Auto-close sidebar on mobile
+        const sidebarTarget = document.getElementById('sidebar-target');
+        if (sidebarTarget && sidebarTarget.classList.contains('mobile-open')) {
+          sidebarTarget.classList.remove('mobile-open');
+          const backdrop = document.querySelector('.sidebar-backdrop');
+          if (backdrop) backdrop.classList.remove('active');
+        }
       });
     });
 
