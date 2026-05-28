@@ -18,6 +18,7 @@ import { PyqView } from './views/PyqView.js';
 import { AnalyticsView } from './views/AnalyticsView.js';
 import { SyllabusProgressView } from './views/SyllabusProgressView.js';
 import { LoginView } from './views/LoginView.js';
+import { firebaseService } from './services/firebase.js';
 
 class App {
   constructor() {
@@ -30,10 +31,27 @@ class App {
   }
 
   init() {
-    if (storage.isLoggedIn()) {
-      this.initApp();
+    if (firebaseService.isConfigured()) {
+      // Firebase mode: check auth state
+      const user = firebaseService.getCurrentUser();
+      if (user) {
+        this.initApp();
+      } else {
+        // Listen for auth state change (async init)
+        firebaseService.onAuthChange((user) => {
+          if (user && !this.appInitialized) {
+            this.initApp();
+          }
+        });
+        this.showLogin();
+      }
     } else {
-      this.showLogin();
+      // Local mode: check localStorage
+      if (storage.isLoggedIn()) {
+        this.initApp();
+      } else {
+        this.showLogin();
+      }
     }
   }
 
@@ -119,12 +137,16 @@ class App {
     this.navigate('dashboard');
   }
 
-  handleLogout() {
+  async handleLogout() {
     // Unmount active view
     if (this.activeViewInstance && typeof this.activeViewInstance.onUnmount === 'function') {
       this.activeViewInstance.onUnmount();
     }
     
+    // Logout from both Firebase and local storage
+    if (firebaseService.isConfigured()) {
+      await firebaseService.logout();
+    }
     storage.logout();
     
     // Clear layout

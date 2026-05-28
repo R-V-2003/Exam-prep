@@ -1,4 +1,5 @@
 import { storage } from '../services/storage.js';
+import { firebaseService } from '../services/firebase.js';
 
 export class LoginView {
   constructor(onLoginSuccess) {
@@ -6,6 +7,7 @@ export class LoginView {
     this.mode = 'login'; // 'login' | 'register'
     this.error = '';
     this.isLoading = false;
+    this.useFirebase = firebaseService.isConfigured();
   }
 
   render(container) {
@@ -35,8 +37,8 @@ export class LoginView {
             ` : ''}
 
             <div class="login-field">
-              <label for="auth-username"><i class="fas fa-at"></i> Username</label>
-              <input type="text" id="auth-username" placeholder="Enter username" autocomplete="username" required />
+              <label for="auth-username"><i class="fas fa-${this.useFirebase ? 'envelope' : 'at'}"></i> ${this.useFirebase ? 'Email' : 'Username'}</label>
+              <input type="${this.useFirebase ? 'email' : 'text'}" id="auth-username" placeholder="${this.useFirebase ? 'Enter email' : 'Enter username'}" autocomplete="${this.useFirebase ? 'email' : 'username'}" required />
             </div>
 
             <div class="login-field">
@@ -215,11 +217,11 @@ export class LoginView {
     if (form) {
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const username = container.querySelector('#auth-username')?.value;
+        const usernameOrEmail = container.querySelector('#auth-username')?.value;
         const password = container.querySelector('#auth-password')?.value;
         const displayName = container.querySelector('#auth-display-name')?.value;
 
-        if (!username || !password) {
+        if (!usernameOrEmail || !password) {
           this.error = 'Please fill in all fields';
           this.render(container);
           return;
@@ -230,15 +232,32 @@ export class LoginView {
         this.render(container);
 
         try {
-          if (this.mode === 'register') {
-            await storage.register(username, password, displayName);
+          if (this.useFirebase) {
+            // Firebase Auth (email/password)
+            if (this.mode === 'register') {
+              await firebaseService.register(usernameOrEmail, password, displayName || usernameOrEmail.split('@')[0]);
+            } else {
+              await firebaseService.login(usernameOrEmail, password);
+            }
           } else {
-            await storage.login(username, password);
+            // Local Auth (localStorage)
+            if (this.mode === 'register') {
+              await storage.register(usernameOrEmail, password, displayName);
+            } else {
+              await storage.login(usernameOrEmail, password);
+            }
           }
           // Success
           if (this.onLoginSuccess) this.onLoginSuccess();
         } catch (err) {
-          this.error = err.message;
+          // Clean up Firebase error messages
+          let msg = err.message;
+          if (msg.includes('auth/email-already-in-use')) msg = 'This email is already registered';
+          else if (msg.includes('auth/user-not-found')) msg = 'No account found with this email';
+          else if (msg.includes('auth/wrong-password')) msg = 'Incorrect password';
+          else if (msg.includes('auth/invalid-email')) msg = 'Please enter a valid email';
+          else if (msg.includes('auth/weak-password')) msg = 'Password must be at least 6 characters';
+          this.error = msg;
           this.isLoading = false;
           this.render(container);
         }
