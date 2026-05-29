@@ -296,5 +296,56 @@ export const supabaseService = {
     } catch (e) {
       console.error('Failed to save study guide to database:', e);
     }
+  },
+
+  // ========== SYLLABUS & PYQ RETRIEVAL ==========
+
+  async getSyllabusDescription(subjectName) {
+    if (!supabase) return null;
+    try {
+      // Look up description using partial matching (ilike)
+      const { data, error } = await supabase
+        .from('syllabus_info')
+        .select('official_description')
+        .ilike('subject_name', `%${subjectName}%`)
+        .maybeSingle();
+
+      if (error) {
+        console.warn('Could not query syllabus_info:', error.message);
+        return null;
+      }
+      return data?.official_description || null;
+    } catch (e) {
+      console.warn('Failed to fetch syllabus description:', e);
+      return null;
+    }
+  },
+
+  async getRelevantPYQs(subjectName, topicName) {
+    if (!supabase) return [];
+    try {
+      let query = supabase.from('pyqs').select('*');
+      
+      // Filter by subject name
+      if (subjectName) {
+        query = query.ilike('subject', `%${subjectName}%`);
+      }
+      
+      // Check if topicName exists inside topic, question or explanation
+      if (topicName) {
+        query = query.or(`topic.ilike.%${topicName}%,question.ilike.%${topicName}%,explanation.ilike.%${topicName}%`);
+      }
+
+      // Limit to 4 relevant questions to avoid overloading the AI context
+      const { data, error } = await query.limit(4);
+      if (error) {
+        console.warn('Could not query pyqs table:', error.message);
+        return [];
+      }
+      return data || [];
+    } catch (e) {
+      console.warn('Failed to fetch PYQs:', e);
+      return [];
+    }
   }
 };

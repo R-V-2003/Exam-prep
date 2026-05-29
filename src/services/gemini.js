@@ -306,6 +306,30 @@ export const gemini = {
       return this.simulateTestGeneration(examType, subjects, questionCount);
     }
 
+    // Fetch relevant PYQs for mock test style reference (RAG)
+    let pyqTestContext = '';
+    try {
+      const pyqList = [];
+      for (const sub of subjects) {
+        const matches = await supabaseService.getRelevantPYQs(sub, null);
+        if (matches && matches.length > 0) {
+          pyqList.push(...matches);
+        }
+        if (pyqList.length >= 4) break;
+      }
+      
+      if (pyqList.length > 0) {
+        pyqTestContext = `REAL PREVIOUS YEAR EXAM QUESTIONS FOR REFERENCE (MIMIC THIS STYLE):
+Here are some real questions asked in the actual 2022 Rajasthan Computer Instructor exam. Use them to mimic the tone, question formatting, options structure, and complexity:
+${pyqList.map((q, idx) => `Question ${idx + 1}: ${q.question}
+Options: A) ${q.options[0]}, B) ${q.options[1]}, C) ${q.options[2]}, D) ${q.options[3]}
+Correct Answer Index: ${q.correct_index} (Explanation: ${q.explanation || 'N/A'}`).join('\n\n')}
+Generate new, completely unique questions of similar depth and style. Do not repeat these exact questions.`;
+      }
+    } catch (e) {
+      console.warn("Failed to retrieve PYQs for mock test styling:", e);
+    }
+
     const systemPrompt = `You are an elite exam question generator for the Rajasthan RSSB Computer Instructor (BCI) Exam.
 Your goal is to generate questions that match the syllabus, structure, and difficulty.
 Your output MUST be a valid JSON object matching this schema precisely:
@@ -326,7 +350,8 @@ Do not enclose in markdown blocks. Return only the raw JSON.`;
 Subjects/Topics to include: ${subjects.join(', ')}.
 Overall Difficulty: ${difficulty}.
 ${customPrompt ? `Additional Custom Instruction: ${customPrompt}` : ''}
-Ensure the questions are challenging, technically accurate, and reflect Rajasthan Computer Instructor exam patterns. Provide a comprehensive explanation for each.`;
+
+${pyqTestContext ? `${pyqTestContext}\n\n` : ''}Ensure the questions are challenging, technically accurate, and reflect Rajasthan Computer Instructor exam patterns. Provide a comprehensive explanation for each.`;
 
     try {
       const result = await this.callAPIJson(userPrompt, systemPrompt);
@@ -449,6 +474,30 @@ Format your final output as a single JSON object with this format:
     // Detect if this is a logical reasoning / analytical ability topic that may need figures
     const isReasoningTopic = /reasoning|analytical|logical|problem solving|data interpretation/i.test(subject) || /reasoning|analytical|logical|problem solving|data interpretation/i.test(topic);
 
+    // 2. Fetch context from database: relevant PYQs and official syllabus descriptions (RAG setup)
+    let syllabusContext = '';
+    let pyqContext = '';
+    try {
+      const syllabusDesc = await supabaseService.getSyllabusDescription(subject);
+      if (syllabusDesc) {
+        syllabusContext = `OFFICIAL SYLLABUS DIRECTIVES:
+The official Rajasthan BCI syllabus defines the scope for this subject as: "${syllabusDesc}". Keep your study guide aligned to this scope.`;
+      }
+
+      const pyqs = await supabaseService.getRelevantPYQs(subject, topic);
+      if (pyqs && pyqs.length > 0) {
+        pyqContext = `REAL PREVIOUS YEAR EXAM QUESTIONS FOR REFERENCE (BCI 2022):
+Here are some real questions asked in the actual 2022 Rajasthan Computer Instructor exam related to this topic:
+${pyqs.map((q, idx) => `Question ${idx + 1}: ${q.question}
+Options: A) ${q.options[0]}, B) ${q.options[1]}, C) ${q.options[2]}, D) ${q.options[3]}
+Correct Answer: Option ${String.fromCharCode(65 + q.correct_index)}
+Explanation: ${q.explanation || 'N/A'}`).join('\n\n')}
+Ensure your study guide covers the concepts, technical terms, and analytical depth tested in these real exam questions.`;
+      }
+    } catch (e) {
+      console.warn("Failed to fetch database context for generation:", e);
+    }
+
     let systemInstructionReasoning = '';
     if (isReasoningTopic) {
       systemInstructionReasoning = `- For questions involving visual patterns, series, diagrams, Venn diagrams, seating arrangements, or directions:
@@ -480,7 +529,8 @@ DO NOT include conversational intros or outros (e.g., "Here is your detailed gui
     }
 
     const userPrompt = `Create a highly detailed, comprehensive, and exhaustive study guide for the topic "${topic}" under the subject "${subject}" in the BCI syllabus.
-Must Include:
+
+${syllabusContext ? `${syllabusContext}\n\n` : ''}${pyqContext ? `${pyqContext}\n\n` : ''}Must Include:
 1. **Introduction & Definition**: A thorough explanation of the core concept and its significance.
 2. **Core Sub-concepts & Architecture**: Detailed explanations of all technical facets, components, properties, or phases. Use tables for comparisons.
 3. **Important Rules & Formulas**: Exhaustive list of formulas, equations, or design rules formatted in blockquotes.
