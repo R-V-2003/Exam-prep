@@ -347,5 +347,34 @@ export const supabaseService = {
       console.warn('Failed to fetch PYQs:', e);
       return [];
     }
+  },
+
+  async getFullPaper(paperIdentifier) {
+    if (!supabase) return [];
+    try {
+      const { data, error } = await supabase
+        .from('pyqs')
+        .select('*')
+        .eq('paper_type', paperIdentifier);
+      
+      if (error) {
+        console.error("Error fetching paper:", error);
+        return [];
+      }
+      
+      // Map to the frontend question format
+      return data.map(q => ({
+        id: q.id,
+        subject: q.subject || "General",
+        topic: q.topic || "PYQ",
+        question: q.question,
+        options: q.options || [],
+        correctIndex: q.correct_index,
+        explanation: q.explanation || ""
+      }));
+    } catch (err) {
+      console.error(err);
+      return [];
+    }
   }
 };
