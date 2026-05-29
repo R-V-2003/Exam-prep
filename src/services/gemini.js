@@ -1,5 +1,6 @@
 import { fallbackTests } from '../data/fallbackTests.js';
 import { storage } from './storage.js';
+import { supabaseService } from './supabase.js';
 
 export const gemini = {
   // Call Groq API completions endpoint
@@ -434,6 +435,17 @@ Format your final output as a single JSON object with this format:
 
   // Generate comprehensive Markdown study guide — EXCLUSIVELY uses Groq for detailed long-form content
   async generateStudyGuide(subject, topic) {
+    // 1. Check Supabase database cache first (instantly returns if already generated)
+    try {
+      const cachedContent = await supabaseService.getStudyGuide(topic);
+      if (cachedContent) {
+        console.log(`Loading study guide for "${topic}" from database cache.`);
+        return cachedContent;
+      }
+    } catch (e) {
+      console.warn("Error fetching from study guides cache:", e);
+    }
+
     // Detect if this is a logical reasoning / analytical ability topic that may need figures
     const isReasoningTopic = /reasoning|analytical|logical|problem solving|data interpretation/i.test(subject) || /reasoning|analytical|logical|problem solving|data interpretation/i.test(topic);
 
@@ -480,7 +492,11 @@ Ensure the guide is thorough, descriptive, and covers all relevant details to he
     if (storage.hasGroqApiKey()) {
       try {
         const response = await this.callGroqAPI(userPrompt, systemPrompt, false);
-        return response.text;
+        if (response && response.text) {
+          // Cache in Supabase so others get it instantly
+          await supabaseService.saveStudyGuide(subject, topic, response.text);
+          return response.text;
+        }
       } catch (err) {
         console.warn("Groq study guide generation failed, trying Gemini fallback", err);
       }
@@ -490,7 +506,11 @@ Ensure the guide is thorough, descriptive, and covers all relevant details to he
     if (storage.hasApiKey()) {
       try {
         const response = await this.callGeminiAPI(userPrompt, systemPrompt, false);
-        return response.text;
+        if (response && response.text) {
+          // Cache in Supabase so others get it instantly
+          await supabaseService.saveStudyGuide(subject, topic, response.text);
+          return response.text;
+        }
       } catch (err) {
         console.warn("Gemini study guide fallback also failed", err);
       }

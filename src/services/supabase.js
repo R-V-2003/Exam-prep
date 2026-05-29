@@ -259,5 +259,42 @@ export const supabaseService = {
     if (error) {
       console.error('Error uploading user data to Supabase:', error);
     }
+  },
+
+  // ========== STUDY GUIDES CACHING ==========
+
+  async getStudyGuide(topic) {
+    if (!supabase) return null;
+    try {
+      const { data, error } = await supabase
+        .from('study_guides')
+        .select('content')
+        .eq('topic', topic)
+        .maybeSingle();
+      
+      if (error) {
+        console.warn('Could not query study_guides table:', error.message);
+        return null;
+      }
+      return data?.content || null;
+    } catch (e) {
+      console.warn('Failed to fetch study guide from database:', e);
+      return null;
+    }
+  },
+
+  async saveStudyGuide(subject, topic, content) {
+    if (!supabase) return;
+    try {
+      const { error } = await supabase
+        .from('study_guides')
+        .insert({ subject, topic, content });
+      
+      if (error) {
+        console.error('Error saving study guide to database:', error);
+      }
+    } catch (e) {
+      console.error('Failed to save study guide to database:', e);
+    }
   }
 };
