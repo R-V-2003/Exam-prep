@@ -13,7 +13,7 @@ export class AnalyticsView {
           <p style="color: var(--text-secondary); font-size: 0.9rem;">Deep dive into your test performance and identify weak areas.</p>
         </div>
 
-        <div class="dashboard-bento-charts" style="grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 20px; height: 800px;">
+        <div class="dashboard-bento-charts" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; min-height: 800px;">
           <div class="glass-panel chart-panel" style="display: flex; flex-direction: column;">
             <div class="chart-header">
               <h3 style="font-size: 1.1rem;"><i class="fas fa-chart-pie" style="color: var(--brand-primary); margin-right: 8px;"></i> Subject Proficiency</h3>
