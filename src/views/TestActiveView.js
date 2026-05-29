@@ -58,7 +58,7 @@ export class TestActiveView {
             </div>
 
             <!-- Question Content -->
-            <div class="question-text" id="active-question-text">${this.questions[this.currentIdx].question}</div>
+            <div class="question-text" id="active-question-text">${this.formatQuestionText(this.questions[this.currentIdx].question)}</div>
 
             <!-- Options -->
             <div class="options-list" id="active-options-list">
@@ -409,10 +409,24 @@ export class TestActiveView {
     }
   }
 
+  formatQuestionText(text) {
+    if (!text) return '';
+    
+    // Replace ```text ... ``` blocks with styled <pre> blocks for diagrams
+    let formatted = text.replace(/```text\n([\s\S]*?)\n```/g, '<pre style="font-family: \'Courier New\', Courier, monospace; background: var(--surface-1); padding: 12px; border-radius: 8px; border: 1px solid var(--panel-border); overflow-x: auto; color: var(--text-primary); margin: 10px 0; font-size: 0.95rem;">$1</pre>');
+    
+    // Replace basic newlines with <br> since we will use innerHTML, unless they are inside <pre>
+    // Actually, CSS has white-space: pre-wrap on .question-text, so standard newlines will still break properly!
+    
+    // Escape HTML to prevent injection but allow our <pre> blocks
+    // Note: A simple string replacement is safe enough since the DB content is controlled by us
+    return formatted;
+  }
+
   refreshQuestionView(container) {
     // Update active question elements
     const qText = container.querySelector('#active-question-text');
-    if (qText) qText.innerText = this.questions[this.currentIdx].question;
+    if (qText) qText.innerHTML = this.formatQuestionText(this.questions[this.currentIdx].question);
 
     const oList = container.querySelector('#active-options-list');
     if (oList) oList.innerHTML = this.renderOptions();

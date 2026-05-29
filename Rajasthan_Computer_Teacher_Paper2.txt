@@ -1,0 +1,1275 @@
+1. What efforts should be made by the teachers to explain technical terms or difficult concepts of a lesson?
+(A) Explaining with the help of examples
+(B) Explaining with the help of TLM
+(C) Explaining with the help of drawing a diagram on the blackboard
+(D) Above all
+पाठ में आये तकनीकी शब्दों या कठिन अवधारणाओं को स्पष्ट करने के लिए शिक्षक क्या कर सकते हैं?
+(A) उदाहरणों द्वारा इनका स्पष्टीकरण
+(B) शिक्षण अधिगम सामग्री के द्वारा इसका स्पष्टीकरण
+(C) श्यामपट्ट पर चित्र बनाकर इसकी व्याख्या
+(D) उपरोक्त सभी
+
+2. Which of the following is an example of effective motivational strategy to encourage students to learn?
+(A) Giving opportunities for competition to students in class
+(B) Providing scaffolding specially, when students learn a new skill
+(C) Emphasis on competition of work rather than learning
+(D) To dictate the answers of questions to students
+निम्नलिखित में से कौन छात्रों को सीखने के लिए प्रोत्साहित करने के लिए प्रभावी प्रेरक रणनीति का एक उदाहरण है?
+(A) कक्षा में विद्यार्थियों को प्रतियोगिता के अवसर देना
+(B) विद्यार्थी जब नया कौशल सीखते हैं तब उन्हें सहयोग प्रदान करना
+(C) अधिगम के बजाय कार्य की प्रतियोगिता पर बल देना
+(D) विद्यार्थियों को प्रश्नों के उत्तर लिखा देना
+
+3. Sequence of 5 E's in Roger Bybee's 5 'E' model -
+(A) Explore, Elaborate, Evaluate, Engage, Explain
+(B) Engage, Explore, Explain, Elaborate, Evaluate
+(C) Evaluate, Elaborate, Engage, Explore, Explain
+(D) Elaborate, Engage, Evaluate, Explore, Explain
+रॉजर बायबी द्वारा दिए गए 5 'E' मॉडल में पाँचों 'E' का क्रम है
+(A) Explore, Elaborate, Evaluate, Engage, Explain
+(B) Engage, Explore, Explain, Elaborate, Evaluate
+(C) Evaluate, Elaborate, Engage, Explore, Explain
+(D) Elaborate, Engage, Evaluate, Explore, Explain
+
+4. Children are usually egocentric during ______ and ______ stages.
+(A) Sensorimotor, Preoperational
+(B) Formal operational, Sensorimotor
+(C) Preoperational, Concrete operational
+(D) Concrete operational, Formal operational
+बच्चे आमतौर पर ______ और ______ चरण के दौरान अहंकारी होते हैं।
+(A) ज्ञानेन्द्रिय, पूर्व-संचालन
+(B) औपचारिक संचालन, ज्ञानेन्द्रिय
+(C) पूर्व-संचालन, ठोस-संचालन
+(D) ठोस संचालन, औपचारिक संचालन
+
+5. In how many different ways can the letters of the word ALLAHABAD be arranged?
+(A) 3780
+(B) 7890
+(C) 7565
+(D) None of these
+ALLAHABAD शब्द के अक्षरों को कितने अलग-अलग तरीकों से व्यवस्थित किया जा सकता है?
+(A) 3780
+(B) 7890
+(C) 7565
+(D) इनमें से कोई नहीं
+
+6. In a row, Suman is ninth from the left. Akash is eighth from the right. Nihal is standing exactly at middle position between these two. What could be the minimum number of persons placed in a row?
+(A) 8
+(B) 9
+(C) 10
+(D) 12
+एक पंक्ति में, सुमन बायीं ओर से नवें स्थान पर है। आकाश दायीं ओर से आठवें स्थान पर है। निहाल इन दोनों के ठीक बीच में खड़ा है। पंक्ति में व्यक्तियों की न्यूनतम संख्या कितनी हो सकती है?
+(A) 8
+(B) 9
+(C) 10
+(D) 12
+
+7. Two statements and two conclusion are given below. You have to decide which of the given conclusions logically follow from the given statements, disregarding commonly known facts.
+Statements: Some horses are cats. All cats are hens.
+Conclusions: (I) Some hens are horses. (II) Some horses are hens.
+(A) Only conclusion I follows
+(B) Only conclusion II follows
+(C) Both conclusion I and II follow
+(D) Neither conclusion I nor II follow
+दो कथन और दो निष्कर्ष नीचे दिए गए हैं। आपको यह निश्चित करना है निम्न में से कौनसा निष्कर्ष सामान्यतः ज्ञात तथ्यों को ना मानते हुए दिए गए कथनों का तार्किक रूप से अनुसरण करता है।
+कथन : कुछ घोड़े बिल्लियां हैं। सभी बिल्लियां मुर्गियां हैं।
+निष्कर्ष : (I) कुछ मुर्गियां घोड़े हैं। (II) कुछ घोड़े मुर्गियां हैं।
+(A) केवल निष्कर्ष I अनुसरण करता है
+(B) केवल निष्कर्ष II अनुसरण करता है
+(C) दोनों निष्कर्ष I और II अनुसरण करते हैं
+(D) न तो निष्कर्ष I ना ही II अनुसरण करते हैं
+
+8. A question and two statements are given below. You have to decide which statement is sufficient to answer the given question.
+How much money do R and S have together?
+Statements: (I) S has ₹200 less than T. (II) R has ₹300 more than T.
+(A) Only I is sufficient
+(B) Only II is sufficient
+(C) Both I and II are sufficient together
+(D) Neither I nor II are sufficient
+एक प्रश्न और दो कथन नीचे दिए गए हैं। आपको तय करना है कि दिए गए प्रश्न का उत्तर देने के लिए कौनसा कथन पर्याप्त है।
+R और S के पास एक साथ कुल कितना धन है?
+कथन: (I) S के पास T से ₹200 कम है। (II) R के पास T से ₹300 ज्यादा है।
+(A) केवल I पर्याप्त है
+(B) केवल II पर्याप्त है
+(C) दोनों I और II एकसाथ पर्याप्त हैं
+(D) न तो I ना ही II पर्याप्त है
+
+9. Study the following pie chart carefully and answer the question given below-
+[Figure: A pie chart showing the percentage distribution of tickets sold by five different theatres. The distribution is: PVR 10%, Cinepolis 20%, Mukta A2 16%, Rangmahal Cineplex 24%, Jyoti Cineplex 30%.]
+The pie-chart given below shows the percentage distribution of the number of tickets sold by five different theatres.
+The number of tickets sold on Friday = 950
+Out of the number of tickets sold by Rangmahal Cineplex 7/12 were purchased by females and out of the number of tickets sold by Jyoti Cineplex 1/19 were purchased by females. What was the total number of tickets purchased by females from Rangmahal Cineplex and Jyoti Cineplex together?
+(A) 148
+(B) 143
+(C) 126
+(D) 152
+निम्नलिखित पाई चार्ट का ध्यानपूर्वक अध्ययन करें और नीचे दिए गए प्रश्न का उत्तर दें-
+नीचे दिया गया पाई-चार्ट पांच अलग-अलग थिएटरों द्वारा बेचे गए टिकटों की संख्या का प्रतिशत वितरण दर्शाता है।
+शुक्रवार को बेचे गए टिकटों की संख्या = 950
+रंगमहल सिनेप्लेक्स द्वारा बेचे गए टिकटों की संख्या में से 7/12 महिलाओं द्वारा खरीदे गए थे और ज्योति सिनेप्लेक्स द्वारा बेचे गए टिकटों की संख्या में से 1/19 महिलाओं द्वारा खरीदे गए थे। रंगमहल सिनेप्लेक्स और ज्योति सिनेप्लेक्स से मिलाकर महिलाओं द्वारा खरीदे गए टिकटों की कुल संख्या क्या थी?
+(A) 148
+(B) 143
+(C) 126
+(D) 152
+
+10. One term is wrong in the following series. Find that wrong term -
+4, 15, 64, 5, 25, 125, 6, 36, 216
+(A) 64
+(B) 25
+(C) 36
+(D) 15
+निम्न श्रृंखला में एक पद गलत है। उस गलत पद को ज्ञात कीजिए -
+4, 15, 64, 5, 25, 125, 6, 36, 216
+(A) 64
+(B) 25
+(C) 36
+(D) 15
+
+11. If P denotes '+', R denotes 'x', S denotes '-' and T denotes '÷', then what will be the value of 5R9P7S9T3P6?
+(A) 128
+(B) 59
+(C) 55
+(D) 54
+यदि P का अर्थ '+', R का अर्थ 'x', S का अर्थ '-' तथा T का अर्थ '÷' है, तब 5R9P7S9T3P6 का मान क्या होगा?
+(A) 128
+(B) 59
+(C) 55
+(D) 54
+
+12. Rohit multiplies a number by 2 instead of dividing the number by 2. Resultant number is what percentage of the correct value?
+(A) 200%
+(B) 300%
+(C) 50%
+(D) 400%
+रोहित एक संख्या को 2 से भाग देने की बजाय दो से गुणा कर देता है। परिणामी संख्या सही मान का कितना प्रतिशत है?
+(A) 200%
+(B) 300%
+(C) 50%
+(D) 400%
+
+13. Choose the correct statement with respect to interfaces -
+(i) Java does not support "multiple inheritance" however, it can be achieved by using interfaces.
+(ii) Unless the class that implements the interface is abstract, all the methods of the interface need to be defined in the class.
+(iii) To implement multiple interfaces, separate them with a comma (,).
+(A) Only (i)
+(B) (i) and (ii)
+(C) (ii) and (iii)
+(D) (i), (ii) and (iii)
+सही कथन छांटिए -
+(i) जावा 'मल्टीपल इन्हैरिटेंस' को सपोर्ट नहीं करता जबकि इसे इंटरफेस के माध्यम से प्राप्त किया जा सकता है।
+(ii) जब तक इंटरफेस को लागू करने वाला वर्ग अमूर्त नहीं है, तब तक इंटरफेस के सभी तरीकों को कक्षा में परिभाषित करने की आवश्यकता है।
+(iii) मल्टीपल इंटरफेस को इप्लीमेंट करने हेतु इन्हें अल्पविराम (,) से पृथक किया जाता है।
+(A) केवल (i)
+(B) (i) एवं (ii)
+(C) (ii) एवं (iii)
+(D) (i), (ii) एवं (iii)
+
+14. Match the following -
+List - I
+(i) A method that is used to create an instantiation of a class
+(ii) A signal that something has happened to stop normal execution of a program
+(iii) A graphical image that is usually stored in a file
+(iv) Converting one type of value to another type is called
+List - II
+(a) Bitmap
+(b) Type casting
+(c) Exception
+(d) Constructor
+(A) (i)-b, (ii)-c, (iii)-d, (iv)-a
+(B) (i)-c, (ii)-d, (iii)-b, (iv)-a
+(C) (i)-a, (ii)-b, (iii)-c, (iv)-d
+(D) (i)-d, (ii)-c, (iii)-a, (iv)-b
+मिलान करें -
+List - I
+(i) एक विधि जिसका उपयोग किसी क्लास instants के बनाने के लिए किया जाता है
+(ii) एक सिग्नल है जो प्रोग्राम में कुछ घटित होने पर प्रोग्राम के सामान्य एक्जीक्यूशन को रोकता है
+(iii) एक ग्राफिकल इमेज जो आमतौर पर एक फाइल में स्टोर की जाती है
+(iv) एक value type को दूसरे value type में बदलना कहलाता है
+List - II
+(a) बिटमैप
+(b) टाइप कास्टिंग
+(c) एक्सेप्शन
+(d) कन्स्ट्रक्टर
+(A) (i)-b, (ii)-c, (iii)-d, (iv)-a
+(B) (i)-c, (ii)-d, (iii)-b, (iv)-a
+(C) (i)-a, (ii)-b, (iii)-c, (iv)-d
+(D) (i)-d, (ii)-c, (iii)-a, (iv)-b
+
+15. Hexa decimal numbers are a mixture of -
+(A) Octal and decimal numbers
+(B) Binary and octal numbers
+(C) Letters and decimal digits
+(D) Binary and decimal numbers
+हेक्सा डेसिमल संख्या मिश्रण है -
+(A) ऑक्टल और डेसिमल नम्बरों का
+(B) बाइनरी और ऑक्टल नम्बरों का
+(C) लैटर और डेसिमल डिजिटों का
+(D) बाइनरी और डेसिमल नम्बरों का
+
+16. Consider the following statement
+I. A child process that remains running even after its parent process is terminated or completed without waiting for the child process execution is called an orphan.
+II. A process that has completed its task but still, it shows an entry in a process table is called a zombie process.
+(A) Both are true
+(B) Both are false
+(C) Only I is true
+(D) Only II is true
+दिए गए कथन पर विचार करें -
+I. ऐसे चाइल्ड प्रोसेस जो अपने पेरेन्ट प्रोसेस के बिना तब भी रन होते रहते हैं, जबकि पेरेन्ट प्रोसेस अपने चाइल्ड प्रोसेस के एक्ज़ीक्यूशन के लिए इंतज़ार किए बिना ही टर्मिनेट अथवा पूर्ण हो जाते हैं, ऑरफन कहलाते हैं।
+II. ऐसे प्रोसेस जो अपनी टास्क खत्म कर चुके हैं, परन्तु फिर भी प्रोसेस टेबल में दिखाई देते हैं, जॉम्बी प्रोसेस कहलाते हैं।
+(A) दोनों सत्य हैं
+(B) दोनों असत्य हैं
+(C) केवल I सत्य है
+(D) केवल II सत्य है
+
+17. Who is known as the father of Artificial Intelligence (AI)?
+(A) Ada Fisher
+(B) Alan Turing
+(C) John McCarthy
+(D) Allen Newell
+आर्टिफिशियल इंटेलिजेन्स (AI) के जनक कौन हैं?
+(A) अडा फिशर
+(B) एलेन ट्यूरिंग
+(C) जॉन मैकार्थी
+(D) एलिन न्यूवैल
+
+18. Binary 101110.11 is equal to -
+(A) (56.6)8 Only
+(B) (46.75)10 Only
+(C) (2E.C)16 Only
+(D) All options are correct
+बाइनरी 101110.11 बराबर है -
+(A) (56.6)8 केवल
+(B) (46.75)10 केवल
+(C) (2E.C)16 केवल
+(D) सभी विकल्प सही हैं
+
+19. Which protocol layer uses the protocol SMTP, HTTP, FTP?
+(A) Application layer
+(B) Transport layer
+(C) Internal layer
+(D) Hardware layer
+SMTP, HTTP, FTP प्रोटोकॉल का इस्तेमाल कौनसा प्रोटोकॉल लेयर करता है?
+(A) एप्लीकेशन लेयर
+(B) ट्रान्सपोर्ट लेयर
+(C) इंटरनल लेयर
+(D) हार्डवेयर लेयर
+
+20. Which of the following are used to generate a message digest by the network security protocols?
+(P) RSA (Q) SHA-1 (R) DES (S) MD5
+(A) P and R only
+(B) Q and R only
+(C) Q and S only
+(D) R and S only
+निम्नलिखित में से कौन सा मैसेज डाईजेस्ट बनाने के काम आता है, नेटवर्क सिक्यूरिटी प्रोटोकॉल द्वारा?
+(P) RSA (Q) SHA-1 (R) DES (S) MD5
+(A) केवल P और R
+(B) केवल Q और R
+(C) केवल Q और S
+(D) केवल R और S
+
+21. The minimum positive integers p such that 3^p modulo 17 = 1 is -
+(A) 5
+(B) 8
+(C) 12
+(D) 16
+न्यूनतम धनात्मक पूर्णांक p जैसे कि 3^p modulo 17 = 1 है -
+(A) 5
+(B) 8
+(C) 12
+(D) 16
+
+22. What does CSA stand for?
+(A) Computer Service Architecture
+(B) Computer Speed Addition
+(C) Carry Save addition
+(D) None of the mentioned
+CSA से क्या तात्पर्य है?
+(A) कम्प्यूटर सर्विस आर्किटेक्चर
+(B) कम्प्यूटर स्पीड एडीशन
+(C) कैरी सेव एडीशन
+(D) उपरोक्त कोई नहीं
+
+23. Match TCP/IP layers and protocols
+Column - I
+(P) Transport layer
+(Q) Network (internet) layer
+(R) Application layer
+Column - II
+1. ICMP
+2. FTP
+3. UDP
+(A) P-2, Q-1, R-3
+(B) P-1, Q-2, R-3
+(C) P-3, Q-1, R-2
+(D) P-3, Q-2, R-1
+लेयर्स तथा प्रोटोकॉल्स का मिलान करें
+Column - I
+(P) ट्रांसपोर्ट लेयर
+(Q) नेटवर्क (इन्टरनेट) लेयर
+(R) एप्लीकेशन लेयर
+Column - II
+1. ICMP
+2. FTP
+3. UDP
+(A) P-2, Q-1, R-3
+(B) P-1, Q-2, R-3
+(C) P-3, Q-1, R-2
+(D) P-3, Q-2, R-1
+
+24. Ethernet uses ______ physical address that is imprinted on the Network Interface Card (NIC).
+(A) 48-bits
+(B) 48-bytes
+(C) 4-bytes
+(D) 128-bits
+इथरनेट ______ का फिज़िकल एड्रेस काम में लेता है, जो कि नेटवर्क इन्टरफेस कार्ड (NIC) पर छपा होता है।
+(A) 48-bits
+(B) 48-bytes
+(C) 4-bytes
+(D) 128-bits
+
+25. What does DDoS stand for?
+(A) Data Denial-of-Service
+(B) Distributed Denial-of-Service
+(C) Distributed Data of Server
+(D) Distribution of Data Service
+DDoS से क्या तात्पर्य है?
+(A) Data Denial-of-Service
+(B) Distributed Denial-of-Service
+(C) Distributed Data of Server
+(D) Distribution of Data Service
+
+26. If (146)_x + (313)_{x-2} = (246)_8 then the value of base x is -
+(A) 5
+(B) 6
+(C) 7
+(D) 9
+यदि (146)_x + (313)_{x-2} = (246)_8 है, तो base x की क्या value होगी?
+(A) 5
+(B) 6
+(C) 7
+(D) 9
+
+27. Consider an undirected un-weighted graph G. Let a breadth first traversal of G be done starting from a node r. Let d(r,u) and d(r,v) be the length of the shortest path from r to u and v respectively in G. If u is visited before v during the breadth first traversal, which of the following statement is correct?
+(A) d(r,u) < d(r,v)
+(B) d(r,u) > d(r,v)
+(C) d(r,u) <= d(r,v)
+(D) None of the above
+एक अप्रत्यक्ष भारित ग्राफ G पर विचार करें। मान लें कि G की चौड़ाई प्रथम ट्रेवर्सल एक नोड r से शुरू होती है। मान लीजिए d(r,u) और d(r,v) क्रमशः r से u और v तक के सबसे छोटे पथों की लंबाई है, G में यदि u को, चौडाई प्रथम ट्रेवर्सल के दौरान v से पहले देखा जाता है, निम्नलिखित में से कौन सा कथन सही है?
+(A) d(r,u) < d(r,v)
+(B) d(r,u) > d(r,v)
+(C) d(r,u) <= d(r,v)
+(D) इनमें से कोई नहीं
+
+28. Which CSS property can provide to add an effect when changing from one style to another, without using flash animations or java script?
+(A) Associations
+(B) Transitions
+(C) Transistor
+(D) None of the above
+फ्लैश एनिमेशन या जावास्क्रिप्ट का उपयोग किये बिना, एक शैली से दूसरी शैली में बदलते समय कौन सी सी.एस.एस. संपत्ति प्रभाव जोड़ने के लिए प्रदान कर सकती है?
+(A) एसोसिएशन
+(B) ट्रांज़ीशन
+(C) ट्रांजिस्टर
+(D) उपरोक्त में से कोई नहीं
+
+29. What does OS X has?
+(A) Monolithic kernel with modules
+(B) Microkernel
+(C) Monolithic kernel
+(D) Hybrid kernel
+ओ.एस. एक्स में क्या पाया जाता है?
+(A) मोनोलिथिक कर्नल विथ मॉड्यूल
+(B) माइक्रोकर्नल
+(C) मोनोलिथिक कर्नल
+(D) हाईब्रिड कर्नल
+
+30. If a process fails, most operating system write the error information to a -
+(A) New file
+(B) Another running process
+(C) Log file
+(D) None of the mentioned
+अगर प्रोसेस फेल हो जाती है, तो ज्यादातर ऑपरेटिंग सिस्टम error इंफॉरमेशन कहाँ लिखते हैं?
+(A) नई फाइल में
+(B) दूसरी चलती प्रोसेस में
+(C) लॉग फाइल में
+(D) उपरोक्त कोई नहीं
+
+31. When a process is in a "Blocked" state it waits for some I/O service. When the service is completed it goes to the -
+(A) Terminated State
+(B) Suspended state
+(C) Running state
+(D) Ready state
+जब कोई प्रक्रिया एक "ब्लॉक" अवस्था में होती है, तो वह कुछ इनपुट और आउटपुट सेवा की प्रतीक्षा करती है। जब सेवा पूरी हो जाती हैं, तो वह कहाँ जाती है?
+(A) टर्मिनेटेड अवस्था
+(B) सस्पेन्डिड अवस्था
+(C) रनिंग अवस्था
+(D) रेडी अवस्था
+
+32. Which of the following highly uses the concept of an array?
+(A) Binary search tree
+(B) Caching
+(C) Spatial locality
+(D) Scheduling of processes
+निम्नलिखित में से कौन अरे की अवधारणा का अत्यधिक उपयोग करता है?
+(A) बाइनरी सर्च ट्री
+(B) कैशिंग
+(C) स्पेशियल लोकैलिटी
+(D) शेड्यूलिंग ऑफ प्रोसेसिज़
+
+33. Which of the following is not a type of constructor?
+(A) Copy constructor
+(B) Friend constructor
+(C) Default constructor
+(D) Parameterized constructor
+निम्न में से कौन सा कन्स्ट्रक्टर का प्रकार नहीं है?
+(A) कॉपी कंस्ट्रक्टर
+(B) फ्रेंड कंस्ट्रक्टर
+(C) डीफॉल्ट कंस्ट्रक्टर
+(D) पैरामीटराईज्ड कंस्ट्रक्टर
+
+34. How many types of polymorphisms are supported by C++?
+(A) 1
+(B) 2
+(C) 3
+(D) 4
+C++ कितने प्रकार के पॉलीमॉरफिज़्म का समर्थन करता है?
+(A) 1
+(B) 2
+(C) 3
+(D) 4
+
+35. ______ is an indirect measure of software development process.
+(A) Cost
+(B) Effort applied
+(C) Efficiency
+(D) All of the mentioned
+इनमें से सॉफ्टवेयर विकास प्रक्रिया का एक अप्रत्यक्ष माप क्या है?
+(A) कीमत
+(B) प्रयास लागू
+(C) क्षमता
+(D) उपरोक्त सभी
+
+36. What is the another name for the circular queue among the following options?
+(A) Square buffer
+(B) Rectangle buffer
+(C) Ring buffer
+(D) None of the above
+निम्नलिखित विकल्पों में से सर्कुलर क्यू का दूसरा नाम क्या है?
+(A) वर्ग बफर
+(B) आयत बफर
+(C) रिंग बफर
+(D) उपरोक्त में से कोई नहीं
+
+37. ______ specification is also known as SRS document.
+(A) White box
+(B) Grey box
+(C) Black box
+(D) None of the mentioned
+______ विनिर्देश को दस्तावेज़ के SRS रूप में भी जाना जाता है।
+(A) सफेद बॉक्स
+(B) ग्रे बॉक्स
+(C) ब्लैक बॉक्स
+(D) इनमें से कोई नही
+
+38. Which of the following principle does queue use?
+(A) LIFO principle
+(B) FIFO principle
+(C) Linear tree
+(D) Ordered array
+क्यू निम्नलिखित में से किस सिद्धांत का प्रयोग करता है?
+(A) LIFO सिद्धांत
+(B) FIFO सिद्धांत
+(C) लीनियर ट्री
+(D) ऑर्डर्ड अरे
+
+39. Quantizing noise occurs in -
+(A) PCM
+(B) TDM
+(C) FDM
+(D) PPM
+परिमाणीकरण शोर होता है -
+(A) PCM में
+(B) TDM में
+(C) FDM में
+(D) PPM में
+
+40. Register renaming is done in pipelined processors -
+(A) As an alternative to register allocation at compile time
+(B) For efficient access to function parameters and local variables
+(C) To handle certain kind of hazards
+(D) As part of address translation
+पाइपलाइन्ड प्रोसेसर में रजिस्टर का नामकरण किया जाता है -
+(A) संकलन समय पर आवंटन दर्ज करने के विकल्प के रूप में
+(B) फंक्शन पैरामीटर और स्थानीय चर के कुशल उपयोग के लिए
+(C) कुछ प्रकार के खतरों से निपटने के लिए
+(D) पता अनुवाद के भाग के रूप में
+
+41. Which of the following is the default authentication mode for IIS?
+(A) Anonymous
+(B) Windows
+(C) Basic authentication
+(D) None of these
+निम्नलिखित में से कौन सा IIS का default authentication mode है?
+(A) Anonymous
+(B) Windows
+(C) Basic authentication
+(D) इनमें से कोई नही
+
+42. What is the correct HTML for creating a hyperlink?
+(A) <a name=""> A </a>
+(B) <a> B </a>
+(C) <a href="http://www.example.com">example</a>
+(D) <a url="http://www.example.com">example</a>
+हाइपरलिंक बनाने के लिए सही HTML क्या है?
+(A) <a name=""> A </a>
+(B) <a> B </a>
+(C) <a href="http://www.example.com">example</a>
+(D) <a url="http://www.example.com">example</a>
+
+43. To match the specific XML elements child like of parent element is the syntax will be -
+(A) <xsl:template match = "PLANET_NAME">
+(B) <xsl:template match = "PLANET/NAME">
+(C) <xsl:template match = "NAME">
+(D) <xsl:template match = "//">
+विशिष्ट XML तत्वों से मेल खाने के लिए बच्चे की तरह मूल तत्व का सिंटेक्स होगा -
+(A) <xsl:template match = "PLANET_NAME">
+(B) <xsl:template match = "PLANET/NAME">
+(C) <xsl:template match = "NAME">
+(D) <xsl:template match = "//">
+
+44. Which of the following statements are true?
+I. Shortest Remaining Time First(SRTF) scheduling may cause starvation.
+II. Preemptive scheduling may cause starvation.
+III. Round robin is better than FCFS in terms of response time.
+(A) I only
+(B) I & III only
+(C) II and III only
+(D) I, II and III
+निम्नलिखित में से कौन से कथन सत्य हैं?
+I. सबसे कम शेष समय पहले (SRTF) शेड्यूलिंग से स्टार्वेशन हो सकती है।
+II. प्रीएम्प्टिव शेड्यूलिंग से स्टार्वेशन हो सकती है।
+III. प्रतिक्रिया समय के मामले में राउंड रॉबिन FCFS से बेहतर है।
+(A) केवल I
+(B) केवल I और III
+(C) केवल II और III
+(D) I, II और III
+
+45. If the channel band is limited to 6 kHz and signal to noise ratio is 16, what would be the capacity of channel?
+(A) 15.15 kbps
+(B) 24.74 kbps
+(C) 30.12 kbps
+(D) 52.18 kbps
+यदि चैनल 6 kHz तक सीमित है और सिग्नल से शोर अनुपात 16 है, तो चैनल की क्षमता क्या होगी?
+(A) 15.15 kbps
+(B) 24.74 kbps
+(C) 30.12 kbps
+(D) 52.18 kbps
+
+46. Which type of channel does not represent any correlation between input and output symbols?
+(A) Noiseless channel
+(B) Lossless channel
+(C) Useless channel
+(D) Deterministic channel
+किस प्रकार का चैनल इनपुट और आउटपुट प्रतीकों के बीच किसी भी संबंध का प्रतिनिधित्व नहीं करता है?
+(A) नीरव चैनल
+(B) दोषरहित चैनल
+(C) बेकार चैनल
+(D) नियतात्मक चैनल
+
+47. What will be the path loss in dB for an open air site?
+(A) -8.27 dB
+(B) -80.27 dB
+(C) 80.27 dB
+(D) 8.27 dB
+एक ओपन एयर साइट के लिए dB में पथ हानि क्या होगी?
+(A) -8.27 dB
+(B) -80.27 dB
+(C) 80.27 dB
+(D) 8.27 dB
+
+48. Which of the following values is the correct value of this hexadecimal code 1F.01B?
+(A) 35.0065918
+(B) 32.0065918
+(C) 31.0065918
+(D) 30.0065918
+निम्नलिखित में से कौनसा मान इस हेक्साडेसिमल कोड 1F.01B का सही मान है?
+(A) 35.0065918
+(B) 32.0065918
+(C) 31.0065918
+(D) 30.0065918
+
+49. The decimal equivalent of binary number 0.0111 is -
+(A) 4.375
+(B) 0.4375
+(C) 0.5375
+(D) -0.4375
+0.0111 बाइनरी नंबर का डेसिमल समकक्ष क्या है?
+(A) 4.375
+(B) 0.4375
+(C) 0.5375
+(D) -0.4375
+
+50. Machine learning is a field of artificial intelligence consisting of learning algorithms that -
+(A) Improve their performance
+(B) At executing some task
+(C) Over time with experience
+(D) All of the above
+मशीन लर्निंग आर्टिफिशियल इंटेलिजेंस का क्षेत्र है जिसमें लर्निंग एल्गोरिथम शामिल है, जो -
+(A) उनके प्रदर्शन में सुधार करता है
+(B) किसी कार्य को करने पर
+(C) समय के साथ अनुभव के साथ
+(D) उपरोक्त सभी
+
+51. Which of the following is a type of computer architecture and its subcategories?
+(A) Von Neumann and micro architecture
+(B) Instruction set architecture
+(C) System design
+(D) All of the mentioned
+निम्नलिखित में कौन एक प्रकार का कम्प्यूटर आर्किटेक्चर और इसकी उप श्रेणियाँ हैं -
+(A) वॉनन्यूमेन और माइक्रो आर्किटेक्चर
+(B) इन्सट्रक्शन सेट आर्किटेक्चर
+(C) सिस्टम डिजाइन
+(D) उपरोक्त सभी
+
+52. The postfix form of the expression (A+B)*(C*D-E)*F/G, is -
+(A) AB+CD*E-FG/**
+(B) AB+CD*E-F**G/
+(C) AB+CD*E-*F*G/
+(D) AB+CDE*-*F*G/
+व्यंजक (A+B)*(C*D-E)*F/G का उपसर्ग रूप है -
+(A) AB+CD*E-FG/**
+(B) AB+CD*E-F**G/
+(C) AB+CD*E-*F*G/
+(D) AB+CDE*-*F*G/
+
+53. Which of the following architecture is suitable for a wide range of data types?
+(A) IA-32
+(B) ARM
+(C) ASUS firebird
+(D) 68000
+निम्न में से कौन सा आर्किटेक्चर डेटा टाईप्स के विस्तृत श्रृंखला के लिए है?
+(A) IA-32
+(B) ARM
+(C) ASUS firebird
+(D) 68000
+
+54. In Wi-Fi security, which of the following protocol is more used?
+(A) WPA
+(B) WPA2
+(C) WPS
+(D) Both (A) and (C)
+Wi-Fi सुरक्षा में, निम्न में से कौन सा प्रोटोकॉल अधिक उपयोग में आता है?
+(A) WPA
+(B) WPA2
+(C) WPS
+(D) (A) एवं (C) दोनों
+
+55. In which steps of SDLC actual programming of software code is done?
+(A) Development and documentation
+(B) Maintenance and evaluation
+(C) Design
+(D) Analysis
+SDLC के किस चरण में सॉफ्टवेयर कोड की वास्तविक प्रोग्रामिंग की जाती है?
+(A) विकास और प्रलेखन
+(B) रख-रखाव और मूल्यांकन
+(C) डिजाइन
+(D) विश्लेषण (Analysis)
+
+56. Which of the following is a first computer virus?
+(A) Sasser
+(B) Blaster
+(C) Creeper
+(D) Both (A) and (C)
+इनमें से कौन सा प्रथम कम्प्यूटर वायरस है?
+(A) Sasser
+(B) Blaster
+(C) Creeper
+(D) (A) तथा (C) दोनों
+
+57. Which one of the following errors will be handled by the operating system?
+(A) Lack of paper in printer
+(B) Connection failure in the network
+(C) Power failure
+(D) All of the above
+इनमें से कौन-सा एरर ऑपरेटिंग सिस्टम सम्भालता है?
+(A) प्रिंटर में पेपर की कमी
+(B) नेटवर्क में कनेक्शन का फेल हो जाना
+(C) पावर फेलियर
+(D) उपरोक्त सभी
+
+58. Consider the following in the context of internet -
+Column-I
+(P) Vint Cerf
+(Q) Mark Zuckerberg
+(R) Larry Page
+Column-II
+1. Facebook
+2. Google
+3. Internet
+Match column-I and column-II -
+(A) P-2, Q-1, R-3
+(B) P-1, Q-3, R-2
+(C) P-3, Q-2, R-1
+(D) P-3, Q-1, R-2
+इंटरनेट के संदर्भ में निम्न पर विचार करें -
+स्तम्भ-I
+(P) विन्ट सेर्फ
+(Q) मार्क जुकरबर्ग
+(R) लैरी पेज
+स्तम्भ-II
+1. फेसबुक
+2. गूगल
+3. इंटरनेट
+स्तम्भ-I तथा स्तम्भ-II का मिलान करें -
+(A) P-2, Q-1, R-3
+(B) P-1, Q-3, R-2
+(C) P-3, Q-2, R-1
+(D) P-3, Q-1, R-2
+
+59. Reverse polish notation for infix expression (A+B)*C-D/E will be -
+(A) -*+ABC/DE
+(B) AB+CD-*E/
+(C) AB+C*DE-/
+(D) AB+C*DE/-
+इनफिक्स व्यंजक (A+B)*C-D/E का रिवर्स पॉलिश नोटेशन होगा -
+(A) -*+ABC/DE
+(B) AB+CD-*E/
+(C) AB+C*DE-/
+(D) AB+C*DE/-
+
+60. In context of internet consider the following -
+Column-I
+(P) DUCKDUCKGO
+(Q) FIREFOX
+(R) SKYPE
+Column-II
+1. Browser
+2. Video conferencing
+3. Search engine
+Which of the following is correct match of column-I and column-II?
+(A) P-1, Q-3, R-2
+(B) P-2, Q-1, R-3
+(C) P-3, Q-1, R-2
+(D) P-3, Q-2, R-1
+इंटरनेट के संदर्भ में निम्न पर विचार करें
+स्तम्भ-I
+(P) DUCKDUCKGO
+(Q) FIREFOX
+(R) SKYPE
+स्तम्भ-II
+1. ब्राउज़र
+2. विडियो कांफ्रेसिंग
+3. सर्च इंजन
+निम्न में से कौन सा स्तम्भ I तथा स्तम्भ II का सुमेल है?
+(A) P-1, Q-3, R-2
+(B) P-2, Q-1, R-3
+(C) P-3, Q-1, R-2
+(D) P-3, Q-2, R-1
+
+61. Which of the following is an offline Messaging App?
+(A) Vojer
+(B) Bing
+(C) Yandex
+(D) Lycos
+निम्न में से कौन सा एक ऑफलाइन मैसेजिंग एप है?
+(A) Vojer
+(B) Bing
+(C) Yandex
+(D) Lycos
+
+62. Let relation R2 has a 'foreign key' that refers to primary key of relation R1. Which of the following operation may cause violation of referential integrity constraints?
+(A) Insertion of new tuple into R2
+(B) Deletion of tuple from R1
+(C) Both option (A) and option (B)
+(D) Neither option (A) nor option (B)
+माना रिलेशन R2 की एक 'फॉरेन की' है जो रिलेशन R1 की प्राथमिक की से संदर्भित है। निम्न में से कौन सा ऑपरेशन संदर्भ समग्रता बंध्यकारकों का उल्लंघन कर सकता है?
+(A) R2 में नए टपल का प्रविष्ठिकरण
+(B) R1 से टपल को हटाना
+(C) विकल्प (A) तथा विकल्प (B) दोनों
+(D) न तो विकल्प (A) और ना ही विकल्प (B)
+
+63. In K-Map, those groups which cover at least one minterm that can't be covered by any other prime implicant is called-
+(A) Prime Implicit
+(B) Essential Prime Implicit
+(C) Redundant Prime Implicit
+(D) Selective Prime Implicit
+K-Map में वे ग्रुप जो कम से कम एक मिनटर्म को कवर करते हैं जिसे किसी अन्य Prime Implicant द्वारा कवर नहीं किया जा सकता है, ______ कहलाते हैं।
+(A) प्राइम इंप्लिसिट
+(B) असेंशियल प्राइम इंप्लिसिट
+(C) रिडन्डेंट प्राइम इंप्लिसिट
+(D) सेलेक्टिव प्राइम इंप्लिसिट
+
+64. Cascading termination refers to a termination of all child processes, if the parent process terminates -
+(A) normally or abnormally
+(B) abnormally
+(C) normally
+(D) None of the mentioned
+कैस्केडिंग टर्मिनेशन सभी चाइल्ड प्रोसेस की समाप्ति को संदर्भित करता है, यदि पैरेन्ट प्रोसेस खत्म हो जाती है -
+(A) सामान्य या असामान्य रूप से
+(B) असामान्य रूप से
+(C) सामान्य रूप से
+(D) उपरोक्त कोई नहीं
+
+65. Binary Coded Decimal (BCD) numbers express each digit in a -
+(A) Bit
+(B) Byte
+(C) Nibble
+(D) All of the above
+बाइनरी कोडेड दशमलव (BCD) संख्याएं प्रत्येक अंक को किसमें व्यक्त करती हैं?
+(A) Bit
+(B) Byte
+(C) Nibble
+(D) उपरोक्त सभी
+
+66. Which of the following format specifiers can be used to read floating type values, in C programming?
+(A) % e
+(B) % f
+(C) % g
+(D) All options are correct
+C प्रोग्रामिंग में फ्लोटिंग टाईप की वैल्यूज़ को पढ़ने के लिए निम्न में से कौन से फॉर्मेट स्पेसिफायर्स प्रयुक्त किए जा सकते हैं?
+(A) % e
+(B) % f
+(C) % g
+(D) सभी विकल्प सही हैं
+
+67. The use of technology to enhance learning process is called ______ in education.
+(A) IT
+(B) ICT
+(C) Information Technique
+(D) Communication Technology
+सीखने की प्रक्रिया को बढ़ाने के लिए प्रौद्योगिकी के उपयोग को कौन सी शिक्षा कहा जाता है?
+(A) IT
+(B) ICT
+(C) Information Technique (सूचना तकनीक)
+(D) Communication Technology (संचार तकनीकी)
+
+68. Register is a group of -
+(A) Flip-Flop
+(B) OR gate
+(C) AND gate
+(D) None of these
+रजिस्टर किसका समूह है?
+(A) Flip-Flop
+(B) OR gate
+(C) AND gate
+(D) कोई नहीं
+
+69. The word which describes the importance of software design is -
+(A) Complexity
+(B) Quality
+(C) Efficiency
+(D) Accuracy
+वह कौन सा शब्द है जो सॉफ्टवेयर डिज़ाइन के महत्त्व का वर्णन करता है?
+(A) जटिलता
+(B) गुणवत्ता
+(C) क्षमता
+(D) शुद्धता
+
+70. What is the port number of the HTTP?
+(A) 80
+(B) 25
+(C) 20/21
+(D) 23
+HTTP का पोर्ट नंबर क्या है?
+(A) 80
+(B) 25
+(C) 20/21
+(D) 23
+
+71. ARP stands for -
+(A) Address Routing Protocol
+(B) Address Routing Packet
+(C) Address Resolution Protocol
+(D) Address Routing Program
+ARP का पूर्ण रूप है -
+(A) एड्रेस राउटिंग प्रोटोकॉल
+(B) एड्रेस राउटिंग पैकेट
+(C) एड्रेस रिज़ॉल्यूशन प्रोटोकॉल
+(D) एड्रेस राउटिंग प्रोग्राम
+
+72. Secure Hash Algorithm-1 (SHA-1) has a message digest of -
+(A) 160 bits
+(B) 512 bits
+(C) 628 bits
+(D) 820 bits
+सिक्योर हैश एल्गोरिथम-1 (SHA-1) का संदेश डाइजेस्ट है -
+(A) 160 बिट्स
+(B) 512 बिट्स
+(C) 628 बिट्स
+(D) 820 बिट्स
+
+73. GSM technology was a standard developed by -
+(A) United Kingdom
+(B) United States
+(C) Europe
+(D) Australia
+GSM तकनीक किसके द्वारा विकसित किया गया था?
+(A) यूनाइटेड किंगडम
+(B) संयुक्त राज्य
+(C) यूरोप
+(D) ऑस्ट्रेलिया
+
+74. IPv4 address have a size of -
+(A) 32 bit
+(B) 64 bit
+(C) 128 bit
+(D) 256 bit
+IPv4 पते का साइज़ होता है -
+(A) 32 बिट
+(B) 64 बिट
+(C) 128 बिट
+(D) 256 बिट
+
+75. A proxy firewall filter works at -
+(A) Physical layer
+(B) Data link layer
+(C) Network layer
+(D) Application layer
+एक प्रॉक्सी फायरवॉल फिल्टर किस पर काम करता है?
+(A) फिजिकल लेयर
+(B) डेटा लिंक लेयर
+(C) नेटवर्क लेयर
+(D) एप्लीकेशन लेयर
+
+76. Global Positioning System uses -
+(A) CDMA
+(B) SDMA
+(C) FDMA
+(D) TDMA
+ग्लोबल पोज़िशनिंग सिस्टम उपयोग करता है -
+(A) CDMA
+(B) SDMA
+(C) FDMA
+(D) TDMA
+
+77. Software Quality Assurance (SQA) encompasses -
+(A) Verification
+(B) Validation
+(C) Both (A) and (B)
+(D) None of the above
+सॉफ्टवेयर गुणवत्ता आश्वासन (SQA) में शामिल है -
+(A) सत्यापन
+(B) मान्यता
+(C) (A) और (B) दोनों
+(D) उपरोक्त में नहीं
+
+78. Which feature of OOP boost the code reusability?
+(A) Encapsulation
+(B) Polymorphism
+(C) Inheritance
+(D) Abstraction
+OOP की कौन सी विशेषता कोड पुनः प्रयोज्य को बढ़ावा देती है?
+(A) एनकेपसुलेशन
+(B) पॉलीमॉरफिज़्म
+(C) इनहेरिटेन्स
+(D) एब्सट्रेक्शन
+
+79. DHTML is not a standardized language for which company?
+(A) Microsoft
+(B) Oracle
+(C) W3 schools
+(D) Facebook
+DHTML किस कंपनी के लिए मानकीकृत भाषा नहीं है?
+(A) Microsoft
+(B) Oracle
+(C) W3 schools
+(D) Facebook
+
+80. If we implement heap as maximum heap, adding a new node of value 15 to the left most node of right subtree, what value will be at leaf nodes of the right subtree of the heap?
+[Figure: A binary tree structure with root node 100. The left child of 100 is 19, and the right child is 36. The left child of 19 is 17, and the right child is 3. The left child of 36 is 25, and the right child is 1. The left child of 17 is 2, and the right child is 7.]
+(A) 15 and 1
+(B) 25 and 1
+(C) 3 and 1
+(D) 2 and 3
+यदि हम हीप को अधिकतम हीप के रूप में लागू करते हैं, मान 15 का नया नोड दाएं उपट्री के सबसे बाएं नोड में जोड़ते हैं, तो हीप के दाहिने उपट्री के लीफ नोड्स पर क्या मूल्य होगा?
+(A) 15 और 1
+(B) 25 और 1
+(C) 3 और 1
+(D) 2 और 3
+
+81. Which of the following is not a symmetric key cryptography algorithm?
+(A) RC4
+(B) Blowfish
+(C) Diffie-Hellman
+(D) DES
+निम्नलिखित में से कौन एक symmetric key cryptography एल्गोरिथम नहीं है?
+(A) RC4
+(B) Blowfish
+(C) Diffie-Hellman
+(D) DES
+
+82. Which method is used for both error detection and error correction method in computer networking?
+(A) Single Parity Check
+(B) Hamming Distance
+(C) Cyclic Redundancy Check (CRC)
+(D) Checksum
+कम्प्यूटर नेटवर्किंग में किस विधि का उपयोग एरर डिटेक्शन एवं एरर करेक्शन दोनों के लिए किया जाता है?
+(A) सिंगल पैरिटी चैक
+(B) हैमिंग डिस्टेंस
+(C) साइक्लिक रिडन्डेंसी चैक
+(D) चैकसम
+
+83. Select the false statement about CDMA technology -
+I. CDMA technology optimizes the use of available bandwidth as it transmits over the entire frequency range.
+II. Each user in a CDMA system uses a different code to modulate their signal.
+III. CDMA technology offers less security as compared to the GSM technology.
+IV. A SIM card is always required for the working of a CDMA device.
+(A) Only (I)
+(B) Only (II)
+(C) (I) and (II)
+(D) (III) and (IV)
+CDMA तकनीक के बारे में गलत कथन का चयन करें -
+I. CDMA तकनीक उपलब्ध bandwidth के उपयोग को Optimize करती है क्योंकि यह संपूर्ण आवृत्ति रेंज पर प्रसारित होती है।
+II. CDMA सिस्टम में प्रत्येक उपयोगकर्ता अपने सिग्नल को संशोधित करने के लिए एक अलग कोड का उपयोग करता है।
+III. CDMA तकनीक GSM तकनीक की तुलना में कम सुरक्षा प्रदान करती है।
+IV. CDMA डिवाइस के काम करने के लिए हमेशा एक सिम कार्ड की आवश्यकता होती है।
+(A) केवल (I)
+(B) केवल (II)
+(C) (I) एवं (II)
+(D) (III) एवं (IV)
+
+84. An entity is represented by set of -
+(A) Attributes
+(B) Relationship
+(C) Model
+(D) None
+एक इकाई को किस सेट द्वारा दर्शाया जाता है?
+(A) एट्रीब्यूट्स
+(B) रिलेशनशिप
+(C) मॉडल
+(D) कोई नहीं
+
+85. The correct sequence of HTML tags for starting a webpage is -
+(A) Head, Title, HTML, Body
+(B) HTML, Body, Title, Head
+(C) Head, Title, HTML, Body
+(D) HTML, Head, Title, Body
+वेब पेज शुरू करने के लिए एच.टी.एम.एल. (HTML) टैग का सही क्रम है -
+(A) Head, Title, HTML, Body
+(B) HTML, Body, Title, Head
+(C) Head, Title, HTML, Body
+(D) HTML, Head, Title, Body
+
+86. Which of the following document contains the user system requirement?
+(A) SRD
+(B) DDD
+(C) SDD
+(D) SRS
+इनमें से किस दस्तावेज में उपयोगकर्ता सिस्टम आवश्यकताएं शामिल हैं?
+(A) SRD
+(B) DDD
+(C) SDD
+(D) SRS
+
+87. The Knapsack problem where the objective function is to minimize the profit is -
+(A) Greedy
+(B) Dynamic 0/1
+(C) Back tracking
+(D) Branch & Bound
+नैपसैक समस्या जहाँ उद्देश्य कार्य लाभ को कम करना है -
+(A) Greedy
+(B) Dynamic 0/1
+(C) Back tracking
+(D) Branch & Bound
+
+88. What will be the output of the program?
+Public class test 2 {
+Public static void main (String[] args) {
+StringBuffer.S1 = new StringBuffer ("Complete");
+S1.setCharAt(1, 'i');
+S1.setCharAt(7, 'd');
+System.out.println (S1);
+}
+}
+(A) Complete
+(B) Iomplede
+(C) Cimpletd
+(D) Coipletd
+प्रोग्राम का आउटपुट क्या होगा?
+Public class test 2 {
+Public static void main(String[] args) {
+StringBuffer.S1 = new StringBuffer ("Complete");
+S1.setCharAt(1, 'i');
+S1.setCharAt(7, 'd');
+System.out.println (S1);
+}
+}
+(A) Complete
+(B) Iomplede
+(C) Cimpletd
+(D) Coipletd
+
+89. An advantage of chained hash table (external hashing) over the open addressing scheme is -
+(A) Worst case complexity of search operations is less
+(B) Space used is less
+(C) Deletion is easier
+(D) None of the above
+ओपन एड्रेसिंग स्कीम पर chained hash table का एक फायदा है -
+(A) खोज कार्यों की सबसे खराब स्थिति कम है
+(B) उपयोग की जाने वाली जगह कम है
+(C) हटाना आसान है
+(D) उपरोक्त में से कोई नहीं
+
+90. Which one of the following is an application of queue data structure?
+(A) When a resource is shared among multiple consumers
+(B) When data is transferred asynchronously between two processes
+(C) Load balancing
+(D) All of the above
+निम्नलिखित में से कौन सा queue डेटा संरचना का एक अनुप्रयोग है?
+(A) जब एक संसाधन कई उपभोक्ताओं के बीच साझा किया जाता है
+(B) जब डेटा दो प्रक्रियाओं के बीच अतुल्यकालिक रूप से स्थानांतरित किया जाता है
+(C) लोड बैलेंसिंग
+(D) उपरोक्त सभी
+
+91. In context of network security match the following -
+Column - I
+(P) Fabrication
+(Q) Modification
+(R) Interception
+Column-II
+1. Message confidentiality
+2. Message integrity
+3. Authentication
+(A) P-1, Q-3, R-2
+(B) P-2, Q-1, R-3
+(C) P-3, Q-1, R-2
+(D) P-3, Q-2, R-1
+नेटवर्क सिक्योरिटी के संदर्भ में मिलान करें -
+Column - I
+(P) फेब्रिकेशन
+(Q) मॉडीफिकेशन
+(R) इन्टरसैपशन
+Column-II
+1. मैसेज कॉन्फिडेन्शिएलिटी
+2. मैसेज इन्टीग्रीटी
+3. ऑथेन्टिकेशन
+(A) P-1, Q-3, R-2
+(B) P-2, Q-1, R-3
+(C) P-3, Q-1, R-2
+(D) P-3, Q-2, R-1
+
+92. CPU scheduling is the basis of -
+(A) Multiprograming operating system
+(B) Large memory sized systems
+(C) Multiprocessor systems
+(D) None of the mentioned
+सी.पी.यू. शेड्यूलिंग.......का मूल है।
+(A) मल्टीप्रोग्रामिंग ऑपरेटिंग प्रणाली
+(B) बड़ी आकार मेमोरी प्रणालियां
+(C) मल्टीप्रोसेसर प्रणालियां
+(D) उपरोक्त में से कोई नहीं
+
+93. Network devices _______ and _______ used at physical layer.
+(A) Gateway, Bridge
+(B) Router, Repeater
+(C) Hub, Switch
+(D) Repeater, Hub
+नेटवर्क डिवाइसेज _______ तथा _______ फिजीकल लेयर पर प्रयुक्त होते हैं।
+(A) गेटवे, ब्रिज
+(B) राउटर, रिपीटर
+(C) हब, स्विच
+(D) रिपीटर, हब
+
+94. Which of the following events is/are exposed by the Data table object?
+(A) RowChanged
+(B) ColumnChanged
+(C) RowChanging
+(D) All of the above
+निम्नलिखित में से कौन से इवेंट डेटा टेबल ऑब्जेक्ट द्वारा उजागर किए गए हैं?
+(A) RowChanged
+(B) ColumnChanged
+(C) RowChanging
+(D) उपरोक्त सभी
+
+95. 8's complement of (7650) is -
+(A) 0230
+(B) 0130
+(C) 1230
+(D) 3450
+(7650) का 8's complement है -
+(A) 0230
+(B) 0130
+(C) 1230
+(D) 3450
+
+96. Choose the correct statements -
+(i) Simplex reflex agents take decisions on the basis of the current percepts and past history.
+(ii) When uniqueness in the agents current state completely determines the next state of the agent, the environment is said to be deterministic.
+(iii) The environment is semi-dynamic if the environment itself does not change with the passage of time but the agent's performance score does.
+(A) (i) and (iii)
+(B) (i) and (ii)
+(C) (ii) and (iii)
+(D) All of the above
+सही कथनों का चयन कीजिए -
+(i) सिम्प्लेक्स रिफ्लेक्स एजेंट वर्तमान धारणा और पिछले इतिहास के आधार पर निर्णय लेते हैं।
+(ii) जब एजेंट की वर्तमान स्टेट की युनीकनेस से एजेंट की अगली स्टेट को पूरी तरह से डिटर्मिन किया जा सकता है, तो ऐसे एनवायरनमेंट को डिटर्मिनिस्टिक कहा जाता है।
+(iii) यदि समय के साथ एनवायरनमेंट नहीं बदलता है, लेकिन एजेंट का प्रदर्शन स्कोर में परिवर्तन होता है, तो इसे सेमी डायनामिक एनवायरनमेंट कहते हैं।
+(A) (i) और (iii)
+(B) (i) और (ii)
+(C) (ii) और (iii)
+(D) उपरोक्त सभी
+
+97. Which one of the following is the process of inserting an element in the stack?
+(A) Insert
+(B) Add
+(C) Push
+(D) None of the above
+निम्नलिखित में से कौन सी स्टैक में तत्त्व डालने की प्रक्रिया है?
+(A) Insert
+(B) Add
+(C) Push
+(D) उपरोक्त में से कोई नहीं
+
+98. Match the following -
+List - I
+A. Disk Scheduling
+B. Batch Processing
+C. Time Sharing
+D. Interrupt Processing
+List - II
+1. Round Robin
+2. Scan
+3. LIFO
+4. FIFO
+Code -
+(A) A-3, B-4, C-2, D-1
+(B) A-4, B-3, C-2, D-1
+(C) A-2, B-4, C-1, D-3
+(D) A-3, B-4, C-1, D-2
+निम्नलिखित को मिलाएं
+सूची-I
+A. डिस्क शेड्यूलिंग
+B. बैच प्रोसेसिंग
+C. टाइम शेयरिंग
+D. इंटर्रप्ट प्रोसेसिंग
+सूची-II
+1. राउंड रॉबिन
+2. स्कैन
+3. LIFO
+4. FIFO
+कोड -
+(A) A-3, B-4, C-2, D-1
+(B) A-4, B-3, C-2, D-1
+(C) A-2, B-4, C-1, D-3
+(D) A-3, B-4, C-1, D-2
+
+99. For defining the best time complexity, let f(n)=log(n) and g(n) = \sqrt{n},
+(A) f(n) \in \Omega(g(n)), but g(n) \notin \Omega(f(n))
+(B) f(n) \notin \Omega(g(n)), but g(n) \in \Omega(f(n))
+(C) f(n) \notin \Omega(g(n)), and g(n) \notin \Omega(f(n))
+(D) f(n) \in \Omega(g(n)), and g(n) \in \Omega(f(n))
+बेस्ट टाइम कॉम्प्लेक्सिटी को डिफाइन करने के लिए मान लीजिए f(n)=log(n) and g(n)=\sqrt{n},
+(A) f(n) \in \Omega(g(n)), but g(n) \notin \Omega(f(n))
+(B) f(n) \notin \Omega(g(n)), but g(n) \in \Omega(f(n))
+(C) f(n) \notin \Omega(g(n)), and g(n) \notin \Omega(f(n))
+(D) f(n) \in \Omega(g(n)), and g(n) \in \Omega(f(n))
+
+100. Which of these is fault base testing technique?
+(A) Stress testing
+(B) Unit testing
+(C) Beta testing
+(D) Mutation testing
+निम्न में से कौन सी फॉल्ट बेस्ड टैस्टिंग का तरीका है?
+(A) स्ट्रैस टैस्टिंग
+(B) यूनिट टैस्टिंग
+(C) बीटा टैस्टिंग
+(D) म्यूटेशन टैस्टिंग

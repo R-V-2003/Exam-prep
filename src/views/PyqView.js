@@ -1,4 +1,4 @@
-import { fallbackTests } from '../data/fallbackTests.js';
+import { supabaseService } from '../services/supabase.js';
 
 export class PyqView {
   constructor(onStartExam) {
@@ -27,7 +27,7 @@ export class PyqView {
               <div style="font-size: 0.8rem; color: var(--text-secondary);">
                 <i class="far fa-clock" style="margin-right: 4px;"></i> 120 Mins &bull; <i class="far fa-file-alt" style="margin-right: 4px;"></i> 100 Qs
               </div>
-              <button class="glow-btn start-pyq-btn" data-type="BCI_I" data-title="2022 Basic Computer Instructor - Paper I" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 8px;">
+              <button class="glow-btn start-pyq-btn" data-db="Basic - Paper I" data-title="2022 Basic Computer Instructor - Paper I" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 8px;">
                 <i class="fas fa-play" style="font-size: 0.7rem; margin-right: 5px;"></i> Start Exam
               </button>
             </div>
@@ -46,7 +46,7 @@ export class PyqView {
               <div style="font-size: 0.8rem; color: var(--text-secondary);">
                 <i class="far fa-clock" style="margin-right: 4px;"></i> 120 Mins &bull; <i class="far fa-file-alt" style="margin-right: 4px;"></i> 100 Qs
               </div>
-              <button class="glow-btn start-pyq-btn" data-type="BCI_II" data-title="2022 Basic Computer Instructor - Paper II" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 8px; background: var(--cyan-gradient); box-shadow: 0 4px 15px rgba(0, 242, 254, 0.15);">
+              <button class="glow-btn start-pyq-btn" data-db="Basic - Paper II" data-title="2022 Basic Computer Instructor - Paper II" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 8px; background: var(--cyan-gradient); box-shadow: 0 4px 15px rgba(0, 242, 254, 0.15);">
                 <i class="fas fa-play" style="font-size: 0.7rem; margin-right: 5px;"></i> Start Exam
               </button>
             </div>
@@ -65,7 +65,7 @@ export class PyqView {
               <div style="font-size: 0.8rem; color: var(--text-secondary);">
                 <i class="far fa-clock" style="margin-right: 4px;"></i> 120 Mins &bull; <i class="far fa-file-alt" style="margin-right: 4px;"></i> 100 Qs
               </div>
-              <button class="glow-btn start-pyq-btn" data-type="BCI_I" data-title="2022 Senior Computer Instructor - Paper I" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 8px;">
+              <button class="glow-btn start-pyq-btn" data-db="Senior - Paper I" data-title="2022 Senior Computer Instructor - Paper I" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 8px;">
                 <i class="fas fa-play" style="font-size: 0.7rem; margin-right: 5px;"></i> Start Exam
               </button>
             </div>
@@ -84,7 +84,7 @@ export class PyqView {
               <div style="font-size: 0.8rem; color: var(--text-secondary);">
                 <i class="far fa-clock" style="margin-right: 4px;"></i> 120 Mins &bull; <i class="far fa-file-alt" style="margin-right: 4px;"></i> 100 Qs
               </div>
-              <button class="glow-btn start-pyq-btn" data-type="BCI_II" data-title="2022 Senior Computer Instructor - Paper II" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 8px; background: var(--cyan-gradient); box-shadow: 0 4px 15px rgba(0, 242, 254, 0.15);">
+              <button class="glow-btn start-pyq-btn" data-db="Senior - Paper II" data-title="2022 Senior Computer Instructor - Paper II" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 8px; background: var(--cyan-gradient); box-shadow: 0 4px 15px rgba(0, 242, 254, 0.15);">
                 <i class="fas fa-play" style="font-size: 0.7rem; margin-right: 5px;"></i> Start Exam
               </button>
             </div>
@@ -98,20 +98,34 @@ export class PyqView {
 
   attachEvents(container) {
     container.querySelectorAll('.start-pyq-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const type = btn.getAttribute('data-type');
+      btn.addEventListener('click', async () => {
+        const dbType = btn.getAttribute('data-db');
         const title = btn.getAttribute('data-title');
         
-        // Load the actual real questions pool from fallbackTests
-        const questionsList = fallbackTests[type] || [];
+        // Show loading state
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+        btn.disabled = true;
         
-        if (questionsList.length === 0) {
-          alert("Error: could not load historical paper questions.");
-          return;
-        }
+        try {
+          // Load the actual real questions pool from Supabase
+          const questionsList = await supabaseService.getFullPaper(dbType);
+          
+          if (!questionsList || questionsList.length === 0) {
+            alert("Error: could not load historical paper questions. They might not be available yet.");
+            return;
+          }
 
-        // Full-length papers receive 120 minutes (2.0 hours) as per RSSB guidelines
-        this.onStartExam(questionsList, 120, title);
+          // Full-length papers receive 120 minutes (2.0 hours) as per RSSB guidelines
+          this.onStartExam(questionsList, 120, title);
+        } catch (e) {
+          console.error(e);
+          alert("Error loading paper.");
+        } finally {
+          // Restore button
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+        }
       });
     });
   }

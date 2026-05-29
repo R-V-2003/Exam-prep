@@ -1,0 +1,1319 @@
+1. Which type of research can be done for the solution of problem related to understanding of difficult concepts in the class?
+(A) Case study
+(B) Action research
+(C) Interaction analysis
+(D) Fundamental research
+कक्षा में किसी भी विषय से संबंधित कठिन अवधारणाओं को समझने संबंधी समस्याओं को तुरंत हल करने के लिए किस प्रकार का शोध किया जा सकता है?
+(A) केस स्टडी
+(B) क्रियात्मक शोध
+(C) अन्तः क्रिया विश्लेषण
+(D) आधारभूत अनुसंधान
+
+2. To increase the "Critical thinking" ability among students, which of the following teaching method is most effective?
+(A) Project based teaching learning
+(B) Lecture method
+(C) Lecture cum demonstration method
+(D) Inductive-deductive method
+विद्यार्थियों में 'समीक्षात्मक चिंतन' को बढ़ाने के लिए, निम्नलिखित में कौन सी विधि सबसे अधिक प्रभावशाली है?
+(A) प्रोजेक्ट आधारित शिक्षण अधिगम
+(B) व्याख्यान विधि
+(C) व्याख्यान सह प्रदर्शन विधि
+(D) आगमन-निगमन विधि
+
+3. You have realised that two students of your class always create a problem in classroom management. What efforts would be made by you?
+(A) Ask them to stand at the back in the class and punish them
+(B) Observe them continuously by assigning them small projects
+(C) Give no attention on them
+(D) Ask them to go out of the class
+आपके ध्यान में आया कि आपकी कक्षा के दो विद्यार्थी ऐसे हैं जिनके कारण कक्षा प्रबंधन में कठिनाई आती है। आप क्या कदम उठायेंगे?
+(A) कक्षा में उन्हें पीछे खड़ा कर सजा देंगे
+(B) उन्हें छोटे-छोटे प्रोजेक्ट देकर उनका लगातार अवलोकन करेंगे
+(C) उन पर कोई ध्यान नहीं देंगे
+(D) उन्हें कक्षा से बाहर कर देंगे
+
+4. What are the applications of "Essay Questions"?
+(A) Check person's ability to make comparison
+(B) Apply principles of new situations
+(C) Communication of ideas
+(D) All of the above
+"निबंधात्मक प्रश्नों" का अनुप्रयोग निम्न में से किसकी जाँच हेतु किया जाता है?
+(A) तुलना करने हेतु व्यक्ति की योग्यता की जाँच हेतु
+(B) सिद्धांतों का नयी परिस्थिति में अनुप्रयोग
+(C) विचारों के सम्प्रेषण हेतु
+(D) उपरोक्त सभी
+
+5. Sneha correctly remembers that her father's birthday is before 16th June but after 11th June whereas, her younger brother correctly remembers that their father's birthday is after 13th June but before 18th June and her elder brother correctly remembers that their father's birthday is on an even date. On what date in June, is definitely their father's birthday?
+(A) 16th
+(B) 12th
+(C) 14th
+(D) Data inadequate
+स्नेहा को ठीक से याद है कि उसके पिता का जन्मदिन 16 जून से पहले लेकिन 11 जून के बाद है जबकि, उसके छोटे भाई को ठीक से याद है कि उनके पिता का जन्मदिन 13 जून के बाद लेकिन 18 जून से पहले है और उसके बड़े भाई को ठीक से याद है कि उनके पिता का जन्मदिन एक सम तारीख को है। जून में किस तारीख को निश्चित रूप से उनके पिता का जन्मदिन है?
+(A) 16
+(B) 12
+(C) 14
+(D) तथ्य अपर्याप्त
+
+6. P, Q, R, S, T and U are sitting in a row facing North. R is sitting between P and T, S is not at the end. Q is sitting immediate right to T, U is not at the right end. Then who is immediate left of R?
+(A) P
+(B) Q
+(C) S
+(D) T
+P, Q, R, S, T और U एक पंक्ति में उत्तर दिशा की ओर मुँह करके बैठे हुए हैं। R, P और T के बीच बैठा है। S अंतिम छोर पर नहीं है। Q, T के एकदम दायीं ओर बैठा है, U दायीं छोर पर नहीं है। R के एकदम बायीं ओर कौन है?
+(A) P
+(B) Q
+(C) S
+(D) T
+
+7. Which conclusion can be drawn from the given statements?
+Statements: (A) Teaching is an art.
+(B) Drawing is also an art
+Conclusions: (I) All artists are teachers.
+(II) All artists know to draw pictures.
+(A) Only conclusion (I) follows
+(B) Only conclusion (II) follows
+(C) Neither conclusion (I) nor (II) follows
+(D) Both conclusion (I) and (II) follows
+दिए गए कथनों में से कौन सा निष्कर्ष निकाला जा सकता है?
+कथन: (A) शिक्षण एक कला है।
+(B) चित्र बनाना भी एक कला है।
+निष्कर्ष: (I) सभी कलाकार शिक्षक हैं।
+(II) सभी कलाकार चित्र बनाना जानते हैं।
+(A) केवल निष्कर्ष (I) अनुसरण करता है
+(B) केवल निष्कर्ष (II) अनुसरण करता है
+(C) न तो निष्कर्ष (I) और ना ही (II) अनुसरण करता है
+(D) निष्कर्ष (I) और (II) दोनों अनुसरण करते हैं
+
+8. Study the following Pie-chart and the table. Answer the question based on them.
+[Figure: A pie chart showing "Books in bad condition" by language: Tamil 27%, Kannada 23%, English 20%, Telugu 16%, Hindi 14%. Alongside it is a table showing "Percentage of total books in library": Kannada 2%, English 1%, Hindi 6%, Telugu 4%, Tamil 8%.]
+If the number of Kannada books in bad condition is 92, then total number of English books in the library will be :
+यदि क्षतिग्रस्थ कन्नड़ पुस्तकों की संख्या 92 है, तो पुस्तकालय में अंग्रेजी पुस्तकों की कुल संख्या होगी -
+(A) 1200
+(B) 1600
+(C) 4800
+(D) 4000
+
+9. If P x Q means P is the brother of Q, P ÷ Q means P is the son of Q and P + Q means P is the sister of Q, then P is the nephew of Q can be represented as -
+(A) P x R ÷ Q
+(B) P + R x Q ÷ R
+(C) P ÷ R x P + R
+(D) P ÷ R + Q
+यदि P x Q का अर्थ है P, Q का भाई है, P ÷ Q का अर्थ है P, Q का बेटा है एवं P + Q का अर्थ है P, Q की बहन है, तो P, Q का भांजा है, को कैसे व्यक्त किया जा सकता है?
+(A) P x R ÷ Q
+(B) P + R x Q ÷ R
+(C) P ÷ R x P + R
+(D) P ÷ R + Q
+
+10. Find the wrong term of the following number series -
+325, 259, 204, 160, 125, 105, 94
+(A) 259
+(B) 204
+(C) 160
+(D) 125
+निम्न संख्या श्रेणी का गलत पद ज्ञात कीजिए
+325, 259, 204, 160, 125, 105, 94
+(A) 259
+(B) 204
+(C) 160
+(D) 125
+
+11. If 'air' is called 'green', 'green' is called 'red', 'red' is called 'sea', 'sea' is called 'blue', 'blue' is called 'water' and 'water' is called 'pink', then what is the colour of grass?
+(A) Green
+(B) Air
+(C) Red
+(D) Pink
+यदि 'हवा' को 'हरा' कहा जाता है, 'हरे' को 'लाल' कहा जाता है, 'लाल' को 'समुद्र' कहा जाता है, 'समुद्र' को 'नीला' कहा जाता है, 'नीले' को 'जल' कहा जाता है और 'जल' को 'गुलाबी' कहा जाता है, तो घास का रंग कैसा होता है?
+(A) हरा
+(B) हवा
+(C) लाल
+(D) गुलाबी
+
+12. In the following question, certain pairs of words are given, out of which the words in all pairs except one, bear a certain relationship. Choose the odd pair.
+(A) Crime: Punishment
+(B) Judgement: Advocate
+(C) Enterprise: Success
+(D) Exercise: Health
+निम्नलिखित प्रश्न में शब्दों के कुछ जोड़े दिए गए हैं, जिनमें से एक को छोड़कर सभी जोड़ियों के शब्द एक निश्चित संबंध रखते हैं। विषम जोड़ी चुनें।
+(A) अपराध: सजा
+(B) निर्णय: अधिवक्ता
+(C) उद्यम: सफलता
+(D) व्यायाम: स्वास्थ्य
+
+13. What will be post order traversal of a binary Tree T, if preorder and inorder traversals of T are given by ABCDEF and BADCFE respectively?
+(A) BDFECA
+(B) BCFDEA
+(C) BFDECA
+(D) BEFDCA
+एक बायनरी ट्री T का पोस्ट ऑर्डर ट्रेवर्सल क्या होगा, यदि T का प्रीऑर्डर तथा इनऑर्डर ट्रेवर्सल क्रमशः ABCDEF तथा BADCFE हैं?
+(A) BDFECA
+(B) BCFDEA
+(C) BFDECA
+(D) BEFDCA
+
+14. Which of the following e-mail protocol is used to move messages through the internet from source to destination?
+(A) SMTP
+(B) IMAP
+(C) POP
+(D) UDP
+निम्न में से कौन सी ई-मेल प्रोटोकॉल, इन्टरनेट के माध्यम से संदेशों को स्त्रोत से गंतव्य तक पहुंचाने में प्रयुक्त होती है?
+(A) SMTP
+(B) IMAP
+(C) POP
+(D) UDP
+
+15. Which of the following is a Sans Serif font?
+(A) Arial
+(B) Times New Roman
+(C) Courier
+(D) Gothic
+निम्न में से कौन सा एक Sans Serif font है?
+(A) Arial
+(B) Times New Roman
+(C) Courier
+(D) Gothic
+
+16. Which of the following is not related to format of animation?
+(A) Flic Format (FLI/FLC)
+(B) MPEG (.mpg)
+(C) Quick time (QT/Moov)
+(D) Amiga (SGI)
+निम्न में से कौन सा एनिमेशन के फॉर्मेट से संबंधित नहीं है?
+(A) Flic Format (FLI/FLC)
+(B) MPEG (.mpg)
+(C) Quick time (QT/Moov)
+(D) Amiga (SGI)
+
+17. Which of the following is not a valid file extension of an audio file?
+(A) .wav
+(B) .mp3
+(C) .mid
+(D) .rar
+निम्न में से कौन सा एक ऑडियो फाइल का उचित फाइल एक्सटेंशन नहीं है?
+(A) .wav
+(B) .mp3
+(C) .mid
+(D) .rar
+
+18. Consider the following statements regarding key -
+(I) A super key is an attribute or combination of attributes that uniquely identifies records in a RDBMS table.
+(II) A candidate key is a subset of a super key.
+(III) All super keys are candidate keys but vice versa is not true.
+(A) Only (I) is true
+(B) Only (II) is true
+(C) (I) and (III) are true
+(D) (I) and (II) are true
+Key के संबंध में निम्नलिखित कथनों पर विचार करें -
+(I) Super key एक या एक से अधिक attributes का संयोजन है जो RDBMS table में रिकॉर्ड्स की unique पहचान करती है।
+(II) Candidate key, super key का एक उपसमुच्चय होती है।
+(III) सभी Super keys, candidate keys होती हैं लेकिन सभी candidate key, super keys नहीं होती हैं।
+(A) केवल (I) सत्य है
+(B) केवल (II) सत्य है
+(C) (I) और (III) दोनों सत्य हैं
+(D) (I) और (II) दोनों सत्य हैं
+
+19. Which is not a type of NoSQL?
+(A) CouchDB
+(B) MongoDB
+(C) HBase
+(D) QBase
+निम्न में से कौन सा NoSQL का प्रकार नहीं है?
+(A) CouchDB
+(B) MongoDB
+(C) HBase
+(D) QBase
+
+20. Identify the most accurate statement about the application of XML -
+(A) XML must be used to produce XML and HTML output.
+(B) XML cannot specify or contain presentation information.
+(C) XML is used to describe hierarchically organized information.
+(D) XML performs the conversion of information between different e-business applications.
+XML के अनुप्रयोग के बारे में सबसे सटीक कथन की पहचान करें -
+(A) XML का इस्तेमाल XML और HTML आउटपुट के उत्पादन के लिए किया जाना चाहिए।
+(B) XML प्रस्तुति जानकारी निर्दिष्ट या शामिल नहीं कर सकता है।
+(C) XML का उपयोग पदानुक्रमित रूप से संगठित जानकारी का वर्णन करने के लिए किया जाता है।
+(D) XML विभिन्न ई-व्यापार अनुप्रयोगों के बीच सूचना का रूपांतरण करता है।
+
+21. To maintain materialized view in RDBMS, use _______.
+(A) Trigger
+(B) Pointer
+(C) Clone object
+(D) None
+RDBMS में भौतिक दृष्टिकोण को रखने के लिए क्या इस्तेमाल किया जाता है?
+(A) Trigger (ट्रिगर)
+(B) Pointer (पॉइंटर)
+(C) Clone object (क्लोन ऑब्जेक्ट)
+(D) कोई नहीं
+
+22. What is the outcome of the prefix expression +, -, *, 3, 2, /, 8, 4, 1?
+(A) 12
+(B) 11
+(C) 5
+(D) 4
+उपसर्ग अभिव्यक्ति +, -, *, 3, 2, /, 8, 4, 1 का परिणाम क्या है?
+(A) 12
+(B) 11
+(C) 5
+(D) 4
+
+23. Which of the following statement contains an error?
+(A) Select * from emp where empid = 10003;
+(B) Select empid from emp where empid = 1006;
+(C) Select empid from emp;
+(D) Select empid where empid = 10009 and last name = 'GELLER';
+निम्नलिखित में से किस कथन में त्रुटि है?
+(A) Select * from emp where empid = 10003;
+(B) Select empid from emp where empid = 1006;
+(C) Select empid from emp;
+(D) Select empid where empid = 10009 and last name = 'GELLER';
+
+24. The information that gets transformed in encryption is -
+(A) Plain text
+(B) Parallel text
+(C) Encrypted text
+(D) Decrypted text
+एन्क्रिप्शन में रूपांतरित होने वाली जानकारी क्या है?
+(A) प्लेन टेक्स्ट
+(B) पेरेलल टेक्स्ट
+(C) एन्क्रिप्टेड टेक्स्ट
+(D) डिक्रिप्टेड टेक्स्ट
+
+25. A black hole in a DFD is -
+(A) A data store with no in bound flows
+(B) A data store with only in bound flows
+(C) A data store with more than one in bound flow
+(D) None of these
+DFD में एक ब्लैक होल होता है -
+(A) एक ऐसा डेटा स्टोर जिसमें कोई बाह्य प्रवाह नहीं है
+(B) एक ऐसा डेटा स्टोर जिसमें केवल बाह्य प्रवाह होता है
+(C) एक से अधिक बाउंड फ्लो वाला डेटा स्टोर
+(D) इनमें से कोई नहीं
+
+26. Which one of the following is not a software process model?
+(A) Linear sequential model
+(B) Prototype model
+(C) The spiral model
+(D) COCOMO model
+निम्नलिखित में से कौन सा एक सॉफ्टवेयर प्रोसेस मॉडल नहीं है?
+(A) लीनियर सिक्वेंशियल मॉडल
+(B) प्रोटोटाइप मॉडल
+(C) स्पाइरल मॉडल
+(D) कोकोमो मॉडल
+
+27. Which of the following is not a valid Master view option in Microsoft PowerPoint 2016?
+(A) Notes master
+(B) Outline master
+(C) Slide master
+(D) Handout master
+माइक्रोसॉफ्ट पावरप्वाइंट 2016 में निम्नलिखित में से कौन एक वैध मास्टर व्यू विकल्प नहीं है?
+(A) नोट्स मास्टर
+(B) आउटलाइन मास्टर
+(C) स्लाइड मास्टर
+(D) हैंडआउट मास्टर
+
+28. In Excel 2016, if you want to insert 3 columns between Column G and H you would -
+(A) Select column G and right click and select insert for 3 times
+(B) Select column H and right click and select insert for three times
+(C) Select column E, F and G and right click and select insert for three times
+(D) Select column D, E and F and right click and select insert for three times
+एक्सेल 2016 में, कॉलम G और H के बीच तीन कॉलम डालने के लिए आप क्या करेंगे?
+(A) कॉलम G सिलेक्ट करेंगे और राइट क्लिक करके तीन बार इन्सर्ट सिलेक्ट करेंगे
+(B) कॉलम H सिलेक्ट करेंगे और राइट क्लिक करके तीन बार इन्सर्ट सिलेक्ट करेंगे
+(C) कॉलम E, F और G सिलेक्ट करेंगे और राइट क्लिक करके तीन बार इन्सर्ट सिलेक्ट करेंगे
+(D) कॉलम D, E और F सिलेक्ट करेंगे और राइट क्लिक करके तीन बार इन्सर्ट सिलेक्ट करेंगे
+
+29. An IP packet has arrived with the first 8 bits as 01000010. Which of the following is correct?
+(A) The number of hops this packet can travel is 2
+(B) The total no. of bytes in header is 16 bytes
+(C) The upper layer protocol is ICMP
+(D) The receiver rejects the packet
+एक IP Packet पहली 8 bits, जो की 01000010 है, के साथ आ गया है। इनमें से कौन सा सही है?
+(A) यह पैकेट जितने हॉप्स की यात्रा कर सकता है वह है 2
+(B) हैडर में कुल bytes की संख्या 16 bytes है
+(C) ऊपरी layer Protocol, ICMP है
+(D) रिसीवर पैकेट को अस्वीकार करता है
+
+30. Which of the following is a combinational logic circuit that has 2^n input lines and a single output line?
+(A) Multiplexer
+(B) Demultiplexer
+(C) Encoder
+(D) Decoder
+निम्नलिखित में से कौन सा कॉम्बिनेशन लॉजिक सर्किट है जिनमें 2^n इनपुट लाइन और सिंगल आउटपुट लाइन है?
+(A) मल्टीप्लेक्सर
+(B) डिमल्टीप्लेक्सर
+(C) एनकोडर
+(D) डिकोडर
+
+31. The commonly used protocol for webpage transfer is -
+(A) HTML
+(B) HTTP
+(C) WML
+(D) WTTP
+वेब पेज ट्रांसफर के लिए आमतौर पर इस्तेमाल किया जाने वाला प्रोटोकॉल है -
+(A) एच.टी.एम.एल. (HTML)
+(B) एच.टी.टी.पी. (HTTP)
+(C) डब्ल्यू.एम.एल (WML)
+(D) डब्ल्यू.टी.टी.पी. (WTTP)
+
+32. The correct statement regarding WiFi and Wi-Max technology is/are
+(I) WiFi uses radio waves to create wireless connection, WiMax uses spectrum to deliver connection.
+(II) WiFi is defined under IEEE 802.11x standards, while WiMax is defined under IEEE 802.16y standards.
+(III) WiMax covers comparatively larger area than WiFi.
+(A) Only (II)
+(B) Only (I) and (II)
+(C) Only (I) and (III)
+(D) (I), (II) and (III)
+Wifi और Wi-Max तकनीक के संबंध में सही कथन है/हैं -
+(I) वायरलेस कनेक्शन बनाने के लिए WiFi रेडियो तरंगों का उपयोग करता है, WiMax कनेक्शन देने के लिए स्पैक्ट्रम का उपयोग करता है।
+(II) WiFi को IEEE 802.11x मानकों के तहत परिभाषित किया गया है, जबकि WiMax को IEEE 802.16y मानकों के तहत परिभाषित किया गया है।
+(III) WiMax, WiFi की तुलना में तुलनात्मक रूप से बड़े क्षेत्र को कवर करता है।
+(A) केवल (II)
+(B) केवल (I) और (II)
+(C) केवल (I) और (III)
+(D) (I), (II) और (III)
+
+33. Which of the following are correct statements with respect to XML?
+(i) It is used to display data only.
+(ii) XML can be used as a database.
+(iii) XPATH is used to store the IP address of the server.
+(iv) XLL defination is used along with XML to specify the links with other documents.
+(A) Only (i) and (ii)
+(B) Only (i), (ii) and (iii)
+(C) Only (ii), (iii) and (iv)
+(D) Only (ii) and (iv)
+निम्नलिखित में से कौन से XML के संबंध में सही कथन हैं?
+(i) इसका उपयोग केवल डाटा डिस्प्ले करने के लिए किया जाता है।
+(ii) XML का उपयोग डाटाबेस के तौर पर भी किया जा सकता है।
+(iii) XPATH का उपयोग सर्वर के IP एड्रेस स्टोर करने में किया जाता है।
+(iv) XLL definition का उपयोग XML के साथ किन्हीं अन्य डॉक्यूमेंट्स के साथ लिंक को उल्लिखित करने के लिए किया जाता है।
+(A) केवल (i) और (ii)
+(B) केवल (i), (ii) और (iii)
+(C) केवल (ii), (iii) और (iv)
+(D) केवल (ii) और (iv)
+
+34. Consider the given binary search tree, if the root node will be deleted, the new root can be -
+[Figure: A Binary Search Tree with Root 50. Left child of 50 is 30, right child is 63. Under 30: Left 15, Right 43. Under 15: Left 10, Right 25. Under 43: Left 36, Right 48. Under 63: Left 59, Right 77. Under 77: Left 73, Right 81.]
+दिए गए बाइनरी सर्च ट्री पर विचार करें, यदि root node डिलीट कर दिया जाए, जो नया रूट हो सकता है -
+(A) 43 or 48
+(B) 63 or 81
+(C) 48 or 59
+(D) 30 or 63
+
+35. What would be the prefix notation for the given equation?
+(a+(b/c)*(d^e)-f)
+(A) +-a*/^bcdef
+(B) -+a*b/c^def
+(C) -+a*/bc^def
+(D) -+fa*/bc^de
+दी गई equation का prefix notation क्या होगा?
+(a+(b/c)*(d^e)-f)
+(A) +-a*/^bcdef
+(B) -+a*b/c^def
+(C) -+a*/bc^def
+(D) -+fa*/bc^de
+
+36. Consider the following stack implemented using stack -
+#define SIZE 11
+Struct STACK
+{
+int arr [SIZE];
+int top = -1;
+}
+What would be the maximum value of top that does not cause the overflow of the stack?
+(A) 8
+(B) 9
+(C) 11
+(D) 10
+स्टैक का उपयोग करके कार्यान्वित निम्नलिखित स्टैक पर विचार करें -
+#define SIZE 11
+Struct STACK
+{
+int arr [SIZE];
+int top = -1;
+}
+शीर्ष का अधिकतम मूल्य क्या होगा जो स्टैक के अतिप्रवाह का कारण नहीं बनता है?
+(A) 8
+(B) 9
+(C) 11
+(D) 10
+
+37. What will be the output of the following in MS-Excel?
+=LCM(5,7,35)
+(A) 70
+(B) 1225
+(C) 12
+(D) 35
+एम.एस.एक्सेल में =LCM(5,7,35) का आउटपुट होगा -
+(A) 70
+(B) 1225
+(C) 12
+(D) 35
+
+38. In MS-PowerPoint we can run slide show from beginning using _____ key and from current slide using _____ key.
+(A) F5, F7
+(B) F6, F8
+(C) F7, Shift+F7
+(D) F5, Shift+F5
+एम.एस.-पावर प्वॉइंट में हम _____ कुंजी के प्रयोग से स्लाइड शो शुरुआत से चला सकते हैं तथा _____ कुंजी के प्रयोग से वर्तमान स्लाइड से।
+(A) F5, F7
+(B) F6, F8
+(C) F7, Shift+F7
+(D) F5, Shift+F5
+
+39. Which of the following view is most suitable to rearrange slide in MS-PowerPoint?
+(A) Slide Sorter
+(B) Notes Page
+(C) Normal
+(D) Slide Show
+एम.एस. पावर प्वॉइंट में स्लाइड्स को पुनर्व्यवस्थित करने के लिए सबसे उपयुक्त व्यू निम्न में से कौन सा है?
+(A) स्लाइड सॉर्टर
+(B) नोट्स पेज
+(C) नॉर्मल
+(D) स्लाइड शो
+
+40. In context of memory card, SD and MMC stands for -
+(A) Secure Digital, Multimedia Card
+(B) Secure Data, Memory Management Card
+(C) Safe Data, Mega Memory Card
+(D) Safe Digits, Multimedia Card
+मैमोरी कार्ड के संदर्भ में SD तथा MMC का तात्पर्य है -
+(A) सिक्योर डिजिटल, मल्टीमीडिया कार्ड
+(B) सिक्योर डाटा, मैमोरी मैनेजमेंट कार्ड
+(C) सेफ डाटा, मेगा मैमोरी कार्ड
+(D) सेफ डिजिट्स, मल्टीमीडिया कार्ड
+
+41. In MS-Word 'Gutter' is related to -
+(A) Orientation
+(B) Page size
+(C) Margins
+(D) Equation
+एमएस-वर्ड में 'Gutter' किससे संबंधित है?
+(A) ऑरिएन्टेशन
+(B) पेज साइज
+(C) मार्जिन्स
+(D) इक्वेशन
+
+42. In context of MS-Word, fill in the blank
+"Create a _____ to assign a name to a specific point in a document".
+(A) ClipArt
+(B) Cross-reference
+(C) Hyperlink
+(D) Bookmark
+एम.एस.-वर्ड के संदर्भ में रिक्त स्थान की पूर्ति करें
+"एक डॉक्युमेंट में एक विशिष्ट बिन्दु के नामांकरण के लिए _____ बनाएँ"।
+(A) क्लिप आर्ट
+(B) क्रॉस-रेफरेंस
+(C) हाइपरलिंक
+(D) बुकमार्क
+
+43. Decorative text in MS-Word document is called -
+(A) Bookmark
+(B) WordArt
+(C) SmartArt
+(D) ClipArt
+एम.एस.-वर्ड डॉक्युमेंट में सजावटी टैक्स्ट कहलाता है -
+(A) बुकमार्क
+(B) वर्डआर्ट
+(C) स्मार्टआर्ट
+(D) क्लिपआर्ट
+
+44. Which of the following is not a system software?
+(A) Programming language translators
+(B) Utility programs
+(C) Database software
+(D) Operating system
+निम्न में से कौन सा एक सिस्टम सॉफ्टवेयर नहीं है?
+(A) प्रोग्रामिंग लैंग्वेज ट्रांसलेटर्स
+(B) यूटिलिटी प्रोग्राम्स
+(C) डाटाबेस सॉफ्टवेयर
+(D) ऑपरेटिंग सिस्टम
+
+45. Which is the largest unit of storage among the following?
+(A) Terabyte
+(B) Kilobyte
+(C) Megabyte
+(D) Gigabyte
+निम्न में से कौन सी स्टोरेज की सबसे बड़ी इकाई है?
+(A) टेराबाइट
+(B) किलोबाइट
+(C) मेगाबाइट
+(D) गीगाबाइट
+
+46. Which of the following is not a first generation computer?
+(A) ENIAC
+(B) PDP-11
+(C) UNIVAC-I
+(D) IBM-701
+निम्न में से कौन सा प्रथम पीढ़ी का कम्प्यूटर नहीं है?
+(A) ENIAC
+(B) PDP-11
+(C) UNIVAC-I
+(D) IBM-701
+
+47. Which of the following is used by banking industry to handle large volume of cheques?
+(A) Digitizer
+(B) MICR
+(C) Barcode reader
+(D) Captcha
+बड़ी मात्रा में प्राप्त चेकों के प्रबंधन के लिए बैंकिंग उद्योग द्वारा निम्न में से किसका उपयोग किया जाता है?
+(A) डिजिटाईज़र
+(B) MICR
+(C) बारकोड रीडर
+(D) कैप्चा
+
+48. If three threads are trying to share a single object at the same time which condition will arise in the scenario?
+(A) Time-lapse
+(B) Critical situation
+(C) Race condition
+(D) Recursion
+यदि तीन धागे एक ही समय में एक वस्तु को साझा करने का प्रयास कर रहे हैं, तो इस परिदृश्य में कौन सी स्थिति उत्पन्न होगी?
+(A) टाईम-लैप्स
+(B) क्रिटिकल सिचुऐशन
+(C) रेस कंडीशन
+(D) रिकर्षण
+
+49. In relational database minimal super keys is known as -
+(A) Primary keys
+(B) Foreign keys
+(C) Candidate keys
+(D) Reference keys
+रिलेशनल डाटाबेस में मिनिमल सुपर कीज़ ______ कहलाती हैं।
+(A) प्राइमरी कीज
+(B) फॉरेन कीज
+(C) कैन्डीडेट कीज़
+(D) रेफरेन्स कीज
+
+50. In decision table left-lower quadrant is called -
+(A) Condition entry
+(B) Condition stub
+(C) Action entry
+(D) Action stub
+डिसीज़न टेबल में बायें-नीचे का ______ कहलाता है।
+(A) कंडीशन एन्ट्री
+(B) कंडीशन स्टब
+(C) एक्शन एन्ट्री
+(D) एक्शन स्टब
+
+51. In context of information gathering, ranking scale questions ask the respondants to -
+(A) Choose one among given answer choices
+(B) Rank list of items in order of importance
+(C) Mark a level of satisfaction on a given scale
+(D) Say Yes or No
+सूचना संग्रहण के संदर्भ में, रैंकिंग स्केल प्रश्न में उत्तरदाता से कहा जाता है -
+(A) दिए गए उत्तर विकल्पों में से एक चुनने के लिए
+(B) वस्तु सूची को उपयोगिता के क्रम में श्रेणीबद्ध करने के लिए
+(C) दिए गए पैमाने पर संतुष्टि का स्तर चिन्हित करने के लिए
+(D) हां या ना कहने के लिए
+
+52. A relation in which every non-key attribute is fully functionally dependent on the primary key and which has no transitive dependencies is in -
+(A) 5NF
+(B) 3NF
+(C) 4NF
+(D) BCNF
+एक रिलेशन जिसमें प्रत्येक नॉन-की एट्रीब्यूट पूर्ण रूप से प्राथमिक कुंजी पर फंक्शनली आश्रित/निर्भर हो तथा जिसमें कोई ट्रांज़िटिव डिपेन्डेन्सी (निर्भरता) नहीं हो, ______ में होता है।
+(A) 5NF
+(B) 3NF
+(C) 4NF
+(D) BCNF
+
+53. Which one is measure of software complexity?
+(A) Number of lines of code (LOC)
+(B) Number of man years
+(C) Number of function points (FP)
+(D) All of the above
+कौन सा सॉफ्टवेयर जटिलता का मापक है?
+(A) कोड की पंक्ति संख्या (LOC)
+(B) आदमी साल की संख्या
+(C) फंक्शन बिन्दुओं की संख्या (FP)
+(D) उपरोक्त सभी
+
+54. The test levels are performed in which of the following order?
+(A) Unit, Integration, System, Acceptance
+(B) It is based on nature of the project
+(C) Unit, Integration, Acceptance, System
+(D) Unit, System, Integration, Acceptance
+परीक्षण स्तर निम्नलिखित में से किस क्रम में किया जाता है?
+(A) यूनिट, इंटीग्रेशन, सिस्टम, एक्सेप्टेन्स
+(B) यह परियोजना की प्रकृति पर आधारित है
+(C) यूनिट, इंटीग्रेशन, एक्सेप्टेन्स, सिस्टम
+(D) यूनिट, सिस्टम, इंटीग्रेशन, एक्सेप्टेन्स
+
+55. Which testing focuses on heavily testing of one particular module?
+(A) Gorilla testing
+(B) Fuzz testing
+(C) Inter system testing
+(D) Breadth testing
+कौन सी टेस्टिंग एक विशेष मॉड्यूल की बहुत अधिक टेस्टिंग पर केन्द्रित है?
+(A) गोरिल्ला टेस्टिंग
+(B) फज़ टेस्टिंग
+(C) इन्टर सिस्टम टेस्टिंग
+(D) ब्रेथ टेस्टिंग
+
+56. The first step to the system study project is to -
+(A) Define system performance criteria
+(B) Describe information needs
+(C) Staff for the study project
+(D) Announce the study project
+सिस्टम स्टडी प्रोजेक्ट के लिए पहला कदम है -
+(A) सिस्टम प्रदर्शन मानदंड परिभाषित करें
+(B) सूचना की जरूरतों का वर्णन करें
+(C) अध्ययन परियोजना के लिए कर्मचारी
+(D) अध्ययन परियोजना की घोषणा करें
+
+57. Which of the following memory is used to minimize memory-processor speed mismatch?
+(A) UVEPROM
+(B) Flash memory
+(C) DVD
+(D) Cache memory
+निम्न में से कौन सी मेमोरी, प्रोसेसर-मेमोरी की गति असंतुलन को न्यूनतम करने में प्रयुक्त होती है?
+(A) UVEPROM
+(B) फ्लैश मेमोरी
+(C) DVD
+(D) कैश मेमोरी
+
+58. Which of the following methods will create string in Java?
+I: String S1 = "Hello Java";
+II: String S2 = new String("Hello Java");
+(A) Only I
+(B) Only II
+(C) Both I and II
+(D) Neither I nor II
+जावा में निम्न में से किस विधि से स्ट्रिंग बनेगी -
+I: String S1 = "Hello Java";
+II: String S2 = new String("Hello Java");
+(A) केवल I
+(B) केवल II
+(C) I तथा II दोनों
+(D) न तो I ना ही II
+
+59. Which of the following are line printer and page printer respectively?
+(A) Laser Printer, Dot Matrix Printer
+(B) Drum Printer, Band Printer
+(C) Drum Printer, Laser Printer
+(D) Laser Printer, Chain Printer
+निम्न में से कौनसे क्रमशः लाइन प्रिंटर तथा पेज प्रिंटर हैं?
+(A) लेज़र प्रिंटर, डॉट-मैट्रिक्स प्रिंटर
+(B) ड्रम प्रिंटर, बैण्ड प्रिंटर
+(C) ड्रम प्रिंटर, लेज़र प्रिंटर
+(D) लेज़र प्रिंटर, चेन प्रिंटर
+
+60. If SQL command DELETE FROM EMPLOYEE; is executed on relation EMPLOYEE having 'n' tuple in it, _______ will be deleted from relation EMPLOYEE.
+(A) Zero tuples
+(B) Only first tuple
+(C) All 'n' tuples
+(D) Only last tuple
+'n' टपल वाले रिलेशन EMPLOYEE पर यदि SQL कमांड DELETE FROM EMPLOYEE निष्पादित की जाती है, तो EMPLOYEE रिलेशन से _______ हट जावेगा।
+(A) शून्य टपल
+(B) केवल प्रथम टपल
+(C) सभी 'n' टपल्स
+(D) केवल अंतिम टपल
+
+61. Which of the following is valid pair of schema change statements in SQL?
+(A) DELETE, ALTER
+(B) DROP, UPDATE
+(C) DROP, ALTER
+(D) DELETE, UPDATE
+निम्न में से कौनसा SQL में स्कीमा परिवर्तन कथनों का उचित युग्म है?
+(A) DELETE, ALTER
+(B) DROP, UPDATE
+(C) DROP, ALTER
+(D) DELETE, UPDATE
+
+62. Choose true statement:
+I- Binary search is faster than linear search.
+II- Binary search may not be applied on all the input lists on which linear search can be applied.
+(A) Only I
+(B) Only II
+(C) Both I and II
+(D) Neither I nor II
+सत्य कथन का चयन करें:
+I- बाइनरी सर्च, लिनियर सर्च की तुलना में तेज है।
+II- बाइनरी सर्च उन सभी इनपुट लिस्ट पर लागू नहीं की जा सकती जिन पर लिनियर सर्च लागू होती है।
+(A) केवल I
+(B) केवल II
+(C) I तथा II दोनों
+(D) न तो I ना ही II
+
+63. LB are UB are lower bound and upper bound of a linear array LA. Consider following algorithm
+1. Repeat for K=LB to UB apply PROCESS to LA[K]
+2. Exit
+The algorithm ______ the array LA.
+(A) sorts
+(B) searches
+(C) traverses
+(D) merges
+एक लिनियर ऐरे LA की लोअर बाउण्ड LB तथा अपर बाउण्ड UB है। निम्न एल्गोरिथम पर विचार करें -
+1. Repeat for K=LB to UB apply PROCESS to LA[K]
+2. Exit
+यह एल्गोरिथम, ऐरे LA को ______ करती है।
+(A) सॉर्ट
+(B) सर्च
+(C) ट्रेवर्स
+(D) मर्ज
+
+64. In context with Relational Algebra, which of the following are Unary operators?
+1. Select
+2. Project
+3. Union
+4. Product
+(A) 1 and 3 only
+(B) 2 and 4 only
+(C) 1 and 2 only
+(D) All are binary
+संबंधपरक बीजगणित के संदर्भ में, निम्नलिखित में से कौनसा यूनरी ऑपरेटर है?
+1. सिलेक्ट
+2. प्रोजेक्ट
+3. यूनियन
+4. प्रोडक्ट
+(A) केवल 1 एवं 3
+(B) केवल 2 एवं 4
+(C) केवल 1 एवं 2
+(D) सभी बाइनरी हैं
+
+65. Which of the following database object does not physically exist?
+(A) Base table
+(B) Index
+(C) View
+(D) None of the above
+निम्नलिखित में से कौन सा डेटाबेस ऑब्जेक्ट भौतिक रूप से मौजूद नहीं है?
+(A) बेस टेबल
+(B) इंडेक्स
+(C) व्यू
+(D) इनमें से कोई नहीं
+
+66. Which of the following is not a super key in a relational schema with attributes V, W, X, Y, Z and primary key VY?
+(A) VXYZ
+(B) VWXZ
+(C) VWXY
+(D) VWXYZ
+निम्नलिखित में से कौनसा एट्रिब्यूट V, W, X, Y, Z और प्राथमिक कुंजी VY वाले रिलेशनल स्कीमा में 'सुपर की' नहीं है?
+(A) VXYZ
+(B) VWXZ
+(C) VWXY
+(D) VWXYZ
+
+67. Match the following -
+List - I (सूची-I)
+(a) DDL
+(b) DML
+(c) TCL
+(d) Binary operation
+List - II (सूची-II)
+(i) LOCK TABLE
+(ii) COMMIT
+(iii) Natural Difference
+(iv) REVOKE
+(A) a-(ii), b-(i), c-(iii), d-(iv)
+(B) a-(i), b-(ii), c-(iv), d-(iii)
+(C) a-(iii), b-(ii), c-(i), d-(iv)
+(D) a-(iv), b-(i), c-(ii), d-(iii)
+
+68. In tuple relational calculus P1 -> P2 is equivalent to -
+(A) ~P1 V P2
+(B) P1 V P2
+(C) P1 ^ P2
+(D) P1 ^ ~P2
+टपल रिलेशनल कैलकुलस में P1 -> P2 बराबर है -
+(A) ~P1 V P2
+(B) P1 V P2
+(C) P1 ^ P2
+(D) P1 ^ ~P2
+
+69. Which of the operations constitute a basic set of operations for manipulating relational data?
+(A) Predicate calculus
+(B) Relational calculus
+(C) Relational algebra
+(D) None of these
+रिलेशनल डेटा में हेर-फेर करने के लिए कौनसे ऑपरेशन, ऑपरेशनों के मूल सेट का गठन करते हैं?
+(A) प्रेडिकेट कैलकुलस
+(B) रिलेशनल कैलकुलस
+(C) रिलेशनल एलजेबरा
+(D) इनमें से कोई नहीं
+
+70. Network layer firewall works as a -
+(A) Frame filter
+(B) Packet filter
+(C) Both (A) and (B)
+(D) None of these
+नेटवर्क लेयर फायरवॉल ______ के रूप में कार्य करता है।
+(A) फ्रेम फिल्टर
+(B) पैकेट फिल्टर
+(C) दोनों (A) और (B)
+(D) इनमें से कोई नहीं
+
+71. _______ is malicious software that alters the regular functionality of an OS, takes full control on the targeted system and acts as the system administrator on the victim's system.
+(A) Spyware
+(B) Virus
+(C) Rootkit
+(D) Trojan horse
+_______ एक मेलिशियस सॉफ्टवेयर है, जो किसी OS की नियमित कार्यात्मकता को बदल देता है, टारगेट सिस्टम पर पूर्ण नियंत्रण कर, पीड़ित के सिस्टम पर सिस्टम एडमिनिस्ट्रेटर की भांति कार्य करता है।
+(A) Spyware
+(B) Virus
+(C) Rootkit
+(D) Trojan horse
+
+72. Hacktivism is -
+(A) a process of break into systems and dig out its information and make it public.
+(B) gaining access to systems with an intention to fix the identified weaknesses.
+(C) a test technique for an existing internet infrastructure and to find its loopholes.
+(D) the act of hacking a computer system, for politically or socially motivated purpose.
+हैक्टिविज्म -
+(A) सिस्टम में सेंध लगाने और इसकी जानकारी प्राप्त कर सार्वजनिक करने की एक प्रक्रिया।
+(B) पहचानी गई कमजोरियों को ठीक करने के इरादे से सिस्टम तक पहुंच प्राप्त करना।
+(C) मौजूद इंटरनेट ढाँचे एवं इसकी खामियों को खोजने की एक परीक्षण तकनीक है।
+(D) राजनीतिक या सामाजिक उद्देश्य से प्रेरित कम्प्यूटर सिस्टम को हैक करने का कार्य है।
+
+73. Identify the oldest phone hacking technique used by hackers to make free calls?
+(A) Spamming
+(B) Phreaking
+(C) Cracking
+(D) Phishing
+सबसे पुरानी फोन हैकिंग तकनीक की पहचान करें, जिसका उपयोग हैकर्स मुफ्त कॉल करने के लिए करते हैं -
+(A) स्पैमिंग
+(B) फ्रीकिंग
+(C) क्रेकिंग
+(D) फ़िशिंग
+
+74. A RAM chip has a capacity of 1024 words of 8 bits each (1kx8). The no. of 2x4 decoders with enable line needed to construct a 16k x 16 RAM from 1kx8 RAM is -
+(A) 4
+(B) 5
+(C) 6
+(D) 7
+एक RAM चिप की क्षमता 8 bits (1k×8) के 1024 शब्दों की होती है। 1kx8 RAM से 16k×16 RAM बनाने के लिए आवश्यक सक्षम लाइन वाले 2x4 डिकोडर की संख्या है -
+(A) 4
+(B) 5
+(C) 6
+(D) 7
+
+75. A tiny bootstrap loader program is situated in -
+(A) Hard disk
+(B) ROM
+(C) BIOS
+(D) None of these
+एक छोटा बूटस्टैप लोडर प्रोग्राम स्थित है -
+(A) Hard disk में
+(B) ROM में
+(C) BIOS में
+(D) इनमें से कोई नहीं
+
+76. Which one of the following is usually used in the process of Wi-fi hacking?
+(A) Aircrack-ng
+(B) Wireshark
+(C) Norton
+(D) All of the above
+निम्नलिखित में से कौनसा Wi-Fi hacking की प्रक्रिया में उपयोग होता है?
+(A) Aircrack-ng
+(B) Wireshark
+(C) Norton
+(D) उपरोक्त सभी
+
+77. In the ______ encoding scheme, each 24 bits become four 6 bit chunks, and eventually are sent as 32 bits.
+(A) 8 bit
+(B) binary
+(C) base 64
+(D) quoted - printable
+______ एनकोडिंग योजना में, प्रत्येक 24 बिट चार 6 बिट खंड बन जाते हैं और अंततः 32 बिट के रूप में भेजे जाते हैं।
+(A) 8 bit
+(B) binary
+(C) base 64
+(D) quoted - printable
+
+78. In FTP, there are three types of ______ stream, block and compressed.
+(A) file types
+(B) data types
+(C) transmission modes
+(D) None of these
+FTP में, तीन प्रकार के ______ stream, block और compressed हैं।
+(A) फाइल टाईप्स
+(B) डेटा टाईप्स
+(C) ट्रांसमिशन मोड्स
+(D) इनमें से कोई नहीं
+
+79. Check sum is used for -
+(A) error correction
+(B) error detection
+(C) Both (A) and (B)
+(D) None of these
+चेक सम का प्रयोग किया जाता है -
+(A) त्रुटि सुधार
+(B) त्रुटि पहचानने के लिए
+(C) (A) और (B) दोनों
+(D) इनमें से कोई नहीं
+
+80. What will be the output list after completing first pass of bubble sort on input array 32, 51, 27, 85, 66, 23, 13, 57?
+(A) 32, 27, 51, 66, 23, 13, 57, 85
+(B) 32, 51, 27, 66, 23, 13, 57, 85
+(C) 27, 33, 51, 23, 13, 57, 66, 85
+(D) 23, 13, 27, 33, 51, 57, 66, 85
+इनपुट ऐरे 32, 51, 27, 85, 66, 23, 13, 57 पर बबल सॉर्ट का प्रथम पास पूर्ण करने के उपरांत आउटपुट लिस्ट क्या होगी?
+(A) 32, 27, 51, 66, 23, 13, 57, 85
+(B) 32, 51, 27, 66, 23, 13, 57, 85
+(C) 27, 33, 51, 23, 13, 57, 66, 85
+(D) 23, 13, 27, 33, 51, 57, 66, 85
+
+81. In context of MS-Excel, find the odd one out -
+(A) Portrait
+(B) Scenario Manager
+(C) Goal seek
+(D) Data table
+एम.एस.एक्सेल के संदर्भ में बेमेल का चुनाव करें -
+(A) पोर्ट्रेट
+(B) सिनेरियो मैनेजर
+(C) गोल सीक
+(D) डाटा टेबल
+
+82. A special software to create a job queue is called -
+(A) Linkage editor
+(B) Interpreter
+(C) Drive
+(D) Spooler
+एक विशेष सॉफ्टवेयर जो जॉब क्यू क्रिएट करता है, उसे ______ कहा जाता है।
+(A) लिंकेज एडिटर
+(B) इंटरप्रिटर
+(C) ड्राइव
+(D) स्पूलर
+
+83. What are the forms of password cracking techniques?
+(A) AttackSyllable
+(B) AttackBrute forcing
+(C) AttackHybrid
+(D) All of the above
+पासवर्ड क्रैकिंग तकनीक के रूप क्या हैं?
+(A) अटैकसिलेबल
+(B) अटैकब्रूट फोर्सिंग
+(C) अटैकहाइब्रिड
+(D) उपरोक्त सभी
+
+84. Choose the incorrect statement -
+(A) If a method is declared as final, that method cannot be overridden in sub class.
+(B) Finalize() is a method of java, which called by garbage collector thread before removing an object from the memory.
+(C) If a class is declared final, it cannot be inherited. If you do so it will give you compile-time error.
+(D) If we declare any variable as final, the value of the variable can be modified in final method.
+गलत कथन छांटिए -
+(A) यदि किसी method को final घोषित किया है, तो उस method को subclass में override नहीं किया जा सकता है।
+(B) Finalize() जावा का method है, जिसे मेमोरी से किसी ऑब्जेक्ट को हटाने से पहले garbage collector thread द्वारा call किया जाता है।
+(C) यदि किसी class को final घोषित किया जाता है, तो इसे inherit नहीं किया जा सकता। यदि आप ऐसा करते हैं, तो यह compile-time error देगा।
+(D) यदि हम किसी variable को final घोषित करते हैं, तो variable की value को final method में modify किया जा सकता है।
+
+85. How many states can be processed in operating system?
+(A) 2
+(B) 3
+(C) 4
+(D) 5
+ऑपरेटिंग सिस्टम में कितने स्टेट प्रोसेस कर सकते हैं?
+(A) 2
+(B) 3
+(C) 4
+(D) 5
+
+86. An INT file in Windows 95 is -
+(A) A program file
+(B) A message file
+(C) A text file
+(D) Link file
+विंडोज़ 95 की एक INT फाइल है -
+(A) एक प्रोग्राम फाइल
+(B) एक संदेश फाइल
+(C) एक टेक्स्ट फाइल
+(D) लिंक फाइल
+
+87. A counting semaphore was initialized to 8. Then 12 P (wait) operations and 7 V (signal) operations were completed on this semaphore. The resulting value of semaphore is -
+(A) 4
+(B) 3
+(C) 5
+(D) 1
+एक counting semaphore 8 से initialized किया गया है। फिर 12 P (wait) ऑपरेशन एवं 7 V (signal) ऑपरेशन इस semaphore पर पूर्ण किए गए हैं। इसके परिणामस्वरूप Semaphore की value होगी -
+(A) 4
+(B) 3
+(C) 5
+(D) 1
+
+88. Which of the following statements is/are true regarding JAVA?
+A. Constants that cannot be changed are declared using the 'Static' keyword.
+B. A class can only inherit one class that can implement multiple interfaces.
+(A) A is true
+(B) B is true
+(C) Both (A) and (B) are true
+(D) Neither (A) nor (B) is true
+JAVA के संबंध में निम्नलिखित में से कौनसा/से कथन सत्य है / हैं?
+A. कॉस्टेंट जिन्हें बदला नहीं जा सकता, उन्हें 'स्टैटिक' कीवर्ड का उपयोग करके घोषित किया जाता है।
+B. एक वर्ग केवल एक वर्ग को इनहेरिट कर सकता है, जो कई इंटरफेस लागू कर सकता है।
+(A) A सही है
+(B) B सही है
+(C) दोनों (A) और (B) सही हैं
+(D) न (A) सही है और ना ही (B) सही है
+
+89. In Artificial intelligence (AI) which agent deals with happy and unhappy state?
+(A) Simple reflex agent
+(B) Model based agent
+(C) Learning agent
+(D) Utility based agent
+आर्टिफिशियल इंटेलिजेंस (AI) में कौनसा एजेंट हैप्पी और अनहैप्पी स्टेट से संबंधित है?
+(A) सिंपल रिफलेक्स एजेंट
+(B) मॉडल बेस्ड एजेंट
+(C) लर्निंग एजेंट
+(D) यूटिलिटी बेस्ड एजेंट
+
+90. In SQL ______ is an aggregate function.
+(A) SELECT
+(B) CREATE
+(C) AVG
+(D) MODIFY
+SQL में ______ एक एग्रिगेट फंक्शन है।
+(A) SELECT
+(B) CREATE
+(C) AVG
+(D) MODIFY
+
+91. 'ptrdata' is a pointer to a data type. The expression *ptrdata++ is evaluated as (C++) -
+(A) *(ptrdata ++)
+(B) (*ptrdata)++
+(C) *(ptrdata) ++
+(D) Depends on compiler
+'ptrdata' एक डेटाटाइप का सूचक है। व्यंजक *ptrdata++ का मूल्यांकन इस प्रकार किया जाता है (C++) -
+(A) *(ptrdata ++)
+(B) (*ptrdata)++
+(C) *(ptrdata) ++
+(D) कम्पाइलर पर डिपेंड करता है
+
+92. Assume that p and q are non-zero positive integers, the following program segment will perform -
+While (p!=0)
+{
+If (p>q)
+p=p-q;
+else
+q=q-p;
+}
+printf("%d",p);
+(A) Subtract small number from large number
+(B) Compute GCD of the given numbers
+(C) Compute LCM of the given numbers
+(D) The loop will run infinitely
+मान लें कि p और q गैर-शून्य सकारात्मक पूर्णांक हैं, निम्न प्रोग्राम खंड प्रदर्शन करेगा -
+While (p!=0)
+{
+If (p>q)
+p=p-q;
+else
+q=q-p;
+}
+printf("%d",p);
+(A) बड़ी संख्या से छोटी संख्या को घटाएगा
+(B) दी गयी संख्याओं के GCD की गणना करेगा
+(C) दी गयी संख्याओं के LCM की गणना करेगा
+(D) लूप infinite बार चलेगा
+
+93. Command to open Snipping tool menu to take a screenshot of only a section of your screen -
+(A) Window key + Ctrl + S
+(B) Window key + Shift + S
+(C) Window key + Alt + X
+(D) Ctrl + Shift + K
+अपनी स्क्रीन के केवल एक हिस्से का स्क्रीनशॉट लेने के लिए Snipping tool मेन्यू खोलने के लिए command है -
+(A) Window key + Ctrl + S
+(B) Window key + Shift + S
+(C) Window key + Alt + X
+(D) Ctrl + Shift + K
+
+94. Find x=?
+If (356)_8 = (x)_16
+(A) EE
+(B) EA
+(C) 7E
+(D) A8
+ज्ञात कीजिए x=?
+यदि (356)_8 = (x)_16
+(A) EE
+(B) EA
+(C) 7E
+(D) A8
+
+95. Which statement is/are true about Exception handling?
+i. There can be try block without catch block but vice versa is not possible.
+ii. There is no limit on the number of catch block corresponding to a try block.
+iii. The object must be created of a specific class of which the error has occurred otherwise runtime error will occur.
+iv. To execute a code with each and every run of program, the code is written in finally block.
+(A) i and ii, iv
+(B) Only ii
+(C) Only iii
+(D) ii and iv Only
+Exception handling के बारे में कौनसा/से कथन सही है/हैं?
+i. catch block के बिना try block हो सकता है लेकिन इसके विपरीत संभव नहीं है।
+ii. किसी एक try block के लिए कितने भी catch block हो सकते हैं।
+iii. जिस ऑब्जेक्ट में एरर अकर हुआ है उसे उसकी निर्दिष्ट क्लास का बनाया जाना चाहिए अन्यथा रन टाइम एरर आएगी।
+iv. किसी कोड को प्रोग्राम के प्रत्येक रन के साथ execute करने के लिए, कोड को finally ब्लॉक में लिखा जाता है।
+(A) i और ii, iv
+(B) केवल ii
+(C) केवल iii
+(D) केवल ii और iv
+
+96. Which phase is not included in Virus Life Cycle?
+(A) Dormant
+(B) Execution
+(C) Start
+(D) Triggering
+कौनसी एक स्टेट वायरस लाइफ साइकिल में सम्मिलित नहीं है?
+(A) डॉरमेंट
+(B) एक्ज़ीक्यूशन
+(C) स्टार्ट
+(D) ट्रिगरिंग
+
+97. Which of the following statement is/are incorrect with respect to abstract classes?
+i. Subclasses of an abstract class that do not provide an implementation of an abstract method, are also abstract.
+ii. Constructor and static methods cannot be declared in abstract class.
+iii. Sometimes we can create objects directly.
+iv. A method must always be redefined in a subclass of abstract class.
+(A) i and ii
+(B) ii and iii
+(C) ii and iv
+(D) i, ii and iv
+Abstract classes के संबंध में निम्नलिखित में से कौन-सा/से कथन गलत है / हैं?
+i. किसी abstract class की subclass जो abstract class के मैथड का implementation उपलब्ध नहीं कराती है, वह भी एक abstract होती है।
+ii. Abstract class में constructor और static method घोषित नहीं किए जा सकते हैं।
+iii. कभी-कभी हम सीधे ऑब्जेक्ट बना सकते हैं।
+iv. एक abstract class की subclass में method को हमेशा पुनर्परीभाषित किया जाना चाहिए।
+(A) i और ii
+(B) ii और iii
+(C) ii और iv
+(D) i, ii और iv
+
+98. In C, what are the various types of real data type (floating point data type)?
+(A) float, long double
+(B) long double, short int
+(C) float, double, long double
+(D) short int, double long int, float
+'C' में विभिन्न प्रकार के real data type (floating point data type) कौनसे हैं?
+(A) float, long double
+(B) long double, short int
+(C) float, double, long double
+(D) short int, double long int, float
+
+99. What is the result after execution of the following code if 'a' is 10, 'b' is 5 and 'c' is 10?
+if ((a>b) && (a<=c))
+a=a+1;
+else
+c=c+1;
+(A) a=10, c=10
+(B) a=11, c=10
+(C) a=10, c=11
+(D) a=11, c=11
+निम्नलिखित कोड के निष्पादन के बाद परिणाम क्या है, यदि 'a' 10 है, 'b' 5 है और 'c' 10 है?
+if ((a>b) && (a<=c))
+a=a+1;
+else
+c=c+1;
+(A) a=10, c=10
+(B) a=11, c=10
+(C) a=10, c=11
+(D) a=11, c=11
+
+100. Which of the following declarations is incorrect in python language?
+(A) xyzp = 5,000,000
+(B) xyzp = 5000 6000 7000 8000
+(C) x, y, z, p = 5000, 6000, 7000, 8000
+(D) x_y_z_p = 5,000,000
+निम्नलिखित में से कौनसी घोषणा python language में सही नहीं है?
+(A) xyzp = 5,000,000
+(B) xyzp = 5000 6000 7000 8000
+(C) x, y, z, p = 5000, 6000, 7000, 8000
+(D) x_y_z_p = 5,000,000
+
+Answer Key:
+| Question No. | Correct Option |
+| 1 | B |
+| 2 | A |
+| 3 | B |
+| 4 | D |
+| 5 | C |
+| 6 | Delete |
+| 7 | C |
+| 8 | D |
+| 9 | D |
+| 10 | D |
+| 11 | C |
+| 12 | B |
+| 13 | A |
+| 14 | A |
+| 15 | Delete |
+| 16 | D |
+| 17 | D |
+| 18 | A |
+| 19 | D |
+| 20 | C |
+| 21 | A |
+| 22 | C |
+| 23 | D |
+| 24 | A |
+| 25 | B |
+| 26 | D |
+| 27 | B |
+| 28 | B |
+| 29 | D |
+| 30 | A |
+| 31 | B |
+| 32 | C |
+| 33 | D |
+| 34 | C |
+| 35 | C |
+| 36 | D |
+| 37 | D |
+| 38 | D |
+| 39 | A |
+| 40 | A |
+| 41 | C |
+| 42 | D |
+| 43 | B |
+| 44 | C |
+| 45 | A |
+| 46 | B |
+| 47 | B |
+| 48 | C |
+| 49 | C |
+| 50 | D |
+| 51 | B |
+| 52 | B |
+| 53 | D |
+| 54 | A |
+| 55 | A |
+| 56 | B |
+| 57 | D |
+| 58 | A |
+| 59 | C |
+| 60 | C |
+| 61 | C |
+| 62 | C |
+| 63 | C |
+| 64 | C |
+| 65 | C |
+| 66 | B |
+| 67 | D |
+| 68 | A |
+| 69 | C |
+| 70 | B |
+| 71 | C |
+| 72 | D |
+| 73 | B |
+| 74 | B |
+| 75 | B |
+| 76 | A |
+| 77 | C |
+| 78 | C |
+| 79 | B |
+| 80 | A |
+| 81 | A |
+| 82 | D |
+| 83 | D |
+| 84 | D |
+| 85 | D |
+| 86 | C |
+| 87 | B |
+| 88 | B |
+| 89 | D |
+| 90 | C |
+| 91 | Delete |
+| 92 | D |
+| 93 | B |
+| 94 | A |
+| 95 | A |
+| 96 | C |
+| 97 | Delete |
+| 98 | C |
+| 99 | B |
+| 100 | B |

@@ -123,6 +123,11 @@ export class TestReviewView {
     return "Needs improvement. Use AI Tutor to learn foundations.";
   }
 
+  formatQuestionText(text) {
+    if (!text) return '';
+    return text.replace(/```text\n([\s\S]*?)\n```/g, '<pre style="font-family: \'Courier New\', Courier, monospace; background: var(--surface-1); padding: 12px; border-radius: 8px; border: 1px solid var(--panel-border); overflow-x: auto; color: var(--text-primary); margin: 10px 0; font-size: 0.95rem;">$1</pre>');
+  }
+
   renderFilterBtn(filter, label) {
     const isActive = this.activeFilter === filter;
     const style = isActive
@@ -171,7 +176,7 @@ export class TestReviewView {
           </div>
 
           <!-- Question Text -->
-          <div style="font-weight: 500; font-size: 1.02rem; margin-bottom: 20px; white-space: pre-wrap;">${q.question}</div>
+          <div style="font-weight: 500; font-size: 1.02rem; margin-bottom: 20px; white-space: pre-wrap;">${this.formatQuestionText(q.question)}</div>
 
           <!-- Options review list -->
           <div class="options-list">
