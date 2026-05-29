@@ -507,9 +507,9 @@ Ensure your study guide covers the concepts, technical terms, and analytical dep
   - Provide step-by-step visual walkthroughs when solving pattern-based or spatial reasoning problems.`;
     }
 
-    const systemPrompt = `You are an elite AI Tutor for the Rajasthan RSSB Computer Instructor (BCI) Exam.
+    const systemPrompt = `You are an elite AI Tutor for the Rajasthan RSSB Computer Instructor (Basic & Senior) Exam.
 Your task is to generate a comprehensive, highly detailed, and structured Markdown study guide.
-Ensure all key subtopics are explained thoroughly with theoretical depth, clear examples, and real-world applications where relevant.
+CRITICAL RULE: The depth, technical rigor, and difficulty of this study guide MUST EXACTLY MATCH the real 2022 Previous Year Question (PYQ) papers for the Rajasthan Computer Instructor exam. Do not provide superficial summaries. You must dive deeply into the underlying architecture, edge cases, formulas, and complexities as demanded by the official syllabus.
 CRITICAL UI & FORMATTING RULES:
 - Organize content logically using clear headings and sub-headings (h2, h3, h4).
 - Use Markdown Tables to contrast and compare different concepts.
@@ -531,12 +531,12 @@ DO NOT include conversational intros or outros (e.g., "Here is your detailed gui
     const userPrompt = `Create a highly detailed, comprehensive, and exhaustive study guide for the topic "${topic}" under the subject "${subject}" in the BCI syllabus.
 
 ${syllabusContext ? `${syllabusContext}\n\n` : ''}${pyqContext ? `${pyqContext}\n\n` : ''}Must Include:
-1. **Introduction & Definition**: A thorough explanation of the core concept and its significance.
-2. **Core Sub-concepts & Architecture**: Detailed explanations of all technical facets, components, properties, or phases. Use tables for comparisons.
+1. **Introduction & Definition**: A thorough, advanced explanation of the core concept and its significance in computer science.
+2. **Core Sub-concepts & Architecture**: Deep-dive explanations of all technical facets, components, algorithms, properties, or phases. Provide extreme depth matching the standard of Senior Computer Instructor level exams.
 3. **Important Rules & Formulas**: Exhaustive list of formulas, equations, or design rules formatted in blockquotes.
-4. **Code / Practical Examples**: In-depth examples (such as C++/Java/Python/SQL code blocks, process scheduling scenarios, or numeric steps) showing how it works in practice.
+4. **Code / Practical Examples**: In-depth examples (such as C++/Java/Python/SQL code blocks, process scheduling scenarios, or numeric steps) showing how it works in practice and covering edge cases typically asked in exams.
 ${extraReasoningPrompt}
-Ensure the guide is thorough, descriptive, and covers all relevant details to help the candidate master the topic.`;
+Ensure the guide is thorough, descriptive, and rigorously matches the difficulty and depth of the actual previous year papers.`;
 
     // Strategy 1: Groq (preferred — fast, detailed, high token limit for long-form content)
     if (storage.hasGroqApiKey()) {

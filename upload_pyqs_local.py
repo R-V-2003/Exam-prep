@@ -91,6 +91,17 @@ def parse_file(task):
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
 
+    answer_key_map = {}
+    if "Answer Key:" in content:
+        content, key_str = content.split("Answer Key:", 1)
+        matches = re.findall(r'\|\s*(\d+)\s*\|\s*([A-D]|Delete)\s*\|', key_str, re.IGNORECASE)
+        for q_str, opt_str in matches:
+            if opt_str.upper() == 'A': answer_key_map[int(q_str)] = 0
+            elif opt_str.upper() == 'B': answer_key_map[int(q_str)] = 1
+            elif opt_str.upper() == 'C': answer_key_map[int(q_str)] = 2
+            elif opt_str.upper() == 'D': answer_key_map[int(q_str)] = 3
+            elif opt_str.lower() == 'delete': answer_key_map[int(q_str)] = -1
+
     # Find all questions: from 1 to 100
     content = "\n" + content.strip()
     questions = []
@@ -196,13 +207,15 @@ def parse_file(task):
         if hi_q:
             q_text += "\n\n" + "\n".join(hi_q)
             
+        correct_idx = answer_key_map.get(q_num, 0)
+
         questions.append({
             "paper_type": f"{task['exam_type']} - {task['paper_type']}",
             "subject": task["subject"],
             "topic": "PYQ",
             "question": q_text,
             "options": options,
-            "correct_index": 0,
+            "correct_index": correct_idx,
             "explanation": "",
             "year": 2022
         })

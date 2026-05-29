@@ -331,9 +331,15 @@ export const supabaseService = {
         query = query.ilike('subject', `%${subjectName}%`);
       }
       
-      // Check if topicName exists inside topic, question or explanation
+      // Extract main keywords from topicName (ignore short words)
       if (topicName) {
-        query = query.or(`topic.ilike.%${topicName}%,question.ilike.%${topicName}%,explanation.ilike.%${topicName}%`);
+        const keywords = topicName.split(/\s+/).filter(w => w.length > 3).slice(0, 3);
+        if (keywords.length > 0) {
+          const orConditions = keywords.map(w => `question.ilike.%${w}%`).join(',');
+          query = query.or(orConditions);
+        } else {
+          query = query.or(`question.ilike.%${topicName}%`);
+        }
       }
 
       // Limit to 4 relevant questions to avoid overloading the AI context
