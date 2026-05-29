@@ -352,15 +352,21 @@ export const supabaseService = {
   async getFullPaper(paperIdentifier) {
     if (!supabase) return [];
     try {
+      // Fetch the 100 most recently added questions to ignore older bad parses
       const { data, error } = await supabase
         .from('pyqs')
         .select('*')
-        .eq('paper_type', paperIdentifier);
+        .eq('paper_type', paperIdentifier)
+        .order('id', { ascending: false })
+        .limit(100);
       
       if (error) {
         console.error("Error fetching paper:", error);
         return [];
       }
+      
+      // Reverse to restore 1 to 100 ordering
+      data.reverse();
       
       // Map to the frontend question format
       return data.map(q => ({

@@ -91,14 +91,36 @@ def parse_file(task):
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Find all questions: starting with number dot space
-    matches = list(re.finditer(r"^(\d+)\.\s+(.*)", content, re.MULTILINE))
+    # Find all questions: from 1 to 100
+    content = "\n" + content.strip()
     questions = []
     
-    for i in range(len(matches)):
-        start = matches[i].start()
-        end = matches[i+1].start() if i + 1 < len(matches) else len(content)
-        block = content[start:end].strip()
+    for q_num in range(1, 101):
+        start_str = f"\n{q_num}. "
+        end_str = f"\n{q_num+1}. " if q_num < 100 else None
+        
+        start_idx = content.find(start_str)
+        if start_idx == -1:
+            # Fallback if there is a typo like '100.' instead of '100. '
+            start_str = f"\n{q_num}."
+            start_idx = content.find(start_str)
+            if start_idx == -1:
+                print(f"Warning: Could not find question {q_num} in {filepath}")
+                continue
+                
+        if end_str:
+            end_idx = content.find(end_str, start_idx)
+            if end_idx == -1:
+                end_str_fallback = f"\n{q_num+1}."
+                end_idx = content.find(end_str_fallback, start_idx)
+                if end_idx == -1:
+                    end_idx = len(content)
+        else:
+            end_idx = len(content)
+            
+        block = content[start_idx:end_idx].strip()
+        # Remove the leading number and dot
+        block = re.sub(r"^\d+\.\s*", "", block)
         
         lines = block.split("\n")
         
@@ -170,9 +192,9 @@ def parse_file(task):
                         options[idx] += " " + line_str
                         break
                     
-        q_text = "\\n".join(en_q)
+        q_text = "\n".join(en_q)
         if hi_q:
-            q_text += "\\n\\n" + "\\n".join(hi_q)
+            q_text += "\n\n" + "\n".join(hi_q)
             
         questions.append({
             "paper_type": f"{task['exam_type']} - {task['paper_type']}",
@@ -202,9 +224,9 @@ def upload_to_supabase(records):
         chunk = records[i:i + chunk_size]
         res = requests.post(url, headers=headers, json=chunk)
         if res.ok or res.status_code == 201:
-            print(f"✅ Uploaded chunk {i//chunk_size + 1} ({len(chunk)} questions)")
+            print(f"Uploaded chunk {i//chunk_size + 1} ({len(chunk)} questions)")
         else:
-            print(f"❌ Failed to upload chunk: {res.status_code} - {res.text}")
+            print(f"Failed to upload chunk: {res.status_code} - {res.text}")
 
 def main():
     all_records = []
