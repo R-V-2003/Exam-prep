@@ -7,7 +7,7 @@ export class AnalyticsView {
 
   render(container) {
     container.innerHTML = `
-      <div class="animate-fade-in dashboard-bento" style="height: auto; overflow: visible;">
+      <div class="animate-fade-in" style="height: auto; overflow: visible; display: flex; flex-direction: column; gap: 10px;">
         <div style="margin-bottom: 20px;">
           <h2 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">Performance Analysis</h2>
           <p style="color: var(--text-secondary); font-size: 0.9rem;">Deep dive into your test performance and identify weak areas.</p>
