@@ -27,7 +27,7 @@ export class Sidebar {
             <span>Dashboard</span>
           </a>
           
-          <div style="margin: 15px 0 5px 16px; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">Preparation</div>
+          <div style="margin: 8px 0 2px 16px; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">Preparation</div>
           
           <a href="#" class="nav-item" data-route="topic-practice">
             <i class="fas fa-book-open"></i>
@@ -60,8 +60,8 @@ export class Sidebar {
           </a>
         </div>
 
-        <div class="sidebar-user-section" style="padding: 16px; border-top: 1px solid var(--panel-border);">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <div class="sidebar-user-section" style="padding: 12px 16px; border-top: 1px solid var(--panel-border);">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
             <div style="width: 34px; height: 34px; border-radius: 10px; background: var(--brand-gradient); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: white; font-weight: 700; flex-shrink: 0;">
               ${(storage.getUserDisplayName() || 'G').charAt(0).toUpperCase()}
             </div>
