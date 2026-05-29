@@ -3,6 +3,7 @@ import './styles/dashboard.css';
 import './styles/quiz.css';
 import './styles/chat.css';
 
+import { injectSpeedInsights } from '@vercel/speed-insights';
 import { storage } from './services/storage.js';
 import { gemini } from './services/gemini.js';
 import { Header } from './components/Header.js';
@@ -21,6 +22,9 @@ import { LoginView } from './views/LoginView.js';
 import { supabaseService } from './services/supabase.js';
 import { LeaderboardView } from './views/LeaderboardView.js';
 import './styles/leaderboard.css';
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
 
 class App {
   constructor() {
