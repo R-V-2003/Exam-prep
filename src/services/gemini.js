@@ -5,6 +5,36 @@ export const gemini = {
   // Call Groq API completions endpoint
   async callGroqAPI(prompt, systemInstruction = '', jsonMode = false) {
     const apiKey = storage.getGroqApiKey();
+    const apiBase = import.meta.env.VITE_API_BASE_URL || '';
+
+    // If we have an apiBase or we are on production web (where relative endpoints are available)
+    if (apiBase || (window.location.protocol !== 'file:' && window.location.hostname !== 'localhost' && !window.location.origin.includes('capacitor'))) {
+      try {
+        const proxyUrl = `${apiBase}/api/groq`;
+        const response = await fetch(proxyUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ prompt, systemInstruction, jsonMode })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const textContent = data.choices?.[0]?.message?.content || '';
+          return {
+            text: textContent,
+            grounding: null
+          };
+        } else {
+          const errData = await response.json().catch(() => ({}));
+          console.warn("Groq serverless proxy returned an error, trying client-side request:", errData);
+        }
+      } catch (err) {
+        console.warn("Groq proxy request failed, trying client-side fallback:", err);
+      }
+    }
+
     if (!apiKey) {
       throw new Error("Groq API Key is missing. Configure it in Settings.");
     }
@@ -52,6 +82,38 @@ export const gemini = {
   // Call Gemini REST API directly
   async callGeminiAPI(prompt, systemInstruction = '', enableSearch = false) {
     const apiKey = storage.getApiKey();
+    const apiBase = import.meta.env.VITE_API_BASE_URL || '';
+
+    // Try Vercel Serverless proxy first
+    if (apiBase || (window.location.protocol !== 'file:' && window.location.hostname !== 'localhost' && !window.location.origin.includes('capacitor'))) {
+      try {
+        const proxyUrl = `${apiBase}/api/gemini`;
+        const response = await fetch(proxyUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ prompt, systemInstruction, enableSearch, jsonMode: false })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const candidate = data.candidates?.[0];
+          const textContent = candidate?.content?.parts?.[0]?.text || '';
+          const groundingMetadata = candidate?.groundingMetadata || null;
+          return {
+            text: textContent,
+            grounding: groundingMetadata
+          };
+        } else {
+          const errData = await response.json().catch(() => ({}));
+          console.warn("Gemini serverless proxy returned an error, trying client-side request:", errData);
+        }
+      } catch (err) {
+        console.warn("Gemini proxy request failed, trying client-side fallback:", err);
+      }
+    }
+
     if (!apiKey) {
       throw new Error("Gemini API Key is missing. Configure a key in Settings.");
     }
@@ -107,6 +169,33 @@ export const gemini = {
   // Call Gemini REST API with JSON response enforcement
   async callGeminiAPIJson(prompt, systemInstruction = '') {
     const apiKey = storage.getApiKey();
+    const apiBase = import.meta.env.VITE_API_BASE_URL || '';
+
+    // Try Vercel Serverless proxy first
+    if (apiBase || (window.location.protocol !== 'file:' && window.location.hostname !== 'localhost' && !window.location.origin.includes('capacitor'))) {
+      try {
+        const proxyUrl = `${apiBase}/api/gemini`;
+        const response = await fetch(proxyUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ prompt, systemInstruction, jsonMode: true })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const textContent = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+          return JSON.parse(textContent);
+        } else {
+          const errData = await response.json().catch(() => ({}));
+          console.warn("Gemini proxy JSON returned error, trying client-side request:", errData);
+        }
+      } catch (err) {
+        console.warn("Gemini proxy JSON request failed, trying client-side fallback:", err);
+      }
+    }
+
     if (!apiKey) {
       throw new Error("Gemini API Key is missing.");
     }
@@ -250,46 +339,17 @@ Ensure the questions are challenging, technically accurate, and reflect Rajastha
     }
   },
 
-  // Daily current affairs updates & linked quiz
+  // Daily current affairs updates & linked quiz — EXCLUSIVELY uses Gemini with Google Search grounding
   async generateDailyCurrentsAndQuiz() {
-    const hasKey = storage.hasGroqApiKey() || storage.hasApiKey();
-    
-    if (!hasKey) {
-      return this.simulateDailyCurrentsAndQuiz();
-    }
-
-    const todayStr = new Date().toDateString();
-    
+    // Check for cached data first (called once per day)
     const cached = storage.getCachedCurrentAffairs();
     if (cached) {
       return cached;
     }
 
-    // Custom Web Search Integration for Groq
-    let newsContext = "";
-    try {
-      const rssUrl = 'https://news.google.com/rss/search?q=Rajasthan+current+affairs+India&hl=en-IN&gl=IN&ceid=IN:en';
-      const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`;
-      const newsRes = await fetch(proxyUrl);
-      const newsData = await newsRes.json();
-      
-      if (newsData.contents) {
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(newsData.contents, "text/xml");
-        const items = xmlDoc.querySelectorAll("item");
-        
-        newsContext = "LATEST LIVE NEWS HEADLINES (Use these to construct the briefing):\n";
-        for (let i = 0; i < Math.min(items.length, 12); i++) {
-          const title = items[i].querySelector("title")?.textContent || "";
-          const pubDate = items[i].querySelector("pubDate")?.textContent || "";
-          newsContext += `- ${title} (Published: ${pubDate})\n`;
-        }
-      }
-    } catch (e) {
-      console.warn("Custom search integration failed", e);
-    }
+    const todayStr = new Date().toDateString();
 
-    const searchPrompt = `${newsContext}\n\nSearch and list the top 5 key current affairs and national/international news events for today (${todayStr}) relevant to government exams (especially Rajasthan state-level news and schemes). Rely heavily on the LIVE NEWS HEADLINES provided above if available. Include recent appointments, awards, and economic data.
+    const searchPrompt = `Search the web and list the top 5 key current affairs and national/international news events for today (${todayStr}) relevant to government exams (especially Rajasthan state-level news and schemes, national appointments, awards, economic data, and sports).
 Also generate a JSON quiz based on these events containing exactly 5 questions (each with 4 options, a correctIndex, and a detailed explanation).
 Format your final output as a single JSON object with this format:
 {
@@ -305,44 +365,85 @@ Format your final output as a single JSON object with this format:
   ]
 }`;
 
-    const systemPrompt = `You are a current affairs analyzer and exam tutor. Construct a short current affairs briefing followed by a 5-question review quiz. Respond ONLY in valid JSON format.`;
+    const systemPrompt = `You are a current affairs analyzer and exam tutor for the Rajasthan RSSB Computer Instructor (BCI) exam. Search the web for the latest news headlines, then construct a comprehensive current affairs briefing followed by a 5-question review quiz. Respond ONLY in valid JSON format. Do not wrap in markdown code fences.`;
 
-    try {
-      // Use Search Grounding if Gemini is available, otherwise normal API
-      const result = await this.callAPI(searchPrompt, systemPrompt, storage.hasApiKey());
-      
-      let cleanText = result.text.trim();
-      if (cleanText.startsWith('```')) {
-        cleanText = cleanText.replace(/^```json/, '').replace(/^```/, '').trim();
-      }
-      
-      const parsed = JSON.parse(cleanText);
-      
-      if (result.grounding?.groundingChunks?.length) {
-        parsed.citations = result.grounding.groundingChunks.map(chunk => ({
-          title: chunk.web?.title || 'Web Search Result',
-          url: chunk.web?.uri || '#'
-        }));
-      } else if (newsContext) {
-        parsed.citations = [{
-          title: "Google News RSS (Rajasthan & India)",
-          url: "https://news.google.com"
-        }];
-      }
+    // Strategy 1: Gemini with Google Search grounding (preferred — gives real-time web results)
+    if (storage.hasApiKey()) {
+      try {
+        const result = await this.callGeminiAPI(searchPrompt, systemPrompt, true);
+        
+        let cleanText = result.text.trim();
+        // Strip markdown fences if present
+        cleanText = cleanText.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
+        
+        const parsed = JSON.parse(cleanText);
+        
+        if (result.grounding?.groundingChunks?.length) {
+          parsed.citations = result.grounding.groundingChunks.map(chunk => ({
+            title: chunk.web?.title || 'Web Search Result',
+            url: chunk.web?.uri || '#'
+          }));
+        }
 
-      storage.setCachedCurrentAffairs(parsed);
-      return parsed;
-    } catch (err) {
-      console.warn("Daily current affairs generation failed, using mock", err);
-      return this.simulateDailyCurrentsAndQuiz();
+        // Cache locally so it's only called once per day
+        storage.setCachedCurrentAffairs(parsed);
+        return parsed;
+      } catch (err) {
+        console.warn("Gemini daily quiz generation failed, trying Groq fallback", err);
+      }
     }
+
+    // Strategy 2: Groq fallback with RSS news context (no web search, but uses live headlines)
+    if (storage.hasGroqApiKey()) {
+      try {
+        let newsContext = "";
+        try {
+          const rssUrl = 'https://news.google.com/rss/search?q=Rajasthan+current+affairs+India&hl=en-IN&gl=IN&ceid=IN:en';
+          const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`;
+          const newsRes = await fetch(proxyUrl);
+          const newsData = await newsRes.json();
+          if (newsData.contents) {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(newsData.contents, "text/xml");
+            const items = xmlDoc.querySelectorAll("item");
+            newsContext = "LATEST LIVE NEWS HEADLINES (Use these to construct the briefing):\n";
+            for (let i = 0; i < Math.min(items.length, 12); i++) {
+              const title = items[i].querySelector("title")?.textContent || "";
+              const pubDate = items[i].querySelector("pubDate")?.textContent || "";
+              newsContext += `- ${title} (Published: ${pubDate})\n`;
+            }
+          }
+        } catch (e) {
+          console.warn("RSS fetch failed for Groq fallback", e);
+        }
+
+        const groqPrompt = `${newsContext}\n\nBased on the headlines above, list the top 5 current affairs for today (${todayStr}) and generate a 5-question quiz. ${searchPrompt}`;
+        const result = await this.callGroqAPI(groqPrompt, systemPrompt, true);
+        const parsed = JSON.parse(result.text);
+        parsed.citations = [{ title: "Google News RSS (Rajasthan & India)", url: "https://news.google.com" }];
+        storage.setCachedCurrentAffairs(parsed);
+        return parsed;
+      } catch (err) {
+        console.warn("Groq daily quiz fallback also failed", err);
+      }
+    }
+
+    // Strategy 3: Static mock data
+    return this.simulateDailyCurrentsAndQuiz();
   },
 
-  // Generate comprehensive Markdown study guide
+  // Generate comprehensive Markdown study guide — EXCLUSIVELY uses Groq for detailed long-form content
   async generateStudyGuide(subject, topic) {
-    const hasKey = storage.hasGroqApiKey() || storage.hasApiKey();
-    if (!hasKey) {
-      return this.simulateStudyGuide(subject, topic);
+    // Detect if this is a logical reasoning / analytical ability topic that may need figures
+    const isReasoningTopic = /reasoning|analytical|logical|problem solving|data interpretation/i.test(subject) || /reasoning|analytical|logical|problem solving|data interpretation/i.test(topic);
+
+    let systemInstructionReasoning = '';
+    if (isReasoningTopic) {
+      systemInstructionReasoning = `- For questions involving visual patterns, series, diagrams, Venn diagrams, seating arrangements, or directions:
+  - Represent figures using simple ASCII art or text-based diagrams inside code blocks.
+  - For example, use box-drawing characters for flowcharts, tables for matrices, and text arrows for direction problems.
+  - Label each figure clearly (e.g., "Figure 1: Seating Arrangement").
+  - Provide step-by-step visual walkthroughs when solving pattern-based or spatial reasoning problems.`;
     }
 
     const systemPrompt = `You are an elite AI Tutor for the Rajasthan RSSB Computer Instructor (BCI) Exam.
@@ -355,24 +456,48 @@ CRITICAL UI & FORMATTING RULES:
 - Use code blocks (with appropriate language syntax highlighting) for coding, commands, or SQL examples.
 - Bold key terms and terminologies for high readability.
 - Maintain a professional, educational, and detailed tone.
+${systemInstructionReasoning}
 DO NOT include conversational intros or outros (e.g., "Here is your detailed guide"). Just return the raw Markdown content.`;
+
+    let extraReasoningPrompt = '';
+    if (isReasoningTopic) {
+      extraReasoningPrompt = `5. **Visual Figures & Diagrams**: Include ASCII art or text-based diagrams (inside code blocks) for patterns, Venn diagrams, seating arrangements, direction-based problems, matrices, or series. Provide at least 3 worked-out examples with step-by-step diagram explanations.
+6. **Key BCI Exam Tips**: Strategic guidelines, shortcut techniques, and typical question patterns from the RSSB Computer Instructor exam.`;
+    } else {
+      extraReasoningPrompt = `5. **Key BCI Exam Tips**: Strategic guidelines and typical questions or patterns that appear in the RSSB Computer Instructor exam for this topic.`;
+    }
 
     const userPrompt = `Create a highly detailed, comprehensive, and exhaustive study guide for the topic "${topic}" under the subject "${subject}" in the BCI syllabus.
 Must Include:
-1. **Introduction & Definition**: A thorough explanation of the core concept and its significance in computer science or general studies.
+1. **Introduction & Definition**: A thorough explanation of the core concept and its significance.
 2. **Core Sub-concepts & Architecture**: Detailed explanations of all technical facets, components, properties, or phases. Use tables for comparisons.
 3. **Important Rules & Formulas**: Exhaustive list of formulas, equations, or design rules formatted in blockquotes.
 4. **Code / Practical Examples**: In-depth examples (such as C++/Java/Python/SQL code blocks, process scheduling scenarios, or numeric steps) showing how it works in practice.
-5. **Key BCI Exam Tips**: Strategic guidelines and typical questions or patterns that appear in the RSSB Computer Instructor exam for this topic.
+${extraReasoningPrompt}
 Ensure the guide is thorough, descriptive, and covers all relevant details to help the candidate master the topic.`;
 
-    try {
-      const response = await this.callAPI(userPrompt, systemPrompt, false);
-      return response.text;
-    } catch (err) {
-      console.warn("Failed to generate study guide via API, falling back to simulated content", err);
-      return this.simulateStudyGuide(subject, topic);
+    // Strategy 1: Groq (preferred — fast, detailed, high token limit for long-form content)
+    if (storage.hasGroqApiKey()) {
+      try {
+        const response = await this.callGroqAPI(userPrompt, systemPrompt, false);
+        return response.text;
+      } catch (err) {
+        console.warn("Groq study guide generation failed, trying Gemini fallback", err);
+      }
     }
+
+    // Strategy 2: Gemini fallback
+    if (storage.hasApiKey()) {
+      try {
+        const response = await this.callGeminiAPI(userPrompt, systemPrompt, false);
+        return response.text;
+      } catch (err) {
+        console.warn("Gemini study guide fallback also failed", err);
+      }
+    }
+
+    // Strategy 3: Local simulated content
+    return this.simulateStudyGuide(subject, topic);
   },
 
   // Fallback simulator for study guide content
