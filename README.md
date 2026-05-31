@@ -3,8 +3,8 @@
 A comprehensive exam preparation application built as a modern Progressive Web App (PWA) and packaged for Android using Capacitor.
 
 ## 🚀 Deployment
-- **Web App:** To be deployed soon.
-- **Android APK:** You can download the latest Android `.apk` from the [Portfolio Downloads](https://r-v-2003.github.io/RAHUL_MALI_PORTFOLIO.github.io/) page!
+- **Web App:** Deployed on Vercel
+- **Android APK:** **[Download the Exam-prep APK here](https://raw.githubusercontent.com/R-V-2003/RAHUL_MALI_PORTFOLIO.github.io/main/exam-prep.apk)**
 
 ## 🛠️ Tech Stack
 - **Frameworks:** React/Vite
