@@ -4,3 +4,7 @@ dist/
 .DS_Store
 *.log
 .vite/
+jdk17/
+jdk17.zip
+jdk21/
+build_apk.ps1
